@@ -1,6 +1,7 @@
 /*
 TODO:
 - font touchup
+- define text wrap points in myCardDescription
 - contact form
 - nav dropdown on mobile
 - projects page as blog-style article links
@@ -43,7 +44,7 @@ table {
     padding: 0 0.66em 0 0;
 }
 #myCardBox {
-    margin: 12.5% 8%;
+    margin: 35% 8% 40%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -54,6 +55,23 @@ table {
     width: 35rem;
     border: 1px solid #ffffff;
     font-size: 20pt;
+}
+#myCardName {
+    font-size: 26pt;
+}
+#myCardDescription {
+    font-size: 14pt;
+}
+@media screen and (min-width: 640px) {
+    #myCardBox {
+        margin: 12.5% 8%;
+    }
+    #myCardName {
+        font-size: 48pt;
+    }
+    #myCardDescription {
+        font-size: 18pt;
+    }
 }
 
 /* Homepage "recent" section */
