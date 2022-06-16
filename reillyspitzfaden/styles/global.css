@@ -29,6 +29,10 @@ table {
 :link, :visited {
     color: #ffffff;
 }
+a:hover {
+    text-decoration: none;
+    transition: text-decoration .5s;
+}
 /* Homepage */
 #nav {
     margin-right: 2rem;
@@ -140,11 +144,11 @@ table {
 }
 
 /* Works list formatting */
-#workslist th {
+#workslist th, #materials th {
     font-weight: 500;
     padding: 0 1rem 0.5rem 0;
 }
-#workslist td {
+#workslist td, #materials td {
     padding: 0 1rem 0.5rem 0;
 }
 
