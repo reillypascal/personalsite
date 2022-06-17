@@ -48,7 +48,7 @@ a:hover {
     padding: 0 0.66em 0 0;
 }
 #myCardBox {
-    margin: 35% 8% 40%;
+    margin: 35% 5% 40%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -56,7 +56,7 @@ a:hover {
 #myCard {
     padding: 0 1rem;
     text-align: center;
-    width: 22rem;
+    width: 18rem;
     border: 1px solid #ffffff;
     font-size: 20pt;
 }
