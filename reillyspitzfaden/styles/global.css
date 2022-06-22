@@ -135,7 +135,7 @@ iframe {
 }
 
 /* Media, projects, supplemental page */
-#containingBlock {
+.containingBlock {
     max-width: 560px;
 }
 .videoWrapper {
