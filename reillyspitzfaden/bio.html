@@ -8,9 +8,11 @@
         <link rel='stylesheet' id='googlefonts-css'  href='https://fonts.googleapis.com/css?family=Lato:300,300italic,900&subset=latin' type='text/css' media='all' />
     </head>
     <body>
+        <!-- includes footer - makes it fill the page -->
         <div id="page-container">
-            <div id="content-wrap">
-                <div id="nav">
+            <!-- navigation menu -->
+            <div id="nav">
+                <div id="navFlex">
                     <div class="navElement"><a href="index.html">Home</a></div>
                     <div class="navElement"><a href="bio.html">Bio</a></div>
                     <div class="navElement"><a href="works.html">Works List</a></div>
@@ -19,43 +21,55 @@
                     <div class="navElement"><a href="supplemental.html">Supplemental Materials</a></div>
                     <div class="navElement"><a href="projects.html">Projects</a></div>
                     <div class="navElement"><a href="mailto:reillypascal@gmail.com">Email Me</a></div>
-                    <!-- drop-down for mobile -->
+                    <!-- add drop-down for mobile -->
+                    <!-- may use display type "inline" to format this as a list? -->
                 </div>
-
-                <div id="headshot">
-                    <!-- head shot - maybe glitch up? -->
-                    <img src="./media/profile-200px.png" alt="My face in profile" 
-                        srcset="./media/profile/profile-100px.png 100w,
-                        ./media/profile-200px.png 200w,
-                        ./media/profile-400px.png 400w"
-                        sizes="(max-width: 480px) 33vw,
-                        (max-width: 960px) 25vw,
-                        200px">
-                </div>    
-                <article class="textBlock">
-                    <h2>Bio</h2>
-                    <p>Reilly Spitzfaden (they/them) is a composer who likes noise, code, electronics, and nostalgia. They build handmade electronic instruments, design interactive software interfaces, and repurpose audio and telecommunications equipment as instruments.</p> 
-                    <p>Reilly's recordings appear on <i>How Things Are Made, S3E02</i>; in the Media Sandbox and Michigan State University Department of Theatre film <i>(313) Choices</i>; and on the recording <i>Statements</i> with the Michigan State University composition studio. Reilly’s compositions have been performed at the Darmstädter Ferienkurse, and by the Eastman BroadBand, members of ensemble mise-en, the Amaranth Quartet, OSSIA New Music, and How things are made.</p>
-                    <p>Reilly holds a PhD in composition from the Eastman School of Music where they studied with Ricardo Zohn-Muldoon, David Liptak, and Oliver Schneller. They received an MA in composition from Eastman, where they studied with Robert Morris and Carlos Sanchez-Gutierrez, and a BM in composition from Michigan State University.</p>
-                </article>
-
-                <h2><a href="documents/spitzfaden-CV-2022.pdf">CV</a></h2>
             </div>
-            
-            <footer> 
-                <hr/>
-                <table>
-                    <!-- maybe other media linked w/ svg, at bottom, etc? -->
-                    <tr>
-                        <td><a href="https://github.com/reillypascal">GitHub</a></td>
-                        <td><a href="https://www.instagram.com/reillypascal/">Instagram</a></td>
-                        <td><a href="https://soundcloud.com/reilly-spitzfaden">SoundCloud</a></td>
-                        <td><a href="https://www.youtube.com/channel/UCqkRNx3xAfG-CYOmHymgAdg">YouTube</a></td>
-                    </tr>
-                </table>
+            <!-- page content minus header/footer -->
+            <div id="content-wrap">
+                <br/>
+                <div id="BGpad">
+                <div id="main">
+                    <div id="headshot">
+                        <!-- head shot - maybe glitch up? -->
+                        <img src="./media/profile-200px.png" alt="My face in profile" 
+                            srcset="./media/profile/profile-100px.png 100w,
+                            ./media/profile-200px.png 200w,
+                            ./media/profile-400px.png 400w"
+                            sizes="(max-width: 480px) 33vw,
+                            (max-width: 960px) 25vw,
+                            200px">
+                    </div>    
+                    <article class="textBlock">
+                        <h2>Bio</h2>
+                        <p>Reilly Spitzfaden (they/them) is a composer who likes noise, code, electronics, and nostalgia. They build handmade electronic instruments, design interactive software interfaces, and repurpose audio and telecommunications equipment as instruments.</p> 
+                        <p>Reilly's recordings appear on <i>How Things Are Made, S3E02</i>; in the Media Sandbox and Michigan State University Department of Theatre film <i>(313) Choices</i>; and on the recording <i>Statements</i> with the Michigan State University composition studio. Reilly’s compositions have been performed at the Darmstädter Ferienkurse, and by the Eastman BroadBand, members of ensemble mise-en, the Amaranth Quartet, OSSIA New Music, and How things are made.</p>
+                        <p>Reilly holds a PhD in composition from the Eastman School of Music where they studied with Ricardo Zohn-Muldoon, David Liptak, and Oliver Schneller. They received an MA in composition from Eastman, where they studied with Robert Morris and Carlos Sanchez-Gutierrez, and a BM in composition from Michigan State University.</p>
+                    </article>
 
-                <p>© 2022 Reilly Spitzfaden // all site coding by Reilly Spitzfaden</p>
-            </footer>
+                    <h2><a href="documents/spitzfaden-CV-2022.pdf">CV</a></h2>
+                <!-- close "main" -->
+                </div>
+                <!-- close "BGpad" -->
+                </div>
+            <!-- close "content-wrap" -->
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <table>
+                <!-- maybe other media linked w/ svg, at bottom, etc? -->
+                <tr>
+                    <td><a href="https://github.com/reillypascal">GitHub</a></td>
+                    <td><a href="https://www.instagram.com/reillypascal/">Instagram</a></td>
+                    <td><a href="https://soundcloud.com/reilly-spitzfaden">SoundCloud</a></td>
+                    <td><a href="https://www.youtube.com/channel/UCqkRNx3xAfG-CYOmHymgAdg">YouTube</a></td>
+                </tr>
+            </table>
+
+            <p>© 2022 Reilly Spitzfaden // all site coding by Reilly Spitzfaden</p>
+        </footer>
+    <!-- close "page-container" -->
         </div>
     </body>
 </html>

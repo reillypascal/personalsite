@@ -8,9 +8,11 @@
         <link rel='stylesheet' id='googlefonts-css'  href='https://fonts.googleapis.com/css?family=Lato:300,300italic,900&subset=latin' type='text/css' media='all' />
     </head>
     <body>
+        <!-- includes footer - makes it fill the page -->
         <div id="page-container">
-            <div id="content-wrap">
-                <div id="nav">
+            <!-- navigation menu -->
+            <div id="nav">
+                <div id="navFlex">
                     <div class="navElement"><a href="index.html">Home</a></div>
                     <div class="navElement"><a href="bio.html">Bio</a></div>
                     <div class="navElement"><a href="works.html">Works List</a></div>
@@ -19,39 +21,52 @@
                     <div class="navElement"><a href="supplemental.html">Supplemental Materials</a></div>
                     <div class="navElement"><a href="projects.html">Projects</a></div>
                     <div class="navElement"><a href="mailto:reillypascal@gmail.com">Email Me</a></div>
-                    <!-- drop-down for mobile -->
+                    <!-- add drop-down for mobile -->
+                    <!-- may use display type "inline" to format this as a list? -->
                 </div>
-
-                <h2>Links to appearances around the internet</h2>
-
-                    <h3><a href="https://nowandxen.libsyn.com/14-tone-reilly-spitzfaden">Interview</a> on <i>"Now&Xen"</i> Podcast</h3>                
-                    <iframe style="border-radius:12px; width: 100%" src="https://open.spotify.com/embed/episode/2KJotkrdUJ7c1sF5WCYeJK?utm_source=generator" height="152" allowfullscreen="" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                    <!-- <iframe title="Libsyn Player" style="border: none; width: 100%" src="https://html5-player.libsyn.com/embed/episode/id/11999960/height/90/theme/custom/thumbnail/yes/direction/forward/render-playlist/no/custom-color/12507b/" height="90" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe> -->
-
-                    <h3><a href="https://wayofm.org/shows/episodes/12042018-0">Interview</a> about Eastman OSSIA New Music commission on WAYO 104.3 FM</h3>
-                    <iframe style="width: 100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FSoundspace_Roc%2Fsoundspace-12-4-18-ossia-reilly-spitzfaden-and-erik-gibelyou%2F" ></iframe>
-
-                    <h3><a href="https://yeahiknowitsucks.wordpress.com/2018/01/04/how-things-are-made-with-reilly-spitzfaden-jamie-vandermolen-maurice-rickard-and-an-eel/">Blog review</a> of "Combination Locks"</h3>
-
-                    <h3><a href="https://composerstoolbox.com/2017/09/23/reilly-spitzfaden-resonances/">Blog feature</a> of "Resonances" as a teaching tool for composers</h3>
-
-                    <h3>A <a href="https://www.icadenza.com/elf-multimedia-performance/">concert review</a> I wrote for iCadenza.</h3>
             </div>
 
-            <footer> 
-                <hr/>
-                <table>
-                    <!-- maybe other media linked w/ svg, at bottom, etc? -->
-                    <tr>
-                        <td><a href="https://github.com/reillypascal">GitHub</a></td>
-                        <td><a href="https://www.instagram.com/reillypascal/">Instagram</a></td>
-                        <td><a href="https://soundcloud.com/reilly-spitzfaden">SoundCloud</a></td>
-                        <td><a href="https://www.youtube.com/channel/UCqkRNx3xAfG-CYOmHymgAdg">YouTube</a></td>
-                    </tr>
-                </table>
+            <!-- page content minus header/footer -->
+            <div id="content-wrap">
+                <br/>
+                <div id="BGpad">
+                <div id="main">
+                    <h2>Links to appearances around the internet</h2>
 
-                <p>© 2022 Reilly Spitzfaden // all site coding by Reilly Spitzfaden</p>
-            </footer>
+                        <h3><a href="https://nowandxen.libsyn.com/14-tone-reilly-spitzfaden">Interview</a> on <i>"Now&Xen"</i> Podcast</h3>                
+                        <iframe style="border-radius:12px; width: 100%" src="https://open.spotify.com/embed/episode/2KJotkrdUJ7c1sF5WCYeJK?utm_source=generator" height="152" allowfullscreen="" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        <!-- <iframe title="Libsyn Player" style="border: none; width: 100%" src="https://html5-player.libsyn.com/embed/episode/id/11999960/height/90/theme/custom/thumbnail/yes/direction/forward/render-playlist/no/custom-color/12507b/" height="90" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe> -->
+
+                        <h3><a href="https://wayofm.org/shows/episodes/12042018-0">Interview</a> about Eastman OSSIA New Music commission on WAYO 104.3 FM</h3>
+                        <iframe style="width: 100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FSoundspace_Roc%2Fsoundspace-12-4-18-ossia-reilly-spitzfaden-and-erik-gibelyou%2F" ></iframe>
+
+                        <h3><a href="https://yeahiknowitsucks.wordpress.com/2018/01/04/how-things-are-made-with-reilly-spitzfaden-jamie-vandermolen-maurice-rickard-and-an-eel/">Blog review</a> of "Combination Locks"</h3>
+
+                        <h3><a href="https://composerstoolbox.com/2017/09/23/reilly-spitzfaden-resonances/">Blog feature</a> of "Resonances" as a teaching tool for composers</h3>
+
+                        <h3>A <a href="https://www.icadenza.com/elf-multimedia-performance/">concert review</a> I wrote for iCadenza.</h3>
+                <!-- close "main" -->
+                </div>
+                <!-- close "BGpad" -->
+                </div>
+            <!-- close "content-wrap" -->
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <table>
+                <!-- maybe other media linked w/ svg, at bottom, etc? -->
+                <tr>
+                    <td><a href="https://github.com/reillypascal">GitHub</a></td>
+                    <td><a href="https://www.instagram.com/reillypascal/">Instagram</a></td>
+                    <td><a href="https://soundcloud.com/reilly-spitzfaden">SoundCloud</a></td>
+                    <td><a href="https://www.youtube.com/channel/UCqkRNx3xAfG-CYOmHymgAdg">YouTube</a></td>
+                </tr>
+            </table>
+
+            <p>© 2022 Reilly Spitzfaden // all site coding by Reilly Spitzfaden</p>
+        </footer>
+        <!-- close "page-container" -->
         </div>
     </body>
 </html>

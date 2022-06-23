@@ -1,24 +1,26 @@
 /*
 TODO:
-- css box spacing for media, links, supplemental, projects
 - nav/workslist dropdown on mobile
-- font touchup
 - contact form
+- gradient on header/footer? shadow?
+- translucent overlay for bg instead of transluceng bg?
+- font touchup
+- article spacing on project page
 - projects page as blog-style article links
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-/* boilerplate, but change if creates issues */
-html {box-sizing: border-box;}
-*, *:before, *:after {box-sizing: inherit;}
 
+/* page element formatting */
 body {
-    background-color: #080a0f;
+    /* background-color: #080a0f;*/
+    background-color: #000;
     color: #ffffff;
     font-family: "Lato", "Trebuchet MS", sans-serif;
     font-weight: 300;
-    margin: 1.5rem 1.5rem;
+    /* margin: 1.5rem 1.5rem; */
 }
+/*
 @media screen and (min-width: 960px) {
     body {
         margin: 1.5rem 8%;
@@ -28,6 +30,12 @@ body {
     body {
         margin: 1.5rem 12%;
     }
+}
+*/
+#content-wrap {
+    background-image: url(../media/wefax_20210809_000222_225235000_cr_25opacity.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 h1 {
     font-weight: 100;
@@ -50,9 +58,25 @@ a:hover {
 iframe {
     border-style: none;
 }
-/* Homepage */
+
+/*************************************************/
+
+/* nav formatting */
 #nav {
-    margin-right: 2rem;
+    margin: 1rem 1rem;
+}
+@media screen and (min-width: 960px) {
+    #nav {
+        margin: 1rem 8%;
+    }
+}
+@media screen and (min-width: 1280px) {
+    #nav {
+        margin: 1rem 12%;
+    }
+}
+#navFlex {
+    padding-right: 2rem;
     position: relative;
     display: flex;
     flex-flow: row wrap;
@@ -62,13 +86,111 @@ iframe {
     padding-right: 1rem;
     padding-bottom: 0.5rem;
 }
+
+/*************************************************/
+
+/* "main" formatting */
+#main, #mainRecent {
+    margin: 0 1.5rem 1rem;
+    background-color: #000;
+    padding: 1em;
+    padding-top: 0.25em;
+    border-radius: 5px;
+}
+#main {width: fit-content; margin: auto;}
+#BGpad {margin: 5%;}
+@media screen and (min-width: 640px) {
+    #main, #mainRecent {border-radius: 7px;}
+}
+@media screen and (min-width: 960px) {
+    /*
+    #main {
+        margin: 0 14% 2%;
+    }
+    */
+    #mainRecent {
+        margin: 0 8% 2%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    /*
+    #main {
+        margin: 0 20% 2%;
+    }
+    */
+    #mainRecent {
+        margin: 0 12% 2%;
+    }
+}
+
+/*************************************************/
+
+/* Footer */
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+#content-wrap {
+    padding-bottom: 2.5rem;
+}
+footer::before {
+    content: '';
+    display: block;
+    padding-top: 1.5rem;
+    margin-bottom: 0rem;
+    border-bottom: 1px solid #383a3f;
+}
+footer {
+    font-size: 0.85rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    box-sizing: border-box;
+}
+@media screen and (min-width: 960px) {
+    footer {
+        margin: 0 8%;
+        width: 84%;
+    }
+}
+@media screen and (min-width: 1280px) {
+    footer {
+        margin: 0 12%;
+        width: 76%;
+    }
+}
+footer td {
+    padding: 1em 0.33em 0 0;
+}
+
+/*************************************************/
+
+/* Homepage */
+#myCardBG {
+    height: 320px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
 #myCard {
     padding: 0 1rem;
-    margin: 35% auto 40%;
+    /*margin: 35% auto 40%;*/
+    justify-content: center;
+    margin: auto;
     text-align: center;
     width: 18rem;
-    border: 1px solid #ffffff;
+    height: 10rem;
+    border: 1px solid #fff;
+    border-radius: 4px;
     font-size: 20pt;
+    text-shadow: 1px 1px 10px #000;
+}
+@media screen and (min-width: 640px) {
+    #myCard {
+        border-radius: 5px;
+    }
 }
 #myCardName {
     font-size: 26pt;
@@ -78,9 +200,13 @@ iframe {
 }
 
 @media screen and (min-width: 640px) {
+    #myCardBG {
+        height: 480px;
+    }
     #myCard {
-        margin: 12.5% auto;
+        /*margin: 12.5% auto;*/
         width: 34rem;
+        height: 15rem;
     }
     #myCardName {
         font-size: 48pt;
@@ -89,8 +215,23 @@ iframe {
         font-size: 18pt;
     }
 }
+@media screen and (min-width: 960px) {
+    #myCardBG {
+        height: 520px;
+    }
+}
+
+/*************************************************/
 
 /* Homepage "recent" section */
+/*
+#recentHeader {
+    border-top: 1px solid #a0a0a0;
+    border-left: 4px solid #a0a0a0;
+    border-top-left-radius: 5px;
+    padding: 0.2em;
+}
+*/
 #recent {
     display: flex;
     flex-flow: row wrap;
@@ -118,24 +259,20 @@ iframe {
     .gridContainingBlock {
         width: 48%;
     }
-    .gridVideoWrapper {
-        position: relative;
-        padding-bottom: 56.25%;
-        padding-top: 25px;
-        height: 0;
-    }
-    .gridVideoWrapper object, 
-    .gridVideoWrapper iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
 }
 
+/*************************************************/
+
 /* Media, projects, supplemental page */
-.containingBlock {
+.videoGrid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.videoGrid .containingBlock {
+    width: 100%;
+}
+.videoList .containingBlock {
     max-width: 560px;
 }
 .videoWrapper {
@@ -152,6 +289,19 @@ iframe {
     width: 100%;
     height: 100%;
 }
+@media screen and (min-width: 640px) {
+    .videoGrid .containingBlock {
+        width: 48%;
+    }
+}
+
+blockquote .instagram-media {
+    max-width: 80% !important;
+    width: 80% !important;
+    /* min-width: auto !important; */
+}
+/*************************************************/
+
 /* Bio formatting */
 #headshot {
     margin: 1rem 0;
@@ -161,7 +311,18 @@ iframe {
         margin: 2rem 0;
     }
 }
+
+/*************************************************/
+
 /* Works list formatting */
+#categories {
+    margin: 0; 
+    padding: 0; 
+}
+#categories li {
+    display: inline; 
+    padding-right: 0.5em; 
+}
 #workslist th, #materials th {
     font-weight: 500;
     padding: 0 1rem 0.5rem 0;
@@ -172,29 +333,4 @@ iframe {
 
 .textBlock {
     max-width: 45em;
-}
-
-/* Footer */
-#page-container {
-    position: relative;
-    min-height: 100vh;
-}
-
-#content-wrap {
-    padding-bottom: 2.5rem;
-}
-
-footer {
-    font-size: 0.85rem;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 0;
-    padding-top: 2rem;
-}
-footer td {
-    padding: 1em 0.33em 0 0;
-}
-footer hr {
-    color: #383a3f;
 }

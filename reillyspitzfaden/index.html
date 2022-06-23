@@ -3,14 +3,16 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Reilly Spitzfaden | Home</title>
+        <title>Reilly Spitzfaden, Composer</title>
         <link rel="stylesheet" type="text/css" href="styles/global.css" />
         <link rel='stylesheet' id='googlefonts-css'  href='https://fonts.googleapis.com/css?family=Lato:300,300italic,900&subset=latin' type='text/css' media='all' />
     </head>
     <body>
+        <!-- includes footer - makes it fill the page -->
         <div id="page-container">
-            <div id="content-wrap">
-                <div id="nav">
+            <!-- navigation menu -->
+            <div id="nav">
+                <div id="navFlex">
                     <div class="navElement"><a href="index.html">Home</a></div>
                     <div class="navElement"><a href="bio.html">Bio</a></div>
                     <div class="navElement"><a href="works.html">Works List</a></div>
@@ -19,34 +21,47 @@
                     <div class="navElement"><a href="supplemental.html">Supplemental Materials</a></div>
                     <div class="navElement"><a href="projects.html">Projects</a></div>
                     <div class="navElement"><a href="mailto:reillypascal@gmail.com">Email Me</a></div>
-                    <!-- drop-down for mobile -->
+                    <!-- add drop-down for mobile -->
                     <!-- may use display type "inline" to format this as a list? -->
-                </div>
-
-                <div id="myCard">
-                    <h1 id="myCardName"><a href="index.html" style="text-decoration: none; border-bottom-style: none;">Reilly Spitzfaden</a></h1>
-                    <p id="myCardDescription">composer&nbsp;//&nbsp;electronic musician&nbsp;//&nbsp;educator</p>
-                </div>
-                <h2 id="recentHeader">Recent</h2>
-                <div id="recent">
-                    <div class="gridContainingBlock">
-                        <p>Part of my Eastman PhD dissertation was featured on Score Follower!</p>
-                        <div class="gridVideoWrapper">
-                            <iframe width="480" height="270" src="https://www.youtube.com/embed/Y_inKSy9K0k" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="gridContainingBlock">
-                        <p>Another dissertation part premiered at the March 2022 <a href="https://www.esm.rochester.edu/ears/">EARS</a> concert</p>
-                        <div class="gridVideoWrapper">
-                            <iframe width="480" height="270" src="https://www.youtube.com/embed/7FXpG1s1HpE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
                 </div>
             </div>
 
-            <footer>
-                <hr/>
+            <!-- page content minus header/footer -->
+            <div id="content-wrap">
 
+                <!-- name card -->
+                <div id="myCardBG">
+                    <div id="myCard">
+                        <h1 id="myCardName"><a href="index.html" style="text-decoration: none; border-bottom-style: none;">Reilly Spitzfaden</a></h1>
+                        <p id="myCardDescription">composer&nbsp;//&nbsp;electronic musician&nbsp;//&nbsp;educator</p>
+                    </div>
+                </div>
+
+                 <!-- recent events -->
+                <div id="mainRecent">
+                    <h2 id="recentHeader">Recent</h2>
+                    <div id="recent">
+                        <div class="gridContainingBlock">
+                            <p>Part of my Eastman PhD dissertation was featured on Score Follower!</p>
+                            <div class="gridVideoWrapper">
+                                <iframe width="480" height="270" src="https://www.youtube.com/embed/Y_inKSy9K0k" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="gridContainingBlock">
+                            <p>Another dissertation part premiered at the March 2022 <a href="https://www.esm.rochester.edu/ears/">EARS</a> concert</p>
+                            <div class="gridVideoWrapper">
+                                <iframe width="480" height="270" src="https://www.youtube.com/embed/7FXpG1s1HpE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    <!-- close recent -->
+                    </div>
+                <!-- close "main" -->
+                </div>
+            <!-- close "content-wrap" -->
+            </div>
+
+            <!-- footer -->
+            <footer>
                 <table>
                     <!-- maybe other media linked w/ svg, at bottom, etc? -->
                     <tr>
@@ -59,6 +74,7 @@
 
                 <p>© 2022 Reilly Spitzfaden // all site coding by Reilly Spitzfaden</p>
             </footer>
+        <!-- close "page-container" -->
         </div>
     </body>
 </html>

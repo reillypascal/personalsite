@@ -8,9 +8,11 @@
         <link rel='stylesheet' id='googlefonts-css'  href='https://fonts.googleapis.com/css?family=Lato:300,300italic,900&subset=latin' type='text/css' media='all' />
     </head>
     <body>
+        <!-- includes footer - makes it fill the page -->
         <div id="page-container">
-            <div id="content-wrap">
-                <div id="nav">
+            <!-- navigation menu -->
+            <div id="nav">
+                <div id="navFlex">
                     <div class="navElement"><a href="index.html">Home</a></div>
                     <div class="navElement"><a href="bio.html">Bio</a></div>
                     <div class="navElement"><a href="works.html">Works List</a></div>
@@ -19,8 +21,16 @@
                     <div class="navElement"><a href="supplemental.html">Supplemental Materials</a></div>
                     <div class="navElement"><a href="projects.html">Projects</a></div>
                     <div class="navElement"><a href="mailto:reillypascal@gmail.com">Email Me</a></div>
-                    <!-- drop-down for mobile -->
+                    <!-- add drop-down for mobile -->
+                    <!-- may use display type "inline" to format this as a list? -->
                 </div>
+            </div>
+
+            <!-- page content minus header/footer -->
+            <div id="content-wrap">
+                <br/>
+                <div id="BGpad">
+                <div id="main">
                     <div id="materials">
                     <h2>Performance Materials</h2>
                         <table>
@@ -42,25 +52,32 @@
                             </tr>
                         </table>
                     </div>
-                    
+                    <br/>
                     <h2>Instrument/Technique Demonstrations</h2>
-                        <h3><i>Scratch</i> speaker instrument demo (contact me about the instrument):</h3>
+                    <div class="videoList">
                         <div class="containingBlock">
+                            <h3><i>Scratch</i> speaker instrument demo (contact me about the instrument):</h3>
                             <div class="videoWrapper">
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/OXtjlqxkQ9Q" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>
 
-                        <h3><i>end of</i> electronics demo (requires Bastl <a href="https://bastl-instruments.com/instruments/kastle">Kastle v1.5</a> synthesizer):</h3>
                         <div class="containingBlock">
+                            <h3><i>end of</i> electronics demo (requires Bastl <a href="https://bastl-instruments.com/instruments/kastle">Kastle v1.5</a> synthesizer):</h3>
                             <div class="videoWrapper">
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/u4jYXdW79h8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>
+                    </div>
+                <!-- close "main" -->
+                </div>
+                <!-- close "BGpad" -->
+                </div>
+            <!-- close "content-wrap" -->
             </div>
 
-            <footer> 
-                <hr/>
+            <!-- footer -->
+            <footer>
                 <table>
                     <!-- maybe other media linked w/ svg, at bottom, etc? -->
                     <tr>
@@ -73,6 +90,7 @@
 
                 <p>© 2022 Reilly Spitzfaden // all site coding by Reilly Spitzfaden</p>
             </footer>
+        <!-- close "page-container" -->
         </div>
     </body>
 </html>
