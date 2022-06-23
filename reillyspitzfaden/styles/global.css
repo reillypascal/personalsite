@@ -1,11 +1,13 @@
 /*
 TODO:
+- SEO
+    - Twitter Cards?
 - nav/workslist dropdown on mobile
 - contact form
 - gradient on header/footer? shadow?
 - translucent overlay for bg instead of transluceng bg?
 - font touchup
-- article spacing on project page
+- replace br w/css?
 - projects page as blog-style article links
 */
 
@@ -36,6 +38,12 @@ body {
     background-image: url(../media/wefax_20210809_000222_225235000_cr_25opacity.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+@supports (-webkit-touch-callout: none) {
+    #content-wrap {
+        background: url('../media/wefax_20210809_000222_225235000_cr_25opacity.png') center top no-repeat scroll;
+        background-size: auto 100vh;
+    }
 }
 h1 {
     font-weight: 100;
