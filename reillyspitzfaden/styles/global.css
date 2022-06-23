@@ -38,6 +38,12 @@ body {
     background-image: url(../media/wefax_20210809_000222_225235000_cr_25opacity.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
+}
+@media screen and (min-width: 640px) {
+    #content-wrap {
+        background-position: left;
+    }
 }
 @supports (-webkit-touch-callout: none) {
     #content-wrap {
