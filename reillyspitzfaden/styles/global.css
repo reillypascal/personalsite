@@ -63,10 +63,14 @@ a:hover {
     border-radius: 2px;
     box-shadow: inset 0 0 0 0 #383a3f;
     padding: .25rem;
-    transition: box-shadow .3s ease-in-out;
 }
 #nav a:hover {
     box-shadow: inset 200px 0 0 0 #383a3f;
+}
+@media screen and (min-width: 480px) {
+    #nav :link {
+        transition: box-shadow .3s ease-in-out;
+    }
 }
 iframe {
     border-style: none;
