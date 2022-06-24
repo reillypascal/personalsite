@@ -52,11 +52,21 @@ table {
 :link, :visited {
     text-decoration: none;
     border-bottom: 1px solid #a0a0a0;
-    color: #ffffff;
+    color: #fff;
 }
 a:hover {
     border-bottom: none;
     transition: border-bottom .5s;
+}
+#nav :link {
+    border-bottom: none;
+    border-radius: 2px;
+    box-shadow: inset 0 0 0 0 #383a3f;
+    padding: .25rem;
+    transition: box-shadow .3s ease-in-out;
+}
+#nav a:hover {
+    box-shadow: inset 200px 0 0 0 #383a3f;
 }
 iframe {
     border-style: none;
@@ -89,8 +99,7 @@ iframe {
     justify-content: left;
 }
 .navElement {
-    padding-right: 1rem;
-    padding-bottom: 0.5rem;
+    padding: 0.25rem 0.5rem 0.25rem 0;
 }
 
 /*************************************************/
