@@ -1,7 +1,6 @@
 /*
 TODO:
 - SEO
-- nav/workslist dropdown on mobile
 - contact form
 Detail
 - translucent overlay for bg instead of transluceng bg?
@@ -15,7 +14,7 @@ Detail
 /* page element formatting: commented out old formatting for without bg img */
 body {
     background-color: #000;
-    color: #ffffff;
+    color: #fff;
     font-family: "Lato", "Trebuchet MS", sans-serif;
     font-weight: 300;
     margin: 0;
@@ -58,19 +57,14 @@ a:hover {
     border-bottom: none;
     transition: border-bottom .5s;
 }
-#nav :link {
+.nav :link {
     border-bottom: none;
     border-radius: 2px;
     box-shadow: inset 0 0 0 0 #383a3f;
     padding: .25rem;
 }
-#nav a:hover {
+.nav a:hover {
     box-shadow: inset 200px 0 0 0 #383a3f;
-}
-@media screen and (min-width: 480px) {
-    #nav :link {
-        transition: box-shadow .3s ease-in-out;
-    }
 }
 iframe {
     border-style: none;
@@ -79,31 +73,71 @@ iframe {
 /*************************************************/
 
 /* nav formatting */
-#nav {
+.nav {
+    overflow: hidden;
     margin: 0;
     width: vw100;
     padding: 1rem 2rem;
     background-color: #000;
+    position: relative;
+}
+.active, .navElement {
+    margin-right: 1rem;
+}
+
+.nav a {
+    color: #fff;
+    padding-right: 2rem;
+    text-decoration: none;
+    display: block;
+}
+.nav a.icon {
+    background: #000;
+    display: block;
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+}
+.nav #menuLinks {
+    display: none;
+}
+.nav :link {
+    border-bottom: none;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 0 #383a3f;
+    transition: box-shadow .3s;
+    padding: .25rem;
+}
+.nav a:hover {
+    box-shadow: inset 170px 0 0 0 #383a3f;
+}
+@media screen and (min-width: 640px) {
+    .nav #menuLinks {
+        display: contents;
+    }
+    .nav {
+        padding-right: 2rem;
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: left;
+    }
+    .nav a.icon {
+        display: none;
+    }
+    .nav :link {
+        border-radius: 2px;
+    }
 }
 @media screen and (min-width: 960px) {
-    #nav {
+    .nav {
         padding: 1rem 8%;
     }
 }
 @media screen and (min-width: 1280px) {
-    #nav {
+    .nav {
         padding: 1rem 12%;
     }
-}
-#navFlex {
-    padding-right: 2rem;
-    position: relative;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: left;
-}
-.navElement {
-    padding: 0.125rem 0.5rem 0.125rem 0;
 }
 
 /*************************************************/
@@ -143,7 +177,7 @@ iframe {
 .content {
     flex-grow: 1;
 }
-#nav, footer {
+.nav, footer {
     flex-shrink: 0;
 }
 footer::before {
