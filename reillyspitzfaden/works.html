@@ -17,9 +17,12 @@
         <link rel='stylesheet' id='googlefonts-css'  href='https://fonts.googleapis.com/css?family=Lato:300,300italic,900&subset=latin' type='text/css' media='all' />
     </head>
     <body>
-        <!-- includes footer - makes it fill the page -->
-        <div id="page-container">
-            <span id="top"></span>
+        <!-- fixed background -->
+        <div class="bg"></div>
+        <!-- moving foreground -->
+        <div class="foreground">
+            <!-- includes footer - makes it fill the page -->
+            <div class="wrapper">
                 <!-- navigation menu -->
                 <div id="nav">
                     <div id="navFlex">
@@ -35,9 +38,8 @@
                         <!-- may use display type "inline" to format this as a list? -->
                     </div>
                 </div>
-
                 <!-- page content minus header/footer -->
-                <div id="content-wrap">
+                <div class="content">
                     <br/>
                     <div id="BGpad">
                     <div id="main">
@@ -209,9 +211,8 @@
             </div>
             <!-- close "BGpad" -->
             </div>
-        <!-- close "content-wrap" -->
+        <!-- close "wrapper" -->
         </div>
-
         <!-- footer -->
         <footer>
             <table>
@@ -226,7 +227,9 @@
 
             <p>© 2022 Reilly Spitzfaden // all site coding by Reilly Spitzfaden</p>
         </footer>
-        <!-- close "page-container" -->
-        </div>
+    <!-- close "foreground" (moving page over bg) -->
+    </div>
+    <!-- close "background" -->
+    </div>
     </body>
 </html>

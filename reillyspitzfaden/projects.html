@@ -17,26 +17,29 @@
         <link rel='stylesheet' id='googlefonts-css'  href='https://fonts.googleapis.com/css?family=Lato:300,300italic,900&subset=latin' type='text/css' media='all' />
     </head>
     <body>
-        <!-- includes footer - makes it fill the page -->
-        <div id="page-container">
-            <!-- navigation menu -->
-            <div id="nav">
-                <div id="navFlex">
-                    <div class="navElement"><a href="index.html">Home</a></div>
-                    <div class="navElement"><a href="bio.html">Bio</a></div>
-                    <div class="navElement"><a href="works.html">Works List</a></div>
-                    <div class="navElement"><a href="media.html">Media</a></div>
-                    <div class="navElement"><a href="links.html">Links</a></div>
-                    <div class="navElement"><a href="supplemental.html">Supplemental Materials</a></div>
-                    <div class="navElement"><a href="projects.html">Projects</a></div>
-                    <div class="navElement"><a href="mailto:reillypascal@gmail.com">Email Me</a></div>
-                    <!-- add drop-down for mobile -->
-                    <!-- may use display type "inline" to format this as a list? -->
+        <!-- fixed background -->
+        <div class="bg"></div>
+        <!-- moving content -->
+        <div class="foreground">
+            <!-- includes footer - makes it fill the page -->
+            <div class="wrapper">
+                <!-- navigation menu -->
+                <div id="nav">
+                    <div id="navFlex">
+                        <div class="navElement"><a href="index.html">Home</a></div>
+                        <div class="navElement"><a href="bio.html">Bio</a></div>
+                        <div class="navElement"><a href="works.html">Works List</a></div>
+                        <div class="navElement"><a href="media.html">Media</a></div>
+                        <div class="navElement"><a href="links.html">Links</a></div>
+                        <div class="navElement"><a href="supplemental.html">Supplemental Materials</a></div>
+                        <div class="navElement"><a href="projects.html">Projects</a></div>
+                        <div class="navElement"><a href="mailto:reillypascal@gmail.com">Email Me</a></div>
+                        <!-- add drop-down for mobile -->
+                        <!-- may use display type "inline" to format this as a list? -->
+                    </div>
                 </div>
-            </div>
-
-            <!-- page content minus header/footer -->
-            <div id="content-wrap">
+                <!-- page content minus header/footer -->
+                <div class="content">
                 <br/>
                 <div id="BGpad">
                     <div id="main">
@@ -82,24 +85,25 @@
                         </div>
                 <!-- close "BGpad" -->
                 </div>
-            <!-- close "content-wrap" -->
+            <!-- close "wrapper" -->
             </div>
+            <!-- footer -->
+            <footer>
+                <table>
+                    <!-- maybe other media linked w/ svg, at bottom, etc? -->
+                    <tr>
+                        <td><a href="https://github.com/reillypascal">GitHub</a></td>
+                        <td><a href="https://www.instagram.com/reillypascal/">Instagram</a></td>
+                        <td><a href="https://soundcloud.com/reilly-spitzfaden">SoundCloud</a></td>
+                        <td><a href="https://www.youtube.com/channel/UCqkRNx3xAfG-CYOmHymgAdg">YouTube</a></td>
+                    </tr>
+                </table>
 
-        <!-- footer -->
-        <footer>
-            <table>
-                <!-- maybe other media linked w/ svg, at bottom, etc? -->
-                <tr>
-                    <td><a href="https://github.com/reillypascal">GitHub</a></td>
-                    <td><a href="https://www.instagram.com/reillypascal/">Instagram</a></td>
-                    <td><a href="https://soundcloud.com/reilly-spitzfaden">SoundCloud</a></td>
-                    <td><a href="https://www.youtube.com/channel/UCqkRNx3xAfG-CYOmHymgAdg">YouTube</a></td>
-                </tr>
-            </table>
-
-            <p>© 2022 Reilly Spitzfaden // all site coding by Reilly Spitzfaden</p>
-        </footer>
-        <!-- close "page-container" -->
+                <p>© 2022 Reilly Spitzfaden // all site coding by Reilly Spitzfaden</p>
+            </footer>
+        <!-- close "foreground" (moving page over bg) -->
         </div>
+    <!-- close "background" -->
+    </div>
     </body>
 </html>
