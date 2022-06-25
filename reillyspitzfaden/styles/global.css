@@ -3,7 +3,7 @@ TODO:
 - SEO
 - contact form
 Detail
-- translucent overlay for bg instead of transluceng bg?
+- translucent overlay for bg instead of translucent bg?
 - font touchup
 - replace br w/css?
 - projects page as blog-style article links
@@ -193,7 +193,10 @@ footer {
     }
 }
 footer td {
-    padding: 1em 0.33em 0 0;
+    padding: 1em 1em 0 0;
+}
+footer :link {
+    border-bottom: none;
 }
 
 /*************************************************/
@@ -239,14 +242,6 @@ footer td {
 /*************************************************/
 
 /* Homepage "recent" section */
-/*
-#recentHeader {
-    border-top: 1px solid #a0a0a0;
-    border-left: 4px solid #a0a0a0;
-    border-top-left-radius: 5px;
-    padding: 0.2em;
-}
-*/
 #recent {
     display: flex;
     flex-flow: row wrap;
