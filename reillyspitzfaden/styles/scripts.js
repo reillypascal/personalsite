@@ -12,7 +12,6 @@ function hamburgerToggle() {
 // Switch from dropdown to menu bar if >= 640px
 function hamburgerOnOff() {
     var size = window.innerWidth;
-    console.log(size);
     var x = document.getElementById("menuLinks");
     if (size >= 640) {
     x.style.display = "contents";
@@ -23,6 +22,13 @@ function hamburgerOnOff() {
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
+    if (!event.target.matches(".fa-bars") && window.innerWidth < 640) {
+      var dropdowns = document.getElementById("menuLinks");
+      dropdowns.style.display = "none";
+    }
+}
+// Mobile version of same
+window.ontouchstart = function(event) {
     if (!event.target.matches(".fa-bars") && window.innerWidth < 640) {
       var dropdowns = document.getElementById("menuLinks");
       dropdowns.style.display = "none";
