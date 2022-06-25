@@ -20,9 +20,10 @@ function hamburgerOnOff() {
     }
 }
 
+/*
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
-    if (event.target.matches(".content") && window.innerWidth < 640) {
+    if ((event.target.matches(".content")) && window.innerWidth < 640) {
       var dropdowns = document.getElementById("menuLinks");
       dropdowns.style.display = "none";
     }
@@ -34,3 +35,4 @@ window.ontouchstart = function(event) {
       dropdowns.style.display = "none";
     }
 }
+*/
