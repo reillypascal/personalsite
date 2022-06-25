@@ -22,14 +22,14 @@ function hamburgerOnOff() {
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
-    if (!event.target.matches(".nav") && !event.target.matches(".fa-bars") && window.innerWidth < 640) {
+    if (event.target.matches(".content") && window.innerWidth < 640) {
       var dropdowns = document.getElementById("menuLinks");
       dropdowns.style.display = "none";
     }
 }
 // Touchscreen version of same
 window.ontouchstart = function(event) {
-    if (!event.target.matches(".nav") && !event.target.matches(".fa-bars") && window.innerWidth < 640) {
+    if (event.target.matches(".content") && window.innerWidth < 640) {
       var dropdowns = document.getElementById("menuLinks");
       dropdowns.style.display = "none";
     }
