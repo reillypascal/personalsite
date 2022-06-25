@@ -1,4 +1,5 @@
 
+// Animate dropdown menu
 function hamburgerToggle() {
     var x = document.getElementById("menuLinks");
     if (x.style.display === "block") {
@@ -7,6 +8,8 @@ function hamburgerToggle() {
     x.style.display = "block";
     }
 }
+
+// Switch from dropdown to menu bar if >= 640px
 function hamburgerOnOff() {
     var size = window.innerWidth;
     console.log(size);
@@ -15,5 +18,13 @@ function hamburgerOnOff() {
     x.style.display = "contents";
     } else {
     x.style.display = "none";
+    }
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches(".fa-bars") && window.innerWidth < 640) {
+      var dropdowns = document.getElementById("menuLinks");
+      dropdowns.style.display = "none";
     }
 }
