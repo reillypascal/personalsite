@@ -68,17 +68,18 @@ iframe {
     overflow: hidden;
     margin: 0;
     width: vw100;
-    padding: 1rem 2rem;
+    padding: 0.5em 2rem;
     background-color: #000;
     position: relative;
+    font-size: 14pt;
 }
 .active, .navElement {
-    margin: 0.125rem 1rem 0.125rem 0;
+    margin: 0.125em 1em 0.125em 0;
 }
 
 .nav a {
     color: #fff;
-    padding-right: 2rem;
+    padding-right: 2em;
     text-decoration: none;
     display: block;
 }
@@ -86,8 +87,8 @@ iframe {
     background: #000;
     display: block;
     position: absolute;
-    right: 2rem;
-    top: 1rem;
+    right: 2em;
+    top: 0.625em;
 }
 .nav #menuLinks {
     display: none;
@@ -95,7 +96,7 @@ iframe {
 .nav :link {
     border-bottom: none;
     border-radius: 2px;
-    padding: .25rem;
+    padding: .25em;
 }
 .nav a:hover {
     background-color: #383a3f;
@@ -110,6 +111,7 @@ iframe {
         display: flex;
         flex-flow: row wrap;
         justify-content: left;
+        font-size: 12pt;
     }
     .nav a.icon {
         display: none;
@@ -117,12 +119,12 @@ iframe {
 }
 @media screen and (min-width: 960px) {
     .nav {
-        padding: 1rem 8%;
+        padding: 0.5em 8%;
     }
 }
 @media screen and (min-width: 1280px) {
     .nav {
-        padding: 1rem 12%;
+        padding: 0.5em 12%;
     }
 }
 
