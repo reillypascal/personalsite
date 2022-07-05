@@ -75,6 +75,9 @@ iframe {
 .active, .navElement {
     margin: 0.125em 1em 0.125em 0;
 }
+.active {
+    margin-right: auto;
+}
 
 .nav a {
     color: #fff;
