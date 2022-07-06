@@ -353,7 +353,6 @@ form {
     box-sizing: border-box;
     max-width: 40em;
     padding: 0.5em;
-    margin: 1.5rem;
 }
 *, *::after, *:before {
     box-sizing: inherit;
