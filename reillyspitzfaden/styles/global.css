@@ -358,7 +358,7 @@ form {
     box-sizing: inherit;
 }
 /* cancel out list styles */
-form ul, fieldset ul {
+fieldset ul {
     list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -370,7 +370,17 @@ fieldset ul li {
     flex-wrap: wrap;
     margin-bottom: .75em;
 }
-
+/* hide border, legend; format label */
+fieldset {
+    padding: 0;
+    margin: 0;
+	border: none;
+}
+legend {
+    width: 0;
+    height: 1px;
+    overflow: hidden;
+}
 label {
     flex: 0 0 8em;
 }
@@ -417,6 +427,7 @@ input[type="submit"] {
     border: none;
     border-radius: 3px;
     display: flex;
+    flex: 0 0 3.5em;
     margin: 0 0 0 auto;
     background-color: #383a3f;
     color: #fff;
@@ -424,15 +435,4 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
     background-color: #585a5f;
-}
-
-fieldset {
-    padding: 0;
-    margin: 0;
-	border: none;
-}
-legend {
-    width: 0;
-    height: 1px;
-    overflow: hidden;
 }
