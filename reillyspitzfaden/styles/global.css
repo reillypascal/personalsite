@@ -404,9 +404,11 @@ textarea {
     color: #fff;
 }
 input[type="submit"] {
+    /* turns off default styling for iOS/Safari, Mozilla, gen. */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    /*****/
     width: 3.5em;
     height: 1.75em;
     font-family: inherit;
@@ -415,8 +417,7 @@ input[type="submit"] {
     border: none;
     border-radius: 3px;
     display: flex;
-    flex: 0 1 3.25em;
-    margin: 0 2px 0 auto;
+    margin: 0 0 0 auto;
     background-color: #383a3f;
     color: #fff;
     justify-content: center;
@@ -427,10 +428,11 @@ input[type="submit"]:hover {
 
 fieldset {
     padding: 0;
+    margin: 0;
 	border: none;
 }
 legend {
-    width: 1px;
+    width: 0;
     height: 1px;
     overflow: hidden;
 }
