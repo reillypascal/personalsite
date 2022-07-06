@@ -52,17 +52,17 @@
                         <form 
                             name="contact" 
                             action="./pages/success.html" 
-                            method="post" 
+                            method="POST" 
                             data-netlify="true"
                         >
                             <fieldset>
                                 <legend>Contact</legend>
                                 <ul style="list-style: none;">
-                                    <li><label for="form-name">Name:</label><input type="text" name="visitorname" id="form-name"></li>
-                                    <li><label for="form-email">Email:</label><input type="email" name="visitoremail" id="form-email"></li>
-                                    <li><label for="form-subject">Subject Line:</label><input type="text" name="visitorsubject" id="form-subject"></li>
+                                    <li><label for="form-name">Name:</label><input type="text" name="name" id="form-name"></li>
+                                    <li><label for="form-email">Email:</label><input type="email" name="email" id="form-email"></li>
+                                    <li><label for="form-subject">Subject Line:</label><input type="text" name="subject" id="form-subject"></li>
                                     <li>Message:<br/>
-                                    <textarea name="visitormessage" rows="4" cols="60" id="form-story" placeholder="Type your message here:"></textarea></li>
+                                    <textarea name="message" rows="4" cols="60" id="form-story" placeholder="Type your message here:"></textarea></li>
                                 </ul>
                             </fieldset>
                             <p><input type="submit" value="Send">
