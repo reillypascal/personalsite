@@ -420,6 +420,7 @@ input[type="submit"] {
     margin-left: auto;
     background-color: #383a3f;
     color: #fff;
+    justify-content: center;
 }
 input[type="submit"]:hover {
     background-color: #585a5f;
