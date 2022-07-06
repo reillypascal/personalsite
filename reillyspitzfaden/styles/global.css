@@ -89,7 +89,7 @@ iframe {
     background: #000;
     display: block;
     position: absolute;
-    padding: 1em 2em;
+    padding: 0.875em 1em;
     right: 0;
     top: 0;
 }
