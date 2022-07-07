@@ -395,7 +395,7 @@ input.textinput {
     padding: 5px;
     font-family: inherit;
     font-size: .875em;
-    font-weight: 300;
+    font-weight: 500;
     background-color: #303234;
     color: #fff;
 }
@@ -407,7 +407,7 @@ textarea {
     padding: 5px;
     font-family: inherit;
     font-size: .875em;
-    font-weight: 300;
+    font-weight: 500;
 	line-height: 1.25;
     resize: none;
     overflow: auto;
