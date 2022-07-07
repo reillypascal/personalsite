@@ -77,6 +77,8 @@ iframe {
 }
 .active {
     margin-right: auto;
+    /* sets highlight size in dropdown layout */
+    width: max-content;
 }
 
 .nav a {
@@ -97,6 +99,8 @@ iframe {
     display: none;
 }
 .nav :link {
+    /* sets highlight size in dropdown layout */
+    width: max-content;
     border-bottom: none;
     border-radius: 2px;
     padding: .25em;
