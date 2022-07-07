@@ -414,6 +414,9 @@ textarea {
     background-color: #303234;
     color: #fff;
 }
+input.textinput:focus, textarea:focus {
+    outline: rgba(224, 240, 255, 0.67) solid 1px ! important;
+}
 input[type="submit"] {
     /* turns off default styling for iOS/Safari, Mozilla, gen. */
     -webkit-appearance: none;
