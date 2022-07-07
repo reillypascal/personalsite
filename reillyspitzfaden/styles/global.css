@@ -438,9 +438,11 @@ input[type="submit"] {
     justify-content: center;
 }
 input[type="submit"]:focus, input[type="submit"]:hover {
-    outline: rgba(224, 240, 255, 0.67) outset 1px ! important;
+    outline: rgba(224, 240, 255, 0.67) solid 1px ! important;
     background-color: #585a5f;
 }
+/*
 input[type="submit"]:active {
     outline: rgba(224, 240, 255, 0.67) inset 1px ! important;
 }
+*/
