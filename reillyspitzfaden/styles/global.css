@@ -318,15 +318,31 @@ footer :link {
 /*************************************************/
 
 /* Bio formatting */
-#headshot {
-    margin: 1rem 0;
+/*
+.headshot {
+    margin: 0.5em 0;
 }
 @media screen and (min-width: 960px) {
-    #headshot {
-        margin: 2rem 0;
+    .headshot {
+        margin: 1rem 0;
     }
 }
-
+*/
+/* Text Block formatting */
+.textBlock {
+    max-width: 45em;
+    line-height: 1.25;
+}
+@media screen and (min-width: 400px) {
+    .textBlock {
+        line-height: 1.33;
+    }
+}
+@media screen and (min-width: 640px) {
+    .textBlock {
+        line-height: 1.6;
+    }
+}
 /*************************************************/
 
 /* Works list formatting */
@@ -344,10 +360,6 @@ footer :link {
 }
 #workslist td, #materials td {
     padding: 0 1rem 0.5rem 0;
-}
-
-.textBlock {
-    max-width: 45em;
 }
 
 /*************************************************/
