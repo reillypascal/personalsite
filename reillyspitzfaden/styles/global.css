@@ -108,7 +108,7 @@ iframe {
 .nav a:focus, .nav a:hover {
     background-color: #383a3f;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 760px) {
     .nav #menuLinks {
         display: contents;
     }

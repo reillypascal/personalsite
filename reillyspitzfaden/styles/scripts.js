@@ -9,11 +9,11 @@ function hamburgerToggle() {
     }
 }
 
-// Switch from dropdown to menu bar if >= 640px
+// Switch from dropdown to menu bar if >= 760px
 function hamburgerOnOff() {
     var size = window.innerWidth;
     var x = document.getElementById("menuLinks");
-    if (size >= 640) {
+    if (size >= 760) {
     x.style.display = "contents";
     } else {
     x.style.display = "none";
