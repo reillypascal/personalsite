@@ -16,20 +16,53 @@
         </style>
 
         <script>
+            // position, velocity x/y
+            let px = 50;
+            let py = 50;
+            let vx = 0.0;
+            let vy = 0.0;
+            let updateRate = 1/60;
+
             function getAccel(){
                 DeviceMotionEvent.requestPermission().then(response => {
                     if (response == 'granted') {
-                        // Add a listener to get smartphone acceleration 
-                        // in the XYZ axes (units in m/s^2)
-                        window.addEventListener('devicemotion', (event) => {
-                            console.log(event.acceleration, event.accelerationIncludingGravity, event.rotationRate, event.interval)
-                        });
-
                         // Add a listener to get smartphone orientation 
                         // in the alpha-beta-gamma axes (units in degrees)
                         window.addEventListener('deviceorientation', (event) => {
-                            console.log(event.absolute, event.alpha, event.beta, event.gamma, event.webkitCompassHeading)
+                            rotation_degrees = event.alpha;
+                            frontToBack_degrees = event.beta;
+                            leftToRight_degrees = event.gamma;
+
+                            // Update velocity according to how tilted the phone is
+                            // Since phones are narrower than they are long, double the increase to the x velocity
+                            vx += leftToRight_degrees * updateRate * 2;
+                            vy += frontToBack_degrees * updateRate;
+
+                            px += vx * 0.5;
+                            if (px > 98 || px < 0){
+                                px = Math.max(0, Math.min(98, px))
+                                vx = 0;
+                            }
+
+
+                            py += vy * 0.5;
+                            if (py > 98 || py < 0){
+                                py = Math.max(0, Math.min(98, py))
+                                vy = 0;
+                            }
+
+                            dot = document.getElementsByClassName("indicatorDot")[0];
+                            dot.setAttribute('style', "left:" + (px) + "%;" + 
+                                                        "top" + (py) + "%;");
                         });
+
+                        // Add a listener to get smartphone acceleration 
+                        // in the XYZ axes (units in m/s^2)
+                        window.addEventListener('devicemotion', (event) => {
+                            // left blank
+                        });
+
+                        
                     }
                 });
             }
