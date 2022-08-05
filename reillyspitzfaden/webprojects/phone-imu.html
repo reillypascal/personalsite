@@ -35,7 +35,7 @@
 
                             // Update velocity according to how tilted the phone is
                             // Since phones are narrower than they are long, double the increase to the x velocity
-                            vx += leftToRight_degrees * updateRate * 2;
+                            vx += leftToRight_degrees * updateRate;
                             vy += frontToBack_degrees * updateRate;
 
                             px += vx * 0.5;
