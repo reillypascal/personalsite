@@ -1,3 +1,4 @@
 # Redirects from what the browser requests to what we serve
 
-/* https://reillyspitzfaden.com/
+https://reillyspitzfaden.netlify.app/* https://reillyspitzfaden.com/:splat 301!
+http://reillyspitzfaden.netlify.app/* http://reillyspitzfaden.com/:splat 301!
