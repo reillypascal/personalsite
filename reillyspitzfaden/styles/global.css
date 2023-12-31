@@ -1,11 +1,10 @@
 /*
 TODO:
+- non-google fonts
 - responsive images
 - js hangups
-- translucent overlay for bg instead of translucent bg?
 - font touchup
 - replace br w/css?
-- projects page as blog-style article links
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
@@ -14,7 +13,7 @@ TODO:
 body {
     background-color: #000;
     color: #fff;
-    font-family: "Lato", "Trebuchet MS", sans-serif;
+    font-family: "Lato", "Helvetica", sans-serif;
     font-weight: 300;
     margin: 0;
 }
