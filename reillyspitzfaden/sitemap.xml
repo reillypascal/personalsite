@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://reillyspitzfaden.netlify.app/</loc>
-        <lastmod>2023-11-10</lastmod>
+        <loc>https://reillyspitzfaden.com/</loc>
+        <lastmod>2023-12-31</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://reillyspitzfaden.netlify.app/bio.html</loc>
-        <lastmod>2023-11-10</lastmod>
+        <loc>https://reillyspitzfaden.com/bio.html</loc>
+        <lastmod>2023-12-31</lastmod>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://reillyspitzfaden.netlify.app/contact.html</loc>
-        <lastmod>2023-11-10</lastmod>
+        <loc>https://reillyspitzfaden.com/contact.html</loc>
+        <lastmod>2023-12-31</lastmod>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://reillyspitzfaden.netlify.app/links.html</loc>
-        <lastmod>2023-11-10</lastmod>
+        <loc>https://reillyspitzfaden.com/links.html</loc>
+        <lastmod>2023-12-31</lastmod>
     </url>
     <url>
-        <loc>https://reillyspitzfaden.netlify.app/media.html</loc>
-        <lastmod>2023-11-10</lastmod>
+        <loc>https://reillyspitzfaden.com/media.html</loc>
+        <lastmod>2023-12-31</lastmod>
     </url>
     <url>
-        <loc>https://reillyspitzfaden.netlify.app/projects.html</loc>
-        <lastmod>2023-11-12</lastmod>
+        <loc>https://reillyspitzfaden.com/projects.html</loc>
+        <lastmod>2023-12-31</lastmod>
     </url>
     <url>
-        <loc>https://reillyspitzfaden.netlify.app/supplemental.html</loc>
-        <lastmod>2023-11-10</lastmod>
+        <loc>https://reillyspitzfaden.com/supplemental.html</loc>
+        <lastmod>2023-12-31</lastmod>
     </url>
     <url>
-        <loc>https://reillyspitzfaden.netlify.app/works.html</loc>
-        <lastmod>2023-11-10</lastmod>
+        <loc>https://reillyspitzfaden.com/works.html</loc>
+        <lastmod>2023-12-31</lastmod>
     </url>
 </urlset>
