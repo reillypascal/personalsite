@@ -7,33 +7,33 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://reillyspitzfaden.com/bio.html</loc>
+        <loc>https://reillyspitzfaden.com/bio</loc>
         <lastmod>2024-01-02</lastmod>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://reillyspitzfaden.com/contact.html</loc>
+        <loc>https://reillyspitzfaden.com/blog</loc>
+        <lastmod>2024-01-02</lastmod>
+    </url>
+    <url>
+        <loc>https://reillyspitzfaden.com/contact</loc>
         <lastmod>2024-01-02</lastmod>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://reillyspitzfaden.com/media.html</loc>
-        <lastmod>2024-01-02</lastmod>
-    </url>
-        <url>
-        <loc>https://reillyspitzfaden.com/blog.html</loc>
+        <loc>https://reillyspitzfaden.com/media</loc>
         <lastmod>2024-01-02</lastmod>
     </url>
     <url>
-        <loc>https://reillyspitzfaden.com/projects.html</loc>
+        <loc>https://reillyspitzfaden.com/projects</loc>
         <lastmod>2024-01-02</lastmod>
     </url>
     <url>
-        <loc>https://reillyspitzfaden.com/supplemental.html</loc>
+        <loc>https://reillyspitzfaden.com/supplemental</loc>
         <lastmod>2024-01-02</lastmod>
     </url>
     <url>
-        <loc>https://reillyspitzfaden.com/works.html</loc>
+        <loc>https://reillyspitzfaden.com/works</loc>
         <lastmod>2024-01-02</lastmod>
     </url>
 </urlset>
