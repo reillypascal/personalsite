@@ -342,6 +342,29 @@ footer :link {
         line-height: 1.6;
     }
 }
+
+/* Blog post list formatting */
+.blogPostLink {
+    max-width: 45em;
+    min-width: fit-content;
+    line-height: 1.25;
+}
+/* @media screen and (min-width: 400px) {
+    .blogPostLink {
+        line-height: 1.33;
+    }
+} */
+@media screen and (min-width: 760px) {
+    .blogPostLink {
+        min-width: 30em;
+        /* line-height: 1.6; */
+    }
+}
+@media screen and (min-width: 960px) {
+    .blogPostLink {
+        min-width: 35em;
+    }
+}
 /*************************************************/
 
 /* Works list formatting */
