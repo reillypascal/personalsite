@@ -365,6 +365,13 @@ footer :link {
         min-width: 35em;
     }
 }
+.commentSection {
+    min-width: 45em;
+}
+#commentBGPad {
+    padding-top: 0;
+    padding-bottom: 4rem;
+}
 /*************************************************/
 
 /* Works list formatting */
