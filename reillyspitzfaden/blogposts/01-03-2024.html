@@ -77,7 +77,7 @@
                     <div id="commentBGPad">
                         <div id="mainBlog">
                             <div class="commentSection">
-                                <form id="comment-form">
+                                <form id="comment-form" name="comments" action="" method="POST">
                                     <h2>Leave a comment</h2>
                                     <fieldset>
                                         <legend>Comment</legend>
@@ -102,22 +102,31 @@
 
                         const myForm = event.target;
                         const formData = new FormData(myForm);
+                        const formObject = {
+                            name: '',
+                            email: '',
+                            comment: ''
+                        };
+                        formObject.name = formData.get("name");
+                        formObject.email = formData.get("email");
+                        formObject.comment = formData.get("comment");
+                        console.log(formObject);
+                        console.log(JSON.stringify(formObject));
 
                         const response = await fetch('/.netlify/functions/set_comment', {
                             method: "POST",
-                            headers: { "Content-Type": "application/x-www-form-urlencoded"},
-                            body: new URLSearchParams(formData).toString(),
+                            body: JSON.stringify(formObject)
                         })
                             .then(response => {
-                                response.json()
-                                console.log(response.body)
+                                // response.json()
+                                console.log(response)
                             })
                             .catch((error) => {
                                 alert(error)
                                 console.log(error);
                                 console.log(response);
                             });
-                            
+
                         // fetch("/", {
                         //     method: "POST",
                         //     headers: { "Content-Type": "application/x-www-form-urlencoded"},

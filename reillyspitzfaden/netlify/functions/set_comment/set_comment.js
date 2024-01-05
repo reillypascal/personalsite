@@ -10,31 +10,29 @@ const { createClient } = require('@supabase/supabase-js');
 const supabase = createClient('https://abdrchiaagsnvanffqjl.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFiZHJjaGlhYWdzbnZhbmZmcWpsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDQzMTQwMDgsImV4cCI6MjAxOTg5MDAwOH0.3_8ocSvmJN6LWnibcNEhpv_zhVHwt5YS4srW12nXypc');
 
 exports.handler = async (event, context, callback) => {
-    // let payload = JSON.parse(event.body).payload;
     const { data, error } = await supabase
         .from('comments')
         .insert([
             {   
-                id: 7,
-                name: "Jane Doe",
-                email: "janedoe@mailinator.com",
+                name: JSON.parse(event.body).name,
+                email: JSON.parse(event.body).email,
                 postURL: "http://localhost:8888/blogposts/01-03-2024.html",
-                comment: 'Jane Doe',
-                created_at: '2024-01-03 00:00:00+00',
-                show: 'true'
+                comment: JSON.parse(event.body).comment,
+                created_at: ((new Date()).toISOString()).toLocaleString('en-US'),
+                show: true
             }
         ])
         .select()
-        .then((data) => {
+        .then(() => {
             return {
                 statusCode: 200,
-                body: JSON.stringify(data)
+                body: "success"
             };
         })
-        .catch((error) => {
+        .catch(() => {
             return {
                 statusCode: 500,
-                body: JSON.stringify(error)
+                body: "error"
             };
         });
 }
