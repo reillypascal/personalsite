@@ -103,14 +103,6 @@
                         const myForm = event.target;
                         const formData = new FormData(myForm);
 
-                        // fetch("/", {
-                        //     method: "POST",
-                        //     headers: { "Content-Type": "application/x-www-form-urlencoded"},
-                        //     body: new URLSearchParams(formData).toString(),
-                        // })
-                        //     .then(() => console.log("Form successfully submitted"))
-                        //     .catch((error) => alert(error));
-
                         const response = await fetch('/.netlify/functions/set_comment', {
                             method: "POST",
                             headers: { "Content-Type": "application/x-www-form-urlencoded"},
@@ -127,6 +119,29 @@
                                 console.log(response);
                             });
 
+                        // const response = await fetch('/.netlify/functions/hello-world', {
+                        //     method: "POST",
+                        //     headers: { "Content-Type": "application/x-www-form-urlencoded"},
+                        //     body: new URLSearchParams(formData).toString(),
+                        // })
+                        //     .then(response => {
+                        //         console.log(response)
+                        //         response.json()
+                        //     })
+                        //     .then(() => console.log("Form successfully submitted"))
+                        //     .catch((error) => {
+                        //         // alert(error)
+                        //         console.log(error);
+                        //         console.log(response);
+                        //     });
+
+                        // fetch("/", {
+                        //     method: "POST",
+                        //     headers: { "Content-Type": "application/x-www-form-urlencoded"},
+                        //     body: new URLSearchParams(formData).toString(),
+                        // })
+                        //     .then(() => console.log("Form successfully submitted"))
+                        //     .catch((error) => alert(error));
                     };
 
                     document.addEventListener('DOMContentLoaded', () => {
