@@ -1,0 +1,19 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Rochester",
+			"country": {
+				"code": "US",
+				"name": "United States"
+			},
+			"subdivision": {
+				"code": "NY",
+				"name": "New York"
+			},
+			"timezone": "America/New_York",
+			"latitude": 43.1806,
+			"longitude": -77.5948
+		},
+		"timestamp": 1704427221115
+	}
+}
