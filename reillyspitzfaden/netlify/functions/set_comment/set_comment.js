@@ -14,18 +14,27 @@ exports.handler = async (event, context, callback) => {
     const { data, error } = await supabase
         .from('comments')
         .insert([
-            {   id: 5,
-                name: "Reilly Spitzfaden",
-                email: "reillypascal@gmail.com",
+            {   
+                id: 7,
+                name: "Jane Doe",
+                email: "janedoe@mailinator.com",
                 postURL: "http://localhost:8888/blogposts/01-03-2024.html",
-                comment: 'Test comment',
+                comment: 'Jane Doe',
                 created_at: '2024-01-03 00:00:00+00',
                 show: 'true'
             }
-        ]);
-
-    return {
-        statusCode: 200,
-        body: JSON.stringify(data)
-    };
+        ])
+        .select()
+        .then((data) => {
+            return {
+                statusCode: 200,
+                body: JSON.stringify(data)
+            };
+        })
+        .catch((error) => {
+            return {
+                statusCode: 500,
+                body: JSON.stringify(error)
+            };
+        });
 }
