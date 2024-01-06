@@ -49,6 +49,14 @@ const handleSubmitComment = async (event) => {
 // retrieve conmment handler - thisPostURL is defined in page
 const handleGetComments = async (event) => {
     event.preventDefault();
+    const parentDiv = document.getElementById('comment-section');
+    parentDiv.innerHTML = '';
+
+    let spinnerBreak = document.createElement('br');
+    let spinner = document.createElement('img');
+    spinner.src = "../media/Spinner-1s-96px.gif";
+    parentDiv.appendChild(spinnerBreak);
+    parentDiv.appendChild(spinner);
 
     const response = await fetch('/.netlify/functions/get_comment', {
         method:'POST',
