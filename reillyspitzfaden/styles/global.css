@@ -399,7 +399,8 @@ footer :link {
 .comment {
     border-radius: 3px;
     padding: 0.25rem 1rem 0.25rem;
-    background-color: #383a3f;
+    /* background-color: #383a3f; */
+    background-color: #303234;
 }
 /*************************************************/
 

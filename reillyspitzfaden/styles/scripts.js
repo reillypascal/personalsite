@@ -24,6 +24,11 @@ function hamburgerOnOff() {
 const handleSubmitComment = async (event) => {
     event.preventDefault();
 
+    // reset "Comment submitted!" in div in the same line as the submit button
+    const submitSuccess = document.getElementById('submit-success');
+    submitSuccess.innerText = '';
+
+    // get form data
     const myForm = event.target;
     const formData = new FormData(myForm);
     const formObject = {
@@ -33,11 +38,19 @@ const handleSubmitComment = async (event) => {
         comment: formData.get("comment")
     };
 
+    // call the serverless function
     const response = await fetch('/.netlify/functions/set_comment', {
         method: "POST",
         body: JSON.stringify(formObject)
     })
         .then(response => {
+            // reset form to indicate comment submitted
+            const commentForm = document.getElementById('comment-form');
+            const submitSuccess = document.getElementById('submit-success');
+            
+            commentForm.reset();
+            submitSuccess.innerText = "Comment submitted!";
+
             console.log(response)
         })
         .catch((error) => {
@@ -49,26 +62,32 @@ const handleSubmitComment = async (event) => {
 // retrieve conmment handler - thisPostURL is defined in page
 const handleGetComments = async (event) => {
     event.preventDefault();
+
+    // erase previously-loaded comments
     const parentDiv = document.getElementById('comment-section');
     parentDiv.innerHTML = '';
 
+    // display spinner
     let spinnerBreak = document.createElement('br');
     let spinner = document.createElement('img');
     spinner.src = "../media/Spinner-1s-96px.gif";
     parentDiv.appendChild(spinnerBreak);
     parentDiv.appendChild(spinner);
 
+    // call serverless function
     const response = await fetch('/.netlify/functions/get_comment', {
         method:'POST',
         body: JSON.stringify({
             postURL: thisPostURL
         })
     })
-        .then(response => response.json())
+        .then(response => response.json()) // .json() returns a promise too, so there needs to be another .then()
         .then(json => {
+            // clear spinner
             const parentDiv = document.getElementById('comment-section');
             parentDiv.innerHTML = '';
 
+            // iterate through comments, make divs for each
             for (let element of json) {
                 // make new div, children
                 let commentDiv = document.createElement('div');
@@ -94,7 +113,12 @@ const handleGetComments = async (event) => {
             }
         })
         .catch((error) => {
-            alert(error);
+            // alert(error);
+            // clear spinner, any past comments; display error instead
+            const parentDiv = document.getElementById('comment-section');
+            parentDiv.innerHTML = '';
+            parentDiv.innerText = 'Error retrieving comments';
+
             console.log(error);
             console.log(response);
         });
