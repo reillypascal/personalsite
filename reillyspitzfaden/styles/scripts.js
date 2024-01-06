@@ -54,6 +54,13 @@ const handleSubmitComment = async (event) => {
             console.log(response)
         })
         .catch((error) => {
+            // reset form to indicate comment submitted
+            const commentForm = document.getElementById('comment-form');
+            const submitSuccess = document.getElementById('submit-success');
+            
+            commentForm.reset();
+            submitSuccess.innerText = "Error submitting comment";
+
             console.log(error);
             console.log(response);
         });
