@@ -87,29 +87,39 @@ const handleGetComments = async (event) => {
             const parentDiv = document.getElementById('comment-section');
             parentDiv.innerHTML = '';
 
-            // iterate through comments, make divs for each
-            for (let element of json) {
-                // make new div, children
-                let commentDiv = document.createElement('div');
-                let commenterName = document.createElement('h3');
-                let commentDate = document.createElement('p');
-                let thisComment = document.createElement('p');
+            if (Object.keys(json).length === 0) {
                 let commentBreak = document.createElement('br');
+                let errorParagraph = document.createElement('p');
 
-                // set up children
-                commentDiv.className = 'comment';
-                commenterName.textContent = element.name;
-                commentDate.textContent = "Date: " + element.created_at;
-                thisComment.textContent = element.comment;
+                errorParagraph.innerText = 'No comments found';
 
-                // add children to div
-                commentDiv.appendChild(commenterName);
-                commentDiv.appendChild(commentDate);
-                commentDiv.appendChild(thisComment);
-
-                // add to document
                 parentDiv.appendChild(commentBreak);
-                parentDiv.appendChild(commentDiv);
+                parentDiv.appendChild(errorParagraph);
+            } else {
+                // iterate through comments, make divs for each
+                for (let element of json) {
+                    // make new div, children
+                    let commentDiv = document.createElement('div');
+                    let commenterName = document.createElement('h3');
+                    let commentDate = document.createElement('p');
+                    let thisComment = document.createElement('p');
+                    let commentBreak = document.createElement('br');
+
+                    // set up children
+                    commentDiv.className = 'comment';
+                    commenterName.textContent = element.name;
+                    commentDate.textContent = "Date: " + element.created_at;
+                    thisComment.textContent = element.comment;
+
+                    // add children to div
+                    commentDiv.appendChild(commenterName);
+                    commentDiv.appendChild(commentDate);
+                    commentDiv.appendChild(thisComment);
+
+                    // add to document
+                    parentDiv.appendChild(commentBreak);
+                    parentDiv.appendChild(commentDiv);
+                }
             }
         })
         .catch((error) => {
@@ -117,7 +127,14 @@ const handleGetComments = async (event) => {
             // clear spinner, any past comments; display error instead
             const parentDiv = document.getElementById('comment-section');
             parentDiv.innerHTML = '';
-            parentDiv.innerText = 'Error retrieving comments';
+
+            let commentBreak = document.createElement('br');
+            let errorParagraph = document.createElement('p');
+
+            errorParagraph.innerText = 'Error retrieving comments';
+
+            parentDiv.appendChild(commentBreak);
+            parentDiv.appendChild(errorParagraph);
 
             console.log(error);
             console.log(response);
