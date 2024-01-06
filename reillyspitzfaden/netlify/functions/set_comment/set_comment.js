@@ -18,7 +18,7 @@ exports.handler = async (event, context, callback) => {
             {   
                 name: JSON.parse(event.body).name,
                 email: JSON.parse(event.body).email,
-                postURL: "http://localhost:8888/blogposts/01-03-2024.html",
+                postURL: JSON.parse(event.body).postURL,
                 comment: JSON.parse(event.body).comment,
                 created_at: ((new Date()).toISOString()).toLocaleString('en-US'),
                 show: true

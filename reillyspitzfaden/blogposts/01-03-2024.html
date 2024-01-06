@@ -85,46 +85,27 @@
                                             <li><input type="text" name="name" id="comment-name" placeholder="Name" class="textinput"></li>
                                             <li><input type="text" name="email" id="comment-email" placeholder="Email" class="textinput"></li>
                                             <li><textarea name="comment" id="comment-story" placeholder="Comment"></textarea></li>
-                                            <li><input type="submit" value="Submit"></li>
+                                            <li><input type="submit" value="Submit" id="submit-comment"></li>
                                         </ul>
                                     </fieldset>
                                 </form>
                                 <h3>User Comments</h3>
-                                <div id="comments" data-url="reillyspitzfaden.com"></div>
+                                <input type="submit" id="load-comments" value="Load Comments">
+                                <div id="comment-section"></div>
                             </div>
                         </div>
                     </div>
                 <!-- </div> -->
                 
                 <script>
-                    const handleSubmit = async (event) => {
-                        event.preventDefault();
-
-                        const myForm = event.target;
-                        const formData = new FormData(myForm);
-                        const formObject = {
-                            name: formData.get("name"),
-                            email: formData.get("email"),
-                            comment: formData.get("comment")
-                        };
-
-                        const response = await fetch('/.netlify/functions/set_comment', {
-                            method: "POST",
-                            body: JSON.stringify(formObject)
-                        })
-                            .then(response => {
-                                console.log(response)
-                            })
-                            .catch((error) => {
-                                console.log(error);
-                                console.log(response);
-                            });
-                    };
-
+                    const thisPostURL = 'reillyspitzfaden.com/blogposts/01-03-2024';
+                    
                     document.addEventListener('DOMContentLoaded', () => {
                         const commentForm = document.getElementById('comment-form');
+                        const getCommentButton = document.getElementById('load-comments');
 
-                        commentForm.addEventListener('submit', handleSubmit);
+                        commentForm.addEventListener('submit', handleSubmitComment);
+                        getCommentButton.addEventListener('click', handleGetComments);
                     })
                 </script>
 
