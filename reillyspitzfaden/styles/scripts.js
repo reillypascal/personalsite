@@ -19,3 +19,131 @@ function hamburgerOnOff() {
     x.style.display = "none";
     }
 }
+
+// submit conmment handler - thisPostURL is defined in page
+const handleSubmitComment = async (event) => {
+    event.preventDefault();
+
+    // reset "Comment submitted!" in div in the same line as the submit button
+    const submitSuccess = document.getElementById('submit-success');
+    submitSuccess.innerText = '';
+
+    // get form data
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+    const formObject = {
+        name: formData.get("name"),
+        email: formData.get("email"),
+        postURL: thisPostURL,
+        comment: formData.get("comment")
+    };
+
+    // call the serverless function
+    const response = await fetch('/.netlify/functions/set_comment', {
+        method: "POST",
+        body: JSON.stringify(formObject)
+    })
+        .then(response => {
+            // reset form to indicate comment submitted
+            const commentForm = document.getElementById('comment-form');
+            const submitSuccess = document.getElementById('submit-success');
+            
+            commentForm.reset();
+            submitSuccess.innerText = "Comment submitted!";
+
+            console.log(response)
+        })
+        .catch((error) => {
+            // reset form to indicate comment submitted
+            const commentForm = document.getElementById('comment-form');
+            const submitSuccess = document.getElementById('submit-success');
+            
+            commentForm.reset();
+            submitSuccess.innerText = "Error submitting comment";
+
+            console.log(error);
+            console.log(response);
+        });
+};
+
+// retrieve conmment handler - thisPostURL is defined in page
+const handleGetComments = async (event) => {
+    event.preventDefault();
+
+    // erase previously-loaded comments
+    const parentDiv = document.getElementById('comment-section');
+    parentDiv.innerHTML = '';
+
+    // display spinner
+    let spinnerBreak = document.createElement('br');
+    let spinner = document.createElement('img');
+    spinner.src = "../media/Spinner-1s-96px.gif";
+    parentDiv.appendChild(spinnerBreak);
+    parentDiv.appendChild(spinner);
+
+    // call serverless function
+    const response = await fetch('/.netlify/functions/get_comment', {
+        method:'POST',
+        body: JSON.stringify({
+            postURL: thisPostURL
+        })
+    })
+        .then(response => response.json()) // .json() returns a promise too, so there needs to be another .then()
+        .then(json => {
+            // clear spinner
+            const parentDiv = document.getElementById('comment-section');
+            parentDiv.innerHTML = '';
+
+            if (Object.keys(json).length === 0) {
+                let commentBreak = document.createElement('br');
+                let errorParagraph = document.createElement('p');
+
+                errorParagraph.innerText = 'No comments found';
+
+                parentDiv.appendChild(commentBreak);
+                parentDiv.appendChild(errorParagraph);
+            } else {
+                // iterate through comments, make divs for each
+                for (let element of json) {
+                    // make new div, children
+                    let commentDiv = document.createElement('div');
+                    let commenterName = document.createElement('h3');
+                    let commentDate = document.createElement('p');
+                    let thisComment = document.createElement('p');
+                    let commentBreak = document.createElement('br');
+
+                    // set up children
+                    commentDiv.className = 'comment';
+                    commenterName.textContent = element.name;
+                    commentDate.textContent = "Date: " + element.created_at;
+                    thisComment.textContent = element.comment;
+
+                    // add children to div
+                    commentDiv.appendChild(commenterName);
+                    commentDiv.appendChild(commentDate);
+                    commentDiv.appendChild(thisComment);
+
+                    // add to document
+                    parentDiv.appendChild(commentBreak);
+                    parentDiv.appendChild(commentDiv);
+                }
+            }
+        })
+        .catch((error) => {
+            // alert(error);
+            // clear spinner, any past comments; display error instead
+            const parentDiv = document.getElementById('comment-section');
+            parentDiv.innerHTML = '';
+
+            let commentBreak = document.createElement('br');
+            let errorParagraph = document.createElement('p');
+
+            errorParagraph.innerText = 'Error retrieving comments';
+
+            parentDiv.appendChild(commentBreak);
+            parentDiv.appendChild(errorParagraph);
+
+            console.log(error);
+            console.log(response);
+        });
+}

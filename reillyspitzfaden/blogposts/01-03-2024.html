@@ -16,9 +16,6 @@
         <title>Reilly Spitzfaden, Composer | 01-03-2024, Hello World!</title>
         <link rel="canonical" href="https://reillyspitzfaden.com/blogposts/01-03-2024" />
         <link rel="icon" href="../media/favicon-32px.png" type="image/x-icon"/>
-        <!-- comments with supabase and supacomment -->
-        <!-- <script src="../comments/comments.js"></script> -->
-        <!-- <link rel="stylesheet" href="../comments/comments.css" /> -->
         <!-- my styles and scripts -->
         <link rel="stylesheet" type="text/css" href="../styles/global.css" />
         <script src="../styles/scripts.js"></script>
@@ -53,7 +50,7 @@
                 <div class="content">
                     <br/>
                     <div id="BGpad">
-                        <div id="main">
+                        <div id="mainBlog">
                             <!-- post contents -->
                             <article class="textBlock">
                                 <h2>Hello World!</h2>
@@ -68,17 +65,53 @@
                                 </ul>
                                 <p>RSS will likely be coming if I'm able to figure that out, as well as potentially a built-in comments feature. For now, I'll be posting updates to my <a href="https://hachyderm.io/@reillypascal">Mastodon</a> (and if you know me personally, on other personal social media!).</p>
                                 <p>I hope you'll join me!</p>
+                                
                             </article>
-                            
-                            <h2>Leave a comment</h2>
-                            <div id="comments" data-url="reilyspitzfaden.com" clickToLoad="true"></div>
-
                             <!-- close "main" -->
                         </div>
                     <!-- close "BGpad" -->
                     </div>
                 <!-- end content -->
                 </div>
+                <!-- <div class="comment"> -->
+                    <div id="commentBGPad">
+                        <div id="mainBlog">
+                            <div class="commentSection">
+                                <form id="comment-form" name="comments" action="" method="POST">
+                                    <h2>Leave a comment</h2>
+                                    <fieldset>
+                                        <legend>Comment</legend>
+                                        <ul>
+                                            <li><input type="text" name="name" id="comment-name" placeholder="Name" class="textinput"></li>
+                                            <li><input type="text" name="email" id="comment-email" placeholder="Email (optional)" class="textinput"></li>
+                                            <li><textarea name="comment" id="comment-story" placeholder="Comment"></textarea></li>
+                                            <li><div id="submit-success"></div><input type="submit" value="Submit" id="submit-comment" ></li>
+                                        </ul>
+                                    </fieldset>
+                                </form>
+                                <div id="commentDisplay">
+                                    <h3>User Comments</h3>
+                                    <input type="submit" id="load-comments" value="Load Comments">
+                                    <!-- <input type="submit" id="load-comments" value="Load Comments" onclick="this.blur();"> -->
+                                    <div id="comment-section"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- </div> -->
+                
+                <script>
+                    const thisPostURL = 'reillyspitzfaden.com/blogposts/01-03-2024';
+
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const commentForm = document.getElementById('comment-form');
+                        const getCommentButton = document.getElementById('load-comments');
+
+                        commentForm.addEventListener('submit', handleSubmitComment);
+                        getCommentButton.addEventListener('click', handleGetComments);
+                    })
+                </script>
+
                 <!-- footer -->
                 <footer>
                     <table>

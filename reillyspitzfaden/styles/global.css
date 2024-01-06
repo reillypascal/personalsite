@@ -1,6 +1,7 @@
 /*
 TODO:
 - non-google fonts
+- comment sizing on mobile
 - responsive images
 - js hangups
 - font touchup
@@ -138,12 +139,22 @@ iframe {
 
 /* "main" formatting */
 #main, #mainRecent {
-    margin: 0 1.5rem 5%;
+    margin: 0 1.5rem 5%; /* top, sides, bottom */
     background-color: #000;
     padding: 1em;
     padding-top: 0.25em;
     border-radius: 5px;
 }
+#mainBlog {
+    margin: 0 1.5rem 5%; /* top, sides, bottom */
+    background-color: #000;
+    padding: 1em;
+    padding-top: 0.25em;
+    border-radius: 5px;
+    width: fit-content; 
+    margin: auto;
+}
+
 #main {width: fit-content; margin: auto;}
 #BGpad {margin: 5%;}
 @media screen and (min-width: 640px) {
@@ -359,11 +370,41 @@ footer :link {
         min-width: 30em;
         /* line-height: 1.6; */
     }
+    /* .commentSection {
+        min-width: none;
+    } */
 }
 @media screen and (min-width: 960px) {
     .blogPostLink {
         min-width: 35em;
     }
+}
+.commentSection {
+    max-width: 45em;
+    min-width: 82.5vw;
+}
+@media screen and (min-width: 855px) {
+    .commentSection {
+        min-width: 45em;
+    }
+}
+.commentSection > form {
+    max-width: 45em;
+}
+#commentBGPad {
+    padding-top: 0;
+    padding-bottom: 4rem;
+    /* display: flex;
+    flex-grow: 90%; */
+}
+#commentDisplay {
+    margin: 0.5rem;
+}
+.comment {
+    border-radius: 3px;
+    padding: 0.25rem 1rem 0.25rem;
+    /* border: 1px solid #888; */
+    background-color: #303234;
 }
 /*************************************************/
 
@@ -461,15 +502,11 @@ input[type="submit"] {
     -moz-appearance: none;
     appearance: none;
     /*****/
-    width: 3.5em;
-    height: 1.75em;
     font-family: inherit;
     font-size: inherit;
     font-weight: 300;
     border: none;
     border-radius: 3px;
-    display: flex;
-    flex: 0 0 3.5em;
     margin: 0 0 0 auto;
     background-color: #383a3f;
     color: #fff;
@@ -478,6 +515,22 @@ input[type="submit"] {
 input[type="submit"]:focus, input[type="submit"]:hover {
     outline: rgba(224, 240, 255, 0.67) solid 1px ! important;
     background-color: #585a5f;
+}
+input[id="send-email"] {
+    display: flex;
+    flex: 0 0 3.5em;
+    /* width: 3.5em; */
+    height: 1.75em;
+}
+input[id="submit-comment"] {
+    display: flex;
+    flex: 0 0 4.5em;
+    /* width: 4.5em; */
+    height: 1.75em;
+}
+input[id="load-comments"] {
+    width: 7.75em;
+    height: 1.75em;
 }
 /*
 input[type="submit"]:active {
