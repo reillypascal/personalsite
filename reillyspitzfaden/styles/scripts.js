@@ -52,8 +52,6 @@ const handleSubmitComment = async (event) => {
             
             commentForm.reset();
             submitSuccess.innerText = "Comment submitted!";
-
-            console.log(response)
         })
         .catch((error) => {
             // reset form to indicate comment submitted

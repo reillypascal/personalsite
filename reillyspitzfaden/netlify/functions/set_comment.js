@@ -34,7 +34,7 @@ exports.handler = async (event, context, callback) => {
             body: JSON.stringify({
               error: e.message
             })
-          }
+        }
     }
     return {
         statusCode: 200,
