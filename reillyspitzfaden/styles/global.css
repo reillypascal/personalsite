@@ -406,6 +406,16 @@ footer :link {
     /* border: 1px solid #888; */
     background-color: #303234;
 }
+
+pre {
+    /* overflow: auto; */
+    white-space: pre-wrap;
+    tab-size: 2;
+}
+code {
+    border-radius: 3px;
+    background-color: #303234 !important;
+}
 /*************************************************/
 
 /* Works list formatting */

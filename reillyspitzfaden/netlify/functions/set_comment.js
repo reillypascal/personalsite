@@ -3,14 +3,21 @@ const {
     SUPABASE_SERVICE_API_KEY
 } = process.env;
 
+// create supabase client using url/anon key from Netlify env variables
 const { createClient } = require('@supabase/supabase-js');
 const supabase = createClient(DATABASE_URL, SUPABASE_SERVICE_API_KEY);
 
+// uses ES modules syntax for default export
 exports.handler = async (event, context, callback) => {
     let data
     try {
+        // the result of createClient() can access the database
         data = await supabase
+        // 'comments' is the name of the table 
+        // within my database; .from() selects that
         .from('comments')
+        // .insert() takes an array with one or more objects whose keys correspond
+        // to those in the table, and adds each object as a new row to the table
         .insert([
             {   
                 name: JSON.parse(event.body).name,
@@ -21,7 +28,6 @@ exports.handler = async (event, context, callback) => {
                 show: true
             }
         ])
-        .select()
     } catch (e) {
         return {
             statusCode: 500,

@@ -20,7 +20,7 @@ function hamburgerOnOff() {
     }
 }
 
-// submit conmment handler - thisPostURL is defined in page
+// submit conmment handler - thisPostURL variable is defined in the page that calls this function
 const handleSubmitComment = async (event) => {
     event.preventDefault();
 
@@ -31,6 +31,7 @@ const handleSubmitComment = async (event) => {
     // get form data
     const myForm = event.target;
     const formData = new FormData(myForm);
+    // make FormData into an object to easily send via supabase-js
     const formObject = {
         name: formData.get("name"),
         email: formData.get("email"),
@@ -38,7 +39,8 @@ const handleSubmitComment = async (event) => {
         comment: formData.get("comment")
     };
 
-    // call the serverless function
+    // call the serverless function and send it 
+    // formObject in the body of the request
     const response = await fetch('/.netlify/functions/set_comment', {
         method: "POST",
         body: JSON.stringify(formObject)

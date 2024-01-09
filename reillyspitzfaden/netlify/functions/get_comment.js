@@ -10,16 +10,19 @@ exports.handler = async (event, context, callback) => {
     let returnVals
     try {
         returnVals = await supabase
+        // as in set_comments, retrieves 'comments' table
         .from('comments')
+        // selects the desired columns in each row
         .select('name, email, comment, created_at')
+        // selects only the rows containing comments 
+        // made at the blog post's URL
         .eq('postURL', JSON.parse(event.body).postURL)
         
     } catch (e) {
         return {
             statusCode: 500,
             body: JSON.stringify({
-              error: e.message,
-              url: DATABASE_URL
+              error: e.message
             })
           }
     }
