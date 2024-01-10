@@ -410,11 +410,11 @@ footer :link {
 pre {
     /* overflow: auto; */
     white-space: pre-wrap;
-    tab-size: 2;
+    /* tab-size: 2; */
 }
 code {
     border-radius: 3px;
-    background-color: #303234 !important;
+    /* background-color: #303234 !important; */
 }
 /*************************************************/
 
