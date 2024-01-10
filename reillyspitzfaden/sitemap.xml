@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://reillyspitzfaden.com/</loc>
+        <loc>https://reillyspitzfaden.com/index.html</loc>
         <lastmod>2024-01-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://reillyspitzfaden.com/bio</loc>
+        <loc>https://reillyspitzfaden.com/bio.html</loc>
         <lastmod>2024-01-02</lastmod>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://reillyspitzfaden.com/blog</loc>
+        <loc>https://reillyspitzfaden.com/blog.html</loc>
         <lastmod>2024-01-09</lastmod>
     </url>
     <url>
-        <loc>https://reillyspitzfaden.com/contact</loc>
+        <loc>https://reillyspitzfaden.com/contact.html</loc>
         <lastmod>2024-01-02</lastmod>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://reillyspitzfaden.com/media</loc>
+        <loc>https://reillyspitzfaden.com/media.html</loc>
         <lastmod>2024-01-02</lastmod>
     </url>
     <url>
-        <loc>https://reillyspitzfaden.com/projects</loc>
+        <loc>https://reillyspitzfaden.com/projects.html</loc>
         <lastmod>2024-01-02</lastmod>
     </url>
     <url>
-        <loc>https://reillyspitzfaden.com/supplemental</loc>
+        <loc>https://reillyspitzfaden.com/supplemental.html</loc>
         <lastmod>2024-01-02</lastmod>
     </url>
     <url>
-        <loc>https://reillyspitzfaden.com/works</loc>
+        <loc>https://reillyspitzfaden.com/works.html</loc>
         <lastmod>2024-01-09</lastmod>
     </url>
     <url>
-        <loc>https://reillyspitzfaden.com/blogposts/01-03-2024</loc>
+        <loc>https://reillyspitzfaden.com/blogposts/01-03-2024.html</loc>
         <lastmod>2024-01-09</lastmod>
     </url>
     <url>
-        <loc>https://reillyspitzfaden.com/blogposts/01-10-2024</loc>
+        <loc>https://reillyspitzfaden.com/blogposts/01-10-2024.html</loc>
         <lastmod>2024-01-09</lastmod>
     </url>
 </urlset>
