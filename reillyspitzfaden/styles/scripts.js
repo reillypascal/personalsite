@@ -53,7 +53,7 @@ const handleSubmitComment = async (event) => {
             commentForm.reset();
             submitSuccess.innerText = "Comment submitted!";
         })
-        .catch((error) => {
+        .catch(error => {
             // reset form to indicate comment submitted
             const commentForm = document.getElementById('comment-form');
             const submitSuccess = document.getElementById('submit-success');
@@ -129,7 +129,7 @@ const handleGetComments = async (event) => {
                 }
             }
         })
-        .catch((error) => {
+        .catch(error => {
             // alert(error);
             // clear spinner, any past comments; display error instead
             const parentDiv = document.getElementById('comment-section');

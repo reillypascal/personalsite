@@ -1,4 +1,4 @@
-Sitemap: https://reillyspitzfaden.netlify.app/sitemap.xml
+Sitemap: https://reillyspitzfaden.com/sitemap.xml
 
 User-agent: GPTBot
 Disallow: /
