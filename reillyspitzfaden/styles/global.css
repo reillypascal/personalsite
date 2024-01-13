@@ -372,18 +372,18 @@ footer :link {
 }
 
 /* Blog post list formatting */
-.blogPostLink {
+.blogPostLinks {
     max-width: 45em;
     min-width: fit-content;
     line-height: 1.25;
 }
 /* @media screen and (min-width: 400px) {
-    .blogPostLink {
+    .blogPostLinks {
         line-height: 1.33;
     }
 } */
 @media screen and (min-width: 760px) {
-    .blogPostLink {
+    .blogPostLinks {
         min-width: 30em;
         /* line-height: 1.6; */
     }
@@ -392,7 +392,7 @@ footer :link {
     } */
 }
 @media screen and (min-width: 960px) {
-    .blogPostLink {
+    .blogPostLinks {
         min-width: 35em;
     }
 }
