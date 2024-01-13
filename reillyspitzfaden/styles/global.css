@@ -416,6 +416,12 @@ footer :link {
     background-color: #303234;
 } 
 
+hr {
+    margin: 2.5rem 0;
+    border: none;
+    border-top: 1px solid #383a3f;
+}
+
 pre {
     /* overflow: auto; */
     /* display: flex !important; */
