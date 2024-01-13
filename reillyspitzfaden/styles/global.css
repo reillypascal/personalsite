@@ -402,8 +402,6 @@ footer :link {
 #commentBGPad {
     padding-top: 0;
     padding-bottom: 4rem;
-    /* display: flex;
-    flex-grow: 90%; */
 } 
 
 #commentDisplay {
@@ -412,25 +410,29 @@ footer :link {
 .comment {
     border-radius: 3px;
     padding: 0.25rem 1rem 0.25rem;
-    /* border: 1px solid #888; */
     background-color: #303234;
 } 
 
 hr {
-    margin: 2.5rem 0;
+    margin: 1.5rem 0;
     border: none;
     border-top: 1px solid #383a3f;
 }
-
+@media screen and (min-width: 400px) {
+    hr {
+        margin: 2rem 0;
+    }
+}
+@media screen and (min-width: 640px) {
+    hr {
+        margin: 2.5rem 0;
+    }
+}
 pre {
-    /* overflow: auto; */
-    /* display: flex !important; */
-    /* overflow-x: auto !important; */
     white-space: pre-wrap;
 }
 code {
     border-radius: 3px;
-    /* background-color: #303234 !important; */
 }
 
 /*************************************************/
@@ -546,13 +548,11 @@ input[type="submit"]:focus, input[type="submit"]:hover {
 input[id="send-email"] {
     display: flex;
     flex: 0 0 3.5em;
-    /* width: 3.5em; */
     height: 1.75em;
 }
 input[id="submit-comment"] {
     display: flex;
     flex: 0 0 4.5em;
-    /* width: 4.5em; */
     height: 1.75em;
 }
 input[id="load-comments"] {
