@@ -151,14 +151,23 @@ iframe {
     padding: 1em;
     padding-top: 0.25em;
     border-radius: 5px;
-    width: fit-content; 
-    margin: auto;
+    /* width: fit-content; 
+    margin: auto; */
 }
 
 #main {width: fit-content; margin: auto;}
-#BGpad {margin: 5%;}
+#BGpad {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
 @media screen and (min-width: 640px) {
     #main, #mainRecent {border-radius: 7px;}
+}
+@media screen and (min-width: 768px) {
+    #mainBlog {
+        max-width: 45em;
+        margin: auto;
+    }
 }
 @media screen and (min-width: 960px) {
     #mainRecent {
@@ -298,9 +307,12 @@ footer :link {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    
 }
 .videoGrid .containingBlock {
-    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    /* width: 100%; */
 }
 .videoList .containingBlock {
     max-width: 560px;
@@ -379,15 +391,6 @@ footer :link {
         min-width: 35em;
     }
 }
-.commentSection {
-    max-width: 45em;
-    min-width: 82.5vw;
-}
-@media screen and (min-width: 855px) {
-    .commentSection {
-        min-width: 45em;
-    }
-}
 .commentSection > form {
     max-width: 45em;
 }
@@ -396,7 +399,8 @@ footer :link {
     padding-bottom: 4rem;
     /* display: flex;
     flex-grow: 90%; */
-}
+} 
+
 #commentDisplay {
     margin: 0.5rem;
 }
@@ -405,17 +409,19 @@ footer :link {
     padding: 0.25rem 1rem 0.25rem;
     /* border: 1px solid #888; */
     background-color: #303234;
-}
+} 
 
 pre {
     /* overflow: auto; */
+    /* display: flex !important; */
+    /* overflow-x: auto !important; */
     white-space: pre-wrap;
-    /* tab-size: 2; */
 }
 code {
     border-radius: 3px;
     /* background-color: #303234 !important; */
 }
+
 /*************************************************/
 
 /* Works list formatting */
