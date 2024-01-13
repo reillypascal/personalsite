@@ -143,16 +143,16 @@ const handleGetComments = async (event) => {
             postURL: thisPostURL
         })
     })
-        // .json() returns a promise too, so there needs to be another .then()
-        .then(response => response.json())
-        .then(json => {
-            // ... clear the spinner; test if there are any comments 
-            // in the returned list; if so, iterate through them 
-            // and add the appropriate HTML/text
-        })
-        .catch(error => {
-            // ... clear the spinner; display an error message
-        });
+    // .json() returns a promise too, so there needs to be another .then()
+    .then(response => response.json())
+    .then(json => {
+        // ... clear the spinner; test if there are any comments 
+        // in the returned list; if so, iterate through them 
+        // and add the appropriate HTML/text
+    })
+    .catch(error => {
+        // ... clear the spinner; display an error message
+    });
 }</code></pre>
 
                             <br />
