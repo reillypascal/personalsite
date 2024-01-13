@@ -4,8 +4,8 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!-- Facebook SEO/cards -->
-        <meta property="og:title" content="Reilly Spitzfaden, Composer | 01-10-2024, Do Read the Comments" />
-        <meta property="og:url" content="https://reillyspitzfaden.com/blogposts/01-10-2024" />
+        <meta property="og:title" content="Reilly Spitzfaden, Composer | 01-14-2024, Do Read the Comments" />
+        <meta property="og:url" content="https://reillyspitzfaden.com/blogposts/01-14-2024" />
         <meta property="og:image" content="https://reillyspitzfaden.com/media/wefax_og_cr.jpeg" />
         <meta property="og:image:secure_url" content="https://reillyspitzfaden.com/media/wefax_og_cr.jpeg" />
         <meta property="og:image:type" content="image/jpeg" /> 
@@ -13,8 +13,8 @@
         <meta property="og:description" content="A writeup of using Netlify serverless functions and Supabase to code a comments section on a static site" />
         <!-- General -->
         <meta name="description" content="A writeup of using Netlify serverless functions and Supabase to code a comments section on a static site" />
-        <title>Reilly Spitzfaden, Composer | 01-10-2024, Do Read the Comments</title>
-        <link rel="canonical" href="https://reillyspitzfaden.com/blogposts/01-10-2024.html" />
+        <title>Reilly Spitzfaden, Composer | 01-14-2024, Do Read the Comments</title>
+        <link rel="canonical" href="https://reillyspitzfaden.com/blogposts/01-14-2024.html" />
         <link rel="icon" href="../media/favicon-32px.png" type="image/x-icon"/>
         <!-- my styles and scripts -->
         <link rel="stylesheet" type="text/css" href="../styles/global.css" />
@@ -57,7 +57,7 @@
                              <!-- post contents -->
                              <article class="textBlock">
                                 <h2>Do Read the Comments</h2>
-                                <h3>January 10, 2024</h3>
+                                <h3>January 14, 2024</h3>
                                 <p>My blog now has a comment section! Let's talk about how I made it.</p> 
                                 <p>It uses the <a href="https://supabase.com/">Supabase</a> Postgres database, which bills itself as an "open-source Firebase alternative." There are a number of ways of communicating with the database. I chose the <a href="https://github.com/supabase/supabase-js">supabase-js</a> JavaScript client since I'm familiar with JS, and because I wanted to use Netlify's <a href="https://www.netlify.com/blog/intro-to-serverless-functions/">"serverless" function</a> capabilities to run the code that communicates with the database.</p>
 
@@ -270,7 +270,7 @@ exports.handler = async (event, context, callback) => {
                     </div>
                 </div>
                 <script>
-                    const thisPostURL = 'reillyspitzfaden.com/blogposts/01-10-2024';
+                    const thisPostURL = 'reillyspitzfaden.com/blogposts/01-14-2024';
 
                     document.addEventListener('DOMContentLoaded', () => {
                         const commentForm = document.getElementById('comment-form');

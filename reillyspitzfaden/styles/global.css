@@ -138,24 +138,27 @@ iframe {
 /*************************************************/
 
 /* "main" formatting */
-#main, #mainRecent {
+#main, #mainRecent, #mainMedia {
     margin: 0 1.5rem 5%; /* top, sides, bottom */
     background-color: #000;
     padding: 1em;
     padding-top: 0.25em;
     border-radius: 5px;
 }
+
+#main, #mainMedia {
+    width: fit-content; 
+    /* margin: auto; */
+}
+
 #mainBlog {
     margin: 0 1.5rem 5%; /* top, sides, bottom */
     background-color: #000;
     padding: 1em;
     padding-top: 0.25em;
     border-radius: 5px;
-    /* width: fit-content; 
-    margin: auto; */
 }
 
-#main {width: fit-content; margin: auto;}
 #BGpad {
     margin-top: 5%;
     margin-bottom: 5%;
@@ -166,9 +169,12 @@ iframe {
 @media screen and (min-width: 768px) {
     #mainBlog {
         max-width: 45em;
+    }
+    #main, #mainBlog, #mainRecent {
         margin: auto;
     }
 }
+
 @media screen and (min-width: 960px) {
     #mainRecent {
         margin: 0 8% 5%;
@@ -307,12 +313,11 @@ footer :link {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    
 }
 .videoGrid .containingBlock {
     margin-left: 1rem;
     margin-right: 1rem;
-    /* width: 100%; */
+    width: 100%;
 }
 .videoList .containingBlock {
     max-width: 560px;
@@ -333,7 +338,7 @@ footer :link {
 }
 @media screen and (min-width: 640px) {
     .videoGrid .containingBlock {
-        width: 48%;
+        width: 45%;
     }
 }
 
