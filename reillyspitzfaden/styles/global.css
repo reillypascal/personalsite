@@ -413,18 +413,18 @@ footer :link {
     background-color: #303234;
 } 
 
-hr {
+.blogPostLinks > hr {
     margin: 1.5rem 0;
     border: none;
     border-top: 1px solid #383a3f;
 }
 @media screen and (min-width: 400px) {
-    hr {
+    .blogPostLinks > hr {
         margin: 2rem 0;
     }
 }
 @media screen and (min-width: 640px) {
-    hr {
+    .blogPostLinks > hr {
         margin: 2.5rem 0;
     }
 }
