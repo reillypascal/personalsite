@@ -77,7 +77,7 @@ const handleGetComments = async (event) => {
     // display spinner
     let spinnerBreak = document.createElement('br');
     let spinner = document.createElement('img');
-    spinner.src = "../media/Spinner-1s-96px.gif";
+    spinner.src = "../media/Rolling-1s-64px.gif";
     parentDiv.appendChild(spinnerBreak);
     parentDiv.appendChild(spinner);
 

@@ -10,10 +10,44 @@ TODO:
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+/* color and theme */
+
+body, .nav, .nav a.icon, #main, #mainBlog, #mainMedia, #mainRecent, footer {
+    background-color: #111213;
+}
+
+body, .nav a, :link, :visited, input.textinput, textarea, input[type="submit"] {
+    color: aliceblue;
+}
+
+#myCard {
+    border-color: aliceblue;
+    text-shadow: 1px 1px 10px #111213;
+    backdrop-filter: blur(1px);
+}
+
+.comment, input.textinput, textarea, input[type="submit"] {
+    background-color: #343a40;
+}
+
+.nav a:focus, .nav a:hover {
+    background-color: #343a40;
+
+}
+
+input.textinput:focus, textarea:focus {
+    outline-color: rgba(224, 240, 255, 0.67) !important;
+}
+
+input[type="submit"]:focus, input[type="submit"]:hover {
+    outline-color: rgba(224, 240, 255, 0.67) !important;
+    background-color: #58626c;
+}
+
 /* page element formatting: commented out old formatting for without bg img */
 body {
-    background-color: #000;
-    color: #fff;
+    /* background-color: #000; */
+    /* color: #fff; */
     font-family: "Lato", "Helvetica", sans-serif;
     font-weight: 300;
     margin: 0;
@@ -50,7 +84,7 @@ table {
 :link, :visited {
     text-decoration: none;
     border-bottom: 1px solid #a0a0a0;
-    color: #fff;
+    /* color: #fff; */
 }
 a:focus, a:hover {
     border-bottom: none;
@@ -68,7 +102,7 @@ iframe {
     margin: 0;
     width: vw100;
     padding: 0.5em 2rem;
-    background-color: #000;
+    /* background-color: #000; */
     position: relative;
     font-size: 14pt;
 }
@@ -82,13 +116,13 @@ iframe {
 }
 
 .nav a {
-    color: #fff;
+    /* color: #fff; */
     padding-right: 2em;
     text-decoration: none;
     display: block;
 }
 .nav a.icon {
-    background: #000;
+    /* background: #000; */
     display: block;
     position: absolute;
     padding: 0.875em 1em;
@@ -105,9 +139,7 @@ iframe {
     border-radius: 2px;
     padding: .25em;
 }
-.nav a:focus, .nav a:hover {
-    background-color: #383a3f;
-}
+
 @media screen and (min-width: 760px) {
     .nav #menuLinks {
         display: contents;
@@ -140,7 +172,7 @@ iframe {
 /* "main" formatting */
 #main, #mainRecent, #mainMedia {
     margin: 0 1.5rem 5%; /* top, sides, bottom */
-    background-color: #000;
+    /* background-color: #000; */
     padding: 1em;
     padding-top: 0.25em;
     border-radius: 5px;
@@ -153,7 +185,7 @@ iframe {
 
 #mainBlog {
     margin: 0 1.5rem 5%; /* top, sides, bottom */
-    background-color: #000;
+    /* background-color: #000; */
     padding: 1em;
     padding-top: 0.25em;
     border-radius: 5px;
@@ -212,7 +244,7 @@ footer::before {
 }
 footer {
     font-size: 0.85rem;
-    background-color: #000;
+    /* background-color: #000; */
     padding: 0 2rem;
 }
 @media screen and (min-width: 960px) {
@@ -243,11 +275,12 @@ footer :link {
     text-align: center;
     width: 18rem;
     height: 10rem;
-    border: 1px solid #fff;
+    border-width: 1px;
+    border-style: solid;
     border-radius: 4px;
     font-size: 20pt;
-    text-shadow: 1px 1px 10px #000;
 }
+
 #myCardName {
     font-size: 26pt;
 }
@@ -410,7 +443,7 @@ footer :link {
 .comment {
     border-radius: 3px;
     padding: 0.25rem 1rem 0.25rem;
-    background-color: #303234;
+    /* background-color: #303234; */
 } 
 
 .blogPostLinks > hr, #workslist > hr, #main > hr {
@@ -504,8 +537,8 @@ input.textinput {
     font-family: inherit;
     font-size: .875em;
     font-weight: 500;
-    background-color: #303234;
-    color: #fff;
+    /* background-color: #303234; */
+    /* color: #fff; */
 }
 textarea {
     display: block;
@@ -519,11 +552,13 @@ textarea {
 	line-height: 1.25;
     resize: none;
     overflow: auto;
-    background-color: #303234;
-    color: #fff;
+    /* background-color: #303234; */
+    /* color: #fff; */
 }
 input.textinput:focus, textarea:focus {
-    outline: rgba(224, 240, 255, 0.67) solid 1px ! important;
+    outline-style: solid !important;
+    outline-width: 1px !important;
+    /* outline: rgba(224, 240, 255, 0.67) solid 1px !important; */
 }
 input[type="submit"] {
     /* turns off default styling for iOS/Safari, Mozilla, gen. */
@@ -537,13 +572,15 @@ input[type="submit"] {
     border: none;
     border-radius: 3px;
     margin: 0 0 0 auto;
-    background-color: #383a3f;
-    color: #fff;
+    /* background-color: #383a3f; */
+    /* color: #fff; */
     justify-content: center;
 }
 input[type="submit"]:focus, input[type="submit"]:hover {
-    outline: rgba(224, 240, 255, 0.67) solid 1px ! important;
-    background-color: #585a5f;
+    outline-style: solid !important;
+    outline-width: 1px !important;
+    /* outline: rgba(224, 240, 255, 0.67) solid 1px ! important; */
+    /* background-color: #585a5f; */
 }
 input[id="send-email"] {
     display: flex;
