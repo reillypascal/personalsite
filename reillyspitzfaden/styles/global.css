@@ -22,7 +22,7 @@ body, .nav a, :link, :visited, input.textinput, textarea, input[type="submit"] {
 
 #myCard {
     border-color: aliceblue;
-    text-shadow: 1px 1px 10px #111213;
+    text-shadow: 0px 0px 4px #111213;
     backdrop-filter: blur(1px);
 }
 
