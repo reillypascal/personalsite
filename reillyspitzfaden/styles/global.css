@@ -45,6 +45,11 @@ input[type="submit"]:focus, input[type="submit"]:hover {
     background-color: #58626c;
 }
 
+/* fixes exposed background image when scrolling */
+html {
+    overscroll-behavior: none;
+}
+
 /* page element formatting: commented out old formatting for without bg img */
 body {
     /* background-color: #000; */
@@ -284,6 +289,7 @@ footer :link {
 }
 
 #myCardName {
+    /* font-family: 'Antic Didone', serif; */
     font-size: 26pt;
 }
 #myCardDescription {
