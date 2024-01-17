@@ -17,7 +17,7 @@ body, .nav, .nav a.icon, #main, #mainBlog, #mainMedia, #mainRecent, footer {
 }
 
 body, .nav a, :link, :visited, input.textinput, textarea, input[type="submit"] {
-    color: aliceblue;
+    color: rgb(206, 214, 221);
 }
 
 #myCard {
@@ -49,8 +49,9 @@ input[type="submit"]:focus, input[type="submit"]:hover {
 body {
     /* background-color: #000; */
     /* color: #fff; */
-    font-family: "Lato", "Helvetica", sans-serif;
-    font-weight: 300;
+    font-family: "Lato", "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12pt;
     margin: 0;
     min-height: 100vh;
 }
@@ -75,10 +76,10 @@ body {
     padding: 0;
 }
 h1 {
-    font-weight: 100;
+    font-weight: 300;
 }
 h2, h3, table {
-    font-weight: 300;
+    font-weight: 400;
 }
 table {
     text-align: left;
