@@ -8,7 +8,13 @@ TODO:
 - replace br w/css?
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); */
+
+@font-face {
+    font-family: "Lato";
+    src: local("Lato"), url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+    font-display: swap;
+}
 
 /* color and theme */
 
@@ -49,7 +55,7 @@ input[type="submit"]:focus, input[type="submit"]:hover {
 body {
     /* background-color: #000; */
     /* color: #fff; */
-    font-family: "Lato", "Verdana", sans-serif;
+    font-family: "Lato", "Trebuchet MS", sans-serif;
     font-weight: 400;
     font-size: 100%;
     margin: 0;
@@ -487,7 +493,7 @@ code {
     padding-right: 0.5em; 
 }
 #workslist th, #materials th {
-    font-weight: 700;
+    font-weight: 400;
     padding: 0 1rem 0.5rem 0;
 }
 #workslist td, #materials td {
