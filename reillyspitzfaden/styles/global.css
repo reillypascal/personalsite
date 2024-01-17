@@ -51,7 +51,7 @@ body {
     /* color: #fff; */
     font-family: "Lato", "Open Sans", sans-serif;
     font-weight: 400;
-    font-size: 12pt;
+    font-size: 100%;
     margin: 0;
     min-height: 100vh;
 }
@@ -107,7 +107,7 @@ iframe {
     padding: 0.5rem 2rem;
     /* background-color: #000; */
     position: relative;
-    font-size: 12pt;
+    font-size: 100%;
 }
 .active, .navElement {
     margin: 0.125rem 0.75rem 0.125rem 0;
@@ -155,7 +155,6 @@ iframe {
         display: flex;
         flex-flow: row wrap;
         justify-content: left;
-        font-size: 12pt;
     }
     .nav a.icon {
         display: none;
