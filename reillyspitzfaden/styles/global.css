@@ -21,10 +21,10 @@ body, .nav a, :link, :visited, input.textinput, textarea, input[type="submit"] {
 }
 
 #myCard {
-    border-color: aliceblue;
-    text-shadow: 0px 0px 4px #111213;
+    border-color: rgb(210, 221, 230);
+    text-shadow: 0px 0px 8px #111213;
     backdrop-filter: blur(1px);
-    backdrop-filter: contrast(-5%);
+    /* backdrop-filter: contrast(-5%); */
 }
 
 .comment, input.textinput, textarea, input[type="submit"] {
@@ -104,13 +104,13 @@ iframe {
     overflow: hidden;
     margin: 0;
     width: vw100;
-    padding: 0.5em 2rem;
+    padding: 0.5rem 2rem;
     /* background-color: #000; */
     position: relative;
-    font-size: 14pt;
+    font-size: 12pt;
 }
 .active, .navElement {
-    margin: 0.125em 1em 0.125em 0;
+    margin: 0.125rem 0.75rem 0.125rem 0;
 }
 .active {
     margin-right: auto;
@@ -120,7 +120,7 @@ iframe {
 
 .nav a {
     /* color: #fff; */
-    padding-right: 2em;
+    padding-right: 2rem;
     text-decoration: none;
     display: block;
 }
@@ -128,8 +128,8 @@ iframe {
     /* background: #000; */
     display: block;
     position: absolute;
-    padding: 0.875em 1em;
-    right: 0.25em;
+    padding: 0.875rem 1rem;
+    right: 0.25rem;
     top: 0;
 }
 .nav #menuLinks {
@@ -144,7 +144,8 @@ iframe {
     padding: 0.25rem 0.5rem;
 }
 
-@media screen and (min-width: 760px) {
+/* Handles switching between hamburger menu and regular */
+@media screen and (min-width: 845px) {
     .nav #menuLinks {
         display: contents;
     }
@@ -162,12 +163,12 @@ iframe {
 }
 @media screen and (min-width: 960px) {
     .nav {
-        padding: 0.5em 8%;
+        padding: 0.5rem 8%;
     }
 }
 @media screen and (min-width: 1280px) {
     .nav {
-        padding: 0.5em 12%;
+        padding: 0.5rem 12%;
     }
 }
 
@@ -206,7 +207,7 @@ iframe {
     #mainBlog {
         max-width: 45em;
     }
-    #main, #mainBlog, #mainRecent {
+    #main, #mainBlog {
         margin: auto;
     }
 }
@@ -279,7 +280,7 @@ footer :link {
     text-align: center;
     width: 18rem;
     height: 10rem;
-    border-width: 1px;
+    border-width: 2px;
     border-style: solid;
     border-radius: 4px;
     font-size: 20pt;

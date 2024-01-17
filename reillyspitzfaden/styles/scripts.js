@@ -13,7 +13,7 @@ function hamburgerToggle() {
 function hamburgerOnOff() {
     var size = window.innerWidth;
     var x = document.getElementById("menuLinks");
-    if (size >= 760) {
+    if (size >= 845) {
     x.style.display = "contents";
     } else {
     x.style.display = "none";
