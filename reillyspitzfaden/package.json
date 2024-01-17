@@ -10,6 +10,7 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@supabase/supabase-js": "^2.39.2",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "lite-youtube-embed": "^0.3.0"
   }
 }

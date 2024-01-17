@@ -42,6 +42,10 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
         </noscript>
 
+        <!-- lite-youtube -->
+        <link rel="stylesheet" href="node_modules/lite-youtube-embed/src/lite-yt-embed.css" />
+        <script src="node_modules/lite-youtube-embed/src/lite-yt-embed.js"></script>
+
         <!-- Mastodon verification -->
         <link rel="me" href="https://hachyderm.io/@reillypascal" />
         <link rel="me" href="https://github.com/reillypascal" />
@@ -87,13 +91,23 @@
                             <div class="gridContainingBlock">
                                 <p>Premiere of a commission for the University of Toronto's <a href="https://tapirlab.music.utoronto.ca/composers/">TaPIR Lab</a></p>
                                 <div class="gridVideoWrapper">
-                                    <iframe width="480" height="270" src="https://www.youtube.com/embed/YtSerbT7C5A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    <lite-youtube videoid="YtSerbT7C5A" style="background-image: url('https://i.ytimg.com/vi/YtSerbT7C5A/hqdefault.jpg');">
+                                        <a href="https://www.youtube.com/watch?v=YtSerbT7C5A" class="lty-playbtn" title="Play Video">
+                                            <span class="lyt-visually-hidden">Play Video: Reilly Spitzfaden - Reach Through</span>
+                                        </a>
+                                    </lite-youtube>
+                                    <!-- <iframe width="480" height="270" src="https://www.youtube.com/embed/YtSerbT7C5A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
                                 </div>
                             </div>
                             <div class="gridContainingBlock">
                                 <p>Part of my Eastman PhD dissertation was featured on Score Follower</p>
                                 <div class="gridVideoWrapper">
-                                    <iframe width="480" height="270" src="https://www.youtube.com/embed/Y_inKSy9K0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <lite-youtube videoid="Y_inKSy9K0k" style="background-image: url('https://i.ytimg.com/vi/Y_inKSy9K0k/hqdefault.jpg');">
+                                        <a href="https://www.youtube.com/watch?v=Y_inKSy9K0k" class="lty-playbtn" title="Play Video">
+                                            <span class="lyt-visually-hidden">Play Video:  Reilly Spitzfaden &mdash; Afterimage from [w/ score] </span>
+                                        </a>
+                                    </lite-youtube>
+                                    <!-- <iframe width="480" height="270" src="https://www.youtube.com/embed/Y_inKSy9K0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                                 </div>
                             </div>
                             <!--
