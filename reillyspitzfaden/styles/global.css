@@ -17,7 +17,7 @@ body, .nav, .nav a.icon, #main, #mainBlog, #mainMedia, #mainRecent, footer {
 }
 
 body, .nav a, :link, :visited, input.textinput, textarea, input[type="submit"] {
-    color: rgb(206, 214, 221);
+    color: rgb(210, 221, 230);
 }
 
 #myCard {
@@ -485,7 +485,7 @@ code {
     padding-right: 0.5em; 
 }
 #workslist th, #materials th {
-    font-weight: 500;
+    font-weight: 700;
     padding: 0 1rem 0.5rem 0;
 }
 #workslist td, #materials td {
@@ -541,7 +541,7 @@ input.textinput {
     padding: 5px;
     font-family: inherit;
     font-size: .875em;
-    font-weight: 500;
+    font-weight: 400;
     /* background-color: #303234; */
     /* color: #fff; */
 }
@@ -553,7 +553,7 @@ textarea {
     padding: 5px;
     font-family: inherit;
     font-size: .875em;
-    font-weight: 500;
+    font-weight: 400;
 	line-height: 1.25;
     resize: none;
     overflow: auto;
