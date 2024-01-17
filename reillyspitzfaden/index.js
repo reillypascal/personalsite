@@ -1,3 +1,3 @@
 require('dotenv').config();
 require('@supabase/supabase-js');
-require('lite-youtube-embed');
+// require('lite-youtube-embed');
