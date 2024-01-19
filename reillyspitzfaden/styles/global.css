@@ -34,11 +34,13 @@ body, .nav a, :link, :visited, input.textinput, textarea, input[type="submit"] {
 }
 
 .comment, input.textinput, textarea, input[type="submit"] {
-    background-color: #343a40;
+    background-color: #363847;
+    /* background-color: #343a40; */
 }
 
 .nav a:focus, .nav a:hover {
-    background-color: #343a40;
+    background-color: #363847;
+    /* background-color: #343a40; */
     box-shadow: 0 0 1px 1px #111213 inset;
 }
 
@@ -48,7 +50,8 @@ input.textinput:focus, textarea:focus {
 
 input[type="submit"]:focus, input[type="submit"]:hover {
     outline-color: rgba(224, 240, 255, 0.67) !important;
-    background-color: #58626c;
+    background-color: #565973;
+    /* background-color: #58626c; */
 }
 
 /* page element formatting: commented out old formatting for without bg img */
