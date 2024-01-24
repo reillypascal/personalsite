@@ -19,7 +19,7 @@ TODO:
 /* color and theme */
 
 body, .nav, .nav a.icon, #main, #mainBlog, #mainMedia, #mainRecent, footer {
-    background-color: #11141a;
+    background-color: #111318;
 }
 
 body, .nav a, :link, :visited, input.textinput, textarea, input[type="submit"] {
@@ -28,7 +28,7 @@ body, .nav a, :link, :visited, input.textinput, textarea, input[type="submit"] {
 
 #myCard {
     border-color: #d2dde6;
-    text-shadow: 0px 0px 8px #11141a;
+    text-shadow: 0px 0px 8px #111318;
     backdrop-filter: blur(1px);
     /* backdrop-filter: contrast(-5%); */
 }
@@ -41,7 +41,7 @@ body, .nav a, :link, :visited, input.textinput, textarea, input[type="submit"] {
 .nav a:focus, .nav a:hover {
     background-color: #363847;
     /* background-color: #343a40; */
-    box-shadow: 0 0 1px 1px #11141a inset;
+    box-shadow: 0 0 1px 1px #111318 inset;
 }
 
 input.textinput:focus, textarea:focus {
