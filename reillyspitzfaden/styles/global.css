@@ -29,7 +29,7 @@ body, .nav a, :link, :visited, input.textinput, textarea, input[type="submit"] {
 #myCard {
     border-color: #d2dde6;
     text-shadow: 1px 1px 8px #000000;
-    background-color: rgba(17, 19, 24, 0.25);
+    background-color: rgba(17, 19, 24, 0.15);
     backdrop-filter: blur(1px);
     /* backdrop-filter: contrast(-5%); */
 }
