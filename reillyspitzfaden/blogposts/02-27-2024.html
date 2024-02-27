@@ -72,9 +72,9 @@
                         <div id="mainBlog">
                              <!-- post contents -->
                              <article class="textBlock">
-                                <h2>Composition journal</h2>
-                                    <p>I'm currently working on a piece for (tentatively) B-flat clarinet, MIDI keyboard/Max, and a percussionist playing a mix of standard instruments, "junk," and feedback setups.</p>
-                                    <p>One of the sound design techniques I've been enjoying lately is making a "spectral composite" of two sounds using Eric Lyon's "<a href="https://github.com/ericlyon/FFTease3.0-MaxMSP">FFTease</a>" Max/MSP package. I'm using the fftz.ether~ object, which:</p>
+                                <h2>Composition Journal, Feb. 27, 2024</h2>
+                                    <p>I'm currently working on a piece for (tentatively) B-flat clarinet; MIDI keyboard/Max; and a percussionist playing a mix of standard instruments, "junk," and feedback setups.</p>
+                                    <p>One of the sound design techniques I've been enjoying lately is making a "spectral composite" of two sounds using Eric Lyon's "<a href="https://github.com/ericlyon/FFTease3.0-MaxMSP">FFTease</a>" Max/MSP package. I'm using the <code>fftz.ether~</code> object, which:</p>
                                     <ul>
                                     <li>Takes the FFT of two sounds</li>
                                     <li>Compares the corresponding bin between the two FFTs</li>
@@ -96,7 +96,7 @@
                                         <source src="./media/02-27-2024/radio_synth_fft.mp3" type="audio/mp3">
                                     </audio>
 
-                                    <p>In addition to sounding cool, the static gives the next stage something to "chew on." I used the phase vocoder from <a href="https://cycling74.com/tutorials/the-phase-vocoder-–-part-i">Cycling '74's</a> tutorial to time stretch my staticky chords, and the static causes all kinds of nice artifacts in the phase vocoder. After this, I added a little bit of saturation because having fftz.ether~ pick the quieter bin can sometimes sound a bit dull.</p>
+                                    <p>In addition to sounding cool, the static gives the next stage something to "chew on." I used the phase vocoder from <a href="https://cycling74.com/tutorials/the-phase-vocoder-–-part-i">Cycling '74's</a> tutorial to time stretch my staticky chords, and the static causes all kinds of nice artifacts in the phase vocoder. After this, I added a little bit of saturation because having <code>fftz.ether~</code> pick the quieter bin can sometimes sound a bit dull.</p>
                                     <audio controls>
                                         <source src="./media/02-27-2024/radio_synth_fft_pvoc.mp3" type="audio/mp3">
                                     </audio>
@@ -108,24 +108,22 @@
                                         <source src="./media/02-27-2024/fm-fb-osc-rand_bip.7.mp3" type="audio/mp3">
                                     </audio>
 
-                                    <p>Finally, I play two copies (one for left and one for right) of the sample with random modulation of the speed and direction.</p>
+                                    <p>I play two copies (one for left and one for right) of the sample with random modulation of the speed and direction.</p>
                                     <audio controls>
                                         <source src="./media/02-27-2024/fm-fb-osc-rand_bip.7_proc.mp3" type="audio/mp3">
                                     </audio>
 
-                                    <p>When I put the two into fftz.ether~, it sounds like this:</p>
+                                    <h3>Sound 1 & 2 combined</h3>
+                                    <p>Finally, when I put both the sustained and percussive sources into <code>fftz.ether~</code> the end result sounds like this:</p>
                                     <audio controls>
                                         <source src="./media/02-27-2024/spectral_composite_dry.mp3" type="audio/mp3">
                                     </audio>
+                                    <p>I was going for something to fill out and add activity to the upper register, and I'm very happy with how it turned out.</p>
 
-                                    <p>Finally, I added some randomly modulated delay and reverb sends for this result:</p>
-                                    <audio controls>
-                                        <source src="./media/02-27-2024/" type="audio/mp3">
-                                    </audio>
-
+                                    <br />
                                     <h3>Conclusion</h3>
                                     <p>I want to give a shout out to <a href="https://nathan.ho.name/archive.html">Nathan Ho</a>. I appreciate his blogging about making sounds in SuperCollider, and it's inspired me to do write-ups of my own sound design. </p>
-                                    <p>Today's sounds will be combined with the chord synthesizer I mentioned on Mastodon <a href="https://hachyderm.io/@reillypascal/111773037885275169">last month</a>. All of this is played by the keyboardist, with today's sound being assigned to a single MIDI note. Ideally I would like to be composing more quickly, but I'm teaching a class I've never taught before (Intro to Music Business), in addition to other teaching, so that's been taking up a lot of my time.</p>
+                                    <p>Today's sounds will be combined with the chord synthesizer I mentioned on Mastodon <a href="https://hachyderm.io/@reillypascal/111773037885275169">last month</a>. All of this is played by the keyboardist, with today's sound (and variants of it using different chords) each being assigned to a single MIDI note. Ideally I would like to be composing more quickly, but I'm teaching a class I've never taught before (Intro to Music Business), in addition to other teaching, so that's been taking up a lot of my time.</p>
                                     <p>If you'd like to try this for yourself, <a href="https://mega.nz/folder/cLVzHCBZ#SVlAyRb0RPL7sUwnXfke8A">here's</a> a link to the patches and other materials. You'll need the FFTease package and Max 8.</p>
                              </article>
                              <!-- close "main" -->
