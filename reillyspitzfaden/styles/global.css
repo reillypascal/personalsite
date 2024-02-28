@@ -468,6 +468,12 @@ footer :link {
     border: none;
     border-top: 1px solid #383a3f;
 }
+
+.comment > hr {
+    margin: 1.25rem 0;
+    border: none;
+    border-top: 1px solid #565973;
+}
 @media screen and (min-width: 400px) {
     .blogPostLinks > hr, #workslist > hr, #main > hr {
         margin: 2rem 0;

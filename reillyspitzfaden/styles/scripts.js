@@ -120,7 +120,7 @@ const handleGetComments = async (event) => {
                     commentDiv.className = 'comment';
                     commenterName.textContent = element.name;
                     thisComment.textContent = element.comment;
-                    commentDateHR.style.color = "#565973"
+                    // commentDateHR.style.color = "#565973";
                     commentDate.textContent = `Date: ${dateObj.getMonth() + 1}-${dateObj.getDay()}-${dateObj.getFullYear()}`;
                     commentDate.style.fontSize = "10pt";
 
