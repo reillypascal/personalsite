@@ -108,20 +108,27 @@ const handleGetComments = async (event) => {
                     // make new div, children
                     let commentDiv = document.createElement('div');
                     let commenterName = document.createElement('h3');
-                    let commentDate = document.createElement('p');
                     let thisComment = document.createElement('p');
+                    let commentDateHR = document.createElement('hr');
+                    let commentDate = document.createElement('p');
                     let commentBreak = document.createElement('br');
+
+                    let dateToParse = element.created_at;
+                    const dateObj = new Date(dateToParse);
 
                     // set up children
                     commentDiv.className = 'comment';
                     commenterName.textContent = element.name;
-                    commentDate.textContent = "Date: " + element.created_at;
                     thisComment.textContent = element.comment;
+                    commentDateHR.style.color = "#565973"
+                    commentDate.textContent = `Date: ${dateObj.getMonth() + 1}-${dateObj.getDay()}-${dateObj.getFullYear()}`;
+                    commentDate.style.fontSize = "10pt";
 
                     // add children to div
                     commentDiv.appendChild(commenterName);
-                    commentDiv.appendChild(commentDate);
                     commentDiv.appendChild(thisComment);
+                    commentDiv.appendChild(commentDateHR);
+                    commentDiv.appendChild(commentDate);
 
                     // add to document
                     parentDiv.appendChild(commentBreak);
