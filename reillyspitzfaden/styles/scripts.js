@@ -108,22 +108,20 @@ const handleGetComments = async (event) => {
                     // make new div, children
                     let commentDiv = document.createElement('div');
                     let commenterName = document.createElement('h3');
-                    let thisComment = document.createElement('p');
-                    let commentDateHR = document.createElement('hr');
                     let commentDate = document.createElement('p');
+                    let thisComment = document.createElement('p');
                     let commentBreak = document.createElement('br');
 
                     // set up children
                     commentDiv.className = 'comment';
                     commenterName.textContent = element.name;
-                    thisComment.textContent = element.comment;
                     commentDate.textContent = "Date: " + element.created_at;
+                    thisComment.textContent = element.comment;
 
                     // add children to div
                     commentDiv.appendChild(commenterName);
-                    commentDiv.appendChild(thisComment);
-                    commentDiv.appendChile(commentDateHR);
                     commentDiv.appendChild(commentDate);
+                    commentDiv.appendChild(thisComment);
 
                     // add to document
                     parentDiv.appendChild(commentBreak);
