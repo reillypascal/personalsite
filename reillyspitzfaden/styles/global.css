@@ -491,6 +491,17 @@ code {
     border-radius: 3px;
 }
 
+/* list (e.g., "listening to") indentation*/
+
+ul {
+    padding-left: 0px;
+    margin-left: 1.75rem;
+}
+
+li + li, li > ul {
+    margin-top: 0.35rem;
+}
+
 /*************************************************/
 
 /* Works list formatting */
