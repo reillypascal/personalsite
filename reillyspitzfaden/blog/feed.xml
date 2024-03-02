@@ -26,7 +26,6 @@
         <pubDate>2024-03-01T05:00:00.000Z</pubDate>
         <description>Links and discussion of what I'm currently listening to and reading</description>
         <content:encoded><![CDATA[
-            <h2>Reading and Listening List &mdash; Mar. 1, 2024</h2>
             <h3>What I've been listening to</h3>
             <ul>
                 <li><a href="https://patrickcarey.bandcamp.com/album/collapse-etiquette"><em>Collapse Etiquette</em></a>, by Patrick Carey
@@ -70,7 +69,6 @@
         <pubDate>2024-02-27T05:00:00.000Z</pubDate>
         <description>Spectral compositing sound design from my work-in-progress "Forget your name"</description>
         <content:encoded><![CDATA[
-        <h2>Composition Journal &mdash; Feb. 27, 2024</h2>
         <p>I'm currently working on a piece for (tentatively) B-flat clarinet; MIDI keyboard/Max; and a percussionist playing a mix of standard instruments, "junk," and feedback setups.</p>
         <p>One of the sound design techniques I've been enjoying lately is making a "spectral composite" of two sounds using Eric Lyon's "<a href="https://github.com/ericlyon/FFTease3.0-MaxMSP">FFTease</a>" Max/MSP package. I'm using the <code>fftz.ether~</code> object, which:</p>
         <ul>
@@ -135,8 +133,6 @@
         <pubDate>2024-01-14T05:00:00.000Z</pubDate>
         <description>A writeup of using Netlify serverless functions and Supabase to code a comments section on a static site</description>
         <content:encoded><![CDATA[
-        <h2>Do Read the Comments</h2>
-        <h3>January 14, 2024</h3>
         <p>My blog now has a comment section! Let's talk about how I made it.</p> 
         <p>It uses the <a href="https://supabase.com/">Supabase</a> Postgres database, which bills itself as an "open-source Firebase alternative." There are a number of ways of communicating with the database. I chose the <a href="https://github.com/supabase/supabase-js">supabase-js</a> JavaScript client since I'm familiar with JS, and because I wanted to use Netlify's <a href="https://www.netlify.com/blog/intro-to-serverless-functions/">"serverless" function</a> capabilities to run the code that communicates with the database.</p>
 
@@ -320,8 +316,6 @@ exports.handler = async (event, context, callback) => {
         <pubDate>2024-01-03T05:00:00.000Z</pubDate>
         <description>An introduction to this blog and what I plan to do with it</description>
         <content:encoded><![CDATA[
-        <h2>Hello World!</h2>
-        <h3>January 3, 2024</h3>
         <p>Welcome to my blog! I recently listened to <a href="https://localghost.dev/">Sophie Koonin</a>'s talk "<a href="https://www.youtube.com/watch?v=H2Ux0hGQcs4">This Talk Is Under Construction: A Love Letter to the Personal Website</a>," as well as <a href="https://localghost.dev/blog/remembering-the-early-00s-teen-website-scene/">this blog post</a> about the early-aughts teen website scene, and was immediately inspired to do more to make this site into a piece of personal expression. One of the ways I'm doing that is starting this blog, which I'll be using as a free-form journal about my interests and for write-ups of current projects. Some interests include:</p>
         <ul>
             <li>Digital signal processing and audio plugin development in C++</li>
