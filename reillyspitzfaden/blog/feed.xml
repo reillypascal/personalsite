@@ -1,0 +1,339 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Reilly Spitzfaden, Composer</title>
+        <link>https://reillyspitzfaden.com/</link>
+        <description>A blog about my personal interests, including C++ audio plugin development, composition/sound design in Max/MSP, open tech, and web development</description>
+    </channel>
+
+    <!-- <item>
+        <title></title>
+        <author>Reilly Spitzfaden (@reillypascal@hachyderm.io)</author>
+        <link>https://reillyspitzfaden.com/blogposts/</link>
+        <guid>https://reillyspitzfaden.com/blogposts/</guid>
+        <pubDate>2024-XX-XXT05:00:00.000Z</pubDate>
+        <description></description>
+        <content:encoded><![CDATA[
+        ]]> 
+        </content:encoded>
+    </item> -->
+
+    <item>
+        <title>Listening and Reading List — Mar. 1, 2024</title>
+        <author>Reilly Spitzfaden (@reillypascal@hachyderm.io)</author>
+        <link>https://reillyspitzfaden.com/blogposts/03-01-2024</link>
+        <guid>https://reillyspitzfaden.com/blogposts/03-01-2024</guid>
+        <pubDate>2024-03-01T05:00:00.000Z</pubDate>
+        <description>Links and discussion of what I'm currently listening to and reading</description>
+        <content:encoded><![CDATA[
+            <h2>Reading and Listening List &mdash; Mar. 1, 2024</h2>
+            <h3>What I've been listening to</h3>
+            <ul>
+                <li><a href="https://patrickcarey.bandcamp.com/album/collapse-etiquette"><em>Collapse Etiquette</em></a>, by Patrick Carey
+                    <ul>
+                        <li>Both aggressive/noisy and ambient. There are bright additive and saw synths, and a bunch of intense, percussive, glitchy noise. Each of the 9 tracks maintains a consistent energy &mdash; always the same material, but always different, like the motion of a mobile. Overall, the album reminds me of tuning a radio through a "new age" station with poor reception, and I found it inspiring for my own work.</li>
+                    </ul>
+                </li>
+                <li>"<a href="https://alexanderpanos.bandcamp.com/track/cycles-2">Cycles</a>" by Alexander Panos
+                    <ul>
+                        <li>I first discovered him via his "<a href="https://payhip.com/b/h9l7V">Color Transfer</a>" Max for Live bundle, which makes some very cool sounds. This track is heavy on the granular sounds and "mulched-up" drums, but it also has poppy and traditionally "pretty" chords and vocals, and moments where the meter becomes clear. A beautiful and unique piece.</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>What I've been reading</h3>
+            <ul>
+                <li>Nathan Ho's <a href="https://nathan.ho.name/posts/cepstrum/">blog post</a> on creative uses of <a href="https://en.wikipedia.org/wiki/Cepstrum">cepstral</a> processing.
+                    <ul>
+                        <li>I've been interested in doing this in my own sound design, but FFT processing in Max is one area I need more work. Nathan uses SuperCollider, and while I like what it can do, I prefer to write for other people to perform, so I like Max's ability to make robust GUIs for my performers. This post looks like it will be helpful in understanding the cepstrum and using it in Max.</li>
+                    </ul>
+                </li>
+                <li>Tom Coates' <a href="http://plasticbag.org/archives/2024/01/how-threads-will-integrate-with-the-fediverse/">post</a> on how Threads will integrate with the <a href="https://en.wikipedia.org/wiki/Fediverse">Fediverse</a>.
+                    <ul>
+                        <li>I'm intensely torn on Threads, Bluesky, potential Tumblr <a href="https://en.wikipedia.org/wiki/ActivityPub">ActivityPub</a> support, etc. I love the Fediverse; I would like to interact with as many of my friends as possible on it; and Cory Doctorow's <a href="https://www.versobooks.com/products/3035-the-internet-con"><em>The Internet Con</em></a> has gotten me excited about interoperability, so on one hand, I would like as many things as possible to connect to the Fediverse. On the other hand, part of what makes the Fediverse great is the non-commercial nature, and I don't want Meta to "<a href="https://en.wikipedia.org/wiki/Embrace,_extend,_and_extinguish">embrace, extend, extinguish</a>" it.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>What I've been doing</h3>
+                <ul>
+                    <li>The W3C <a href="https://indieweb.org/Social_Web_Incubator_Community_Group">Social Web Incubator Community Group</a> (which includes stakeholders such as Meta) was brought up at Wednesday, Feb. 28's IndieWeb <a href="https://indieweb.org/Homebrew_Website_Club">Homebrew Website Club</a> Pacific meeting. A member mentioned that at one meeting, there was discussion of <a href="https://github.com/Letterbook/FEP/tree/web-based-protocol-handlers">extensions</a> to ActivityPub, and that he was able to voice concern that this could lead to an "embrace, extend, extinguish" situation. It looks like anyone can join the mailing list and meetings (see <a href="https://www.w3.org/community/socialcg/">this</a> page), and I will be joining today. It does encourage me that there is this way for the Fediverse community to get involved and help shape the future of ActivityPub.</li>
+                </ul>
+            ]]> 
+        </content:encoded>
+    </item>
+
+    <item>
+        <title>Composition Journal — Feb. 27, 2024</title>
+        <author>Reilly Spitzfaden (@reillypascal@hachyderm.io)</author>
+        <link>https://reillyspitzfaden.com/blogposts/02-27-2024</link>
+        <guid>https://reillyspitzfaden.com/blogposts/02-27-2024</guid>
+        <pubDate>2024-02-27T05:00:00.000Z</pubDate>
+        <description>Spectral compositing sound design from my work-in-progress "Forget your name"</description>
+        <content:encoded><![CDATA[
+        <h2>Composition Journal &mdash; Feb. 27, 2024</h2>
+        <p>I'm currently working on a piece for (tentatively) B-flat clarinet; MIDI keyboard/Max; and a percussionist playing a mix of standard instruments, "junk," and feedback setups.</p>
+        <p>One of the sound design techniques I've been enjoying lately is making a "spectral composite" of two sounds using Eric Lyon's "<a href="https://github.com/ericlyon/FFTease3.0-MaxMSP">FFTease</a>" Max/MSP package. I'm using the <code>fftz.ether~</code> object, which:</p>
+        <ul>
+        <li>Takes the FFT of two sounds</li>
+        <li>Compares the corresponding bin between the two FFTs</li>
+        <li>Takes either the louder or quieter of the two, depending on the settings</li>
+        <li>The choice can also be "weighted" toward one source or the other</li>
+        </ul>
+
+        <p>I particularly like the effect of taking the quieter of the two. It's great for combining a more sustained sound and one with a percussive envelope. As the percussive sound decays, more and more of its bins "win out," imparting a percussive envelope on the output.</p>
+
+        <h3>Sound 1: tonal/sustained</h3>
+        <p>For today's sound, my sustained, tonal source was made with the open-source <a href="https://surge-synthesizer.github.io">Surge XT</a> synthesizer. Surge XT contains an oscillator titled "Twist" that appears to be an implementation of Mutable Instruments' "<a href="https://pichenettes.github.io/mutable-instruments-documentation/modules/plaits/">Plaits</a>" Eurorack module. I'm using one of the organ-like wavetables to create a sound that rapidly morphs between low and high harmonics. Additionally, Surge XT supports microtuning, and I'm using the 131313... mode of <a href="https://en.xen.wiki/w/20edo">20-edo</a>.</p>
+
+        <audio controls>
+            <source src="./media/02-27-2024/plaits_organ_rand_sweeps_2.mp3" type="audio/mp3">
+        </audio>
+
+        <p>I then used a trick I've discovered to make samples sound like they're played through an untuned FM radio. I have a collection of samples of just raw radio static. If I use those samples to modulate a delay on my source, the static convincingly changes in amplitude along with the sample.</p>
+        <audio controls>
+            <source src="./media/02-27-2024/radio_synth_fft.mp3" type="audio/mp3">
+        </audio>
+
+        <p>In addition to sounding cool, the static gives the next stage something to "chew on." I used the phase vocoder from <a href="https://cycling74.com/tutorials/the-phase-vocoder-–-part-i">Cycling '74's</a> tutorial to time stretch my staticky chords, and the static causes all kinds of nice artifacts in the phase vocoder. After this, I added a little bit of saturation because having <code>fftz.ether~</code> pick the quieter bin can sometimes sound a bit dull.</p>
+        <audio controls>
+            <source src="./media/02-27-2024/radio_synth_fft_pvoc.mp3" type="audio/mp3">
+        </audio>
+
+        <h3>Sound 2: noisy/rhythmic</h3>
+        <p>On the other side, I started with a sine wave oscillator in gen~ frequency-modulating itself at a single-sample delay (it was this short delay that made me need to use gen~). I used the rand~ object to modulate a number of parameters, including the starting frequency and modulation depth. This produces some nice staticky, rhythmic noises that sound like a very light synthetic snare.</p>
+        <p>I then used Logic Pro's "flex time" feature to quantize the result to a 16th note grid (which also adds some nice time stretching artifacts!) </p>
+        <audio controls>
+            <source src="./media/02-27-2024/fm-fb-osc-rand_bip.7.mp3" type="audio/mp3">
+        </audio>
+
+        <p>I play two copies (one for left and one for right) of the sample with random modulation of the speed and direction.</p>
+        <audio controls>
+            <source src="./media/02-27-2024/fm-fb-osc-rand_bip.7_proc.mp3" type="audio/mp3">
+        </audio>
+
+        <h3>Sound 1 & 2 combined</h3>
+        <p>Finally, when I put both the sustained and percussive sources into <code>fftz.ether~</code> the end result sounds like this:</p>
+        <audio controls>
+            <source src="./media/02-27-2024/spectral_composite_dry.mp3" type="audio/mp3">
+        </audio>
+        <p>I was going for something to fill out and add activity to the upper register, and I'm very happy with how it turned out.</p>
+
+        <br />
+        <h3>Conclusion</h3>
+        <p>I want to give a shout out to <a href="https://nathan.ho.name/archive.html">Nathan Ho</a>. I appreciate his blogging about making sounds in SuperCollider, and it's inspired me to do write-ups of my own sound design. </p>
+        <p>Today's sounds will be combined with the chord synthesizer I mentioned on Mastodon <a href="https://hachyderm.io/@reillypascal/111773037885275169">last month</a>. All of this is played by the keyboardist, with today's sound (and variants of it using different chords) each being assigned to a single MIDI note. Ideally I would like to be composing more quickly, but I'm teaching a class I've never taught before (Intro to Music Business), in addition to other teaching, so that's been taking up a lot of my time.</p>
+        <p>If you'd like to try this for yourself, <a href="https://mega.nz/folder/cLVzHCBZ#SVlAyRb0RPL7sUwnXfke8A">here's</a> a link to the patches and other materials. You'll need the FFTease package and Max 8.</p>
+        ]]> 
+        </content:encoded>
+    </item>
+    
+    <item>
+        <title>Do Read the Comments</title>
+        <author>Reilly Spitzfaden (@reillypascal@hachyderm.io)</author>
+        <link>https://reillyspitzfaden.com/blogposts/01-14-2024</link>
+        <guid>https://reillyspitzfaden.com/blogposts/01-14-2024</guid>
+        <pubDate>2024-01-14T05:00:00.000Z</pubDate>
+        <description>A writeup of using Netlify serverless functions and Supabase to code a comments section on a static site</description>
+        <content:encoded><![CDATA[
+        <h2>Do Read the Comments</h2>
+        <h3>January 14, 2024</h3>
+        <p>My blog now has a comment section! Let's talk about how I made it.</p> 
+        <p>It uses the <a href="https://supabase.com/">Supabase</a> Postgres database, which bills itself as an "open-source Firebase alternative." There are a number of ways of communicating with the database. I chose the <a href="https://github.com/supabase/supabase-js">supabase-js</a> JavaScript client since I'm familiar with JS, and because I wanted to use Netlify's <a href="https://www.netlify.com/blog/intro-to-serverless-functions/">"serverless" function</a> capabilities to run the code that communicates with the database.</p>
+
+        <p>I considered several ways of getting the comments to display, including embedding a server-side-rendered page in an &lt;iframe&gt;, and using the pre-made "<a href="https://jsrepos.com/repo/a-blazing-fast-lightweight-and-open-source-comment-system-for-your-static-website-blogs-powered-by-supabase">SupaComments</a>" library, but it actually turned out to be easier to just do it myself with vanilla JavaScript. For the full code, see the <a href="https://github.com/reillypascal/personalsite/tree/main/reillyspitzfaden/netlify/functions">Netlify functions</a>, <a href="https://github.com/reillypascal/personalsite/blob/main/reillyspitzfaden/styles/scripts.js">global JS file</a>, and the <a href="https://github.com/reillypascal/personalsite/tree/main/reillyspitzfaden/blogposts">blog posts'</a> HTML files on GitHub. I'll walk through some of the most relevant parts here.</p> 
+        
+        <br />
+        <h3>Handling Comment Submissions</h3>
+        <p>In the form submission handler function, I make the form data into a FormData object. I then retrieve the commenter's name, email, and comment, as well as the URL of the blog post on which they're commenting. Note that in the code examples, I have left out the DOM-manipulating code to focus on handling the comment data.</p>
+
+<pre><code class="language-js" data-language="javascript">// (from scripts.js)
+// submit conmment handler - thisPostURL variable is 
+// defined in the page that calls this function
+const handleSubmitComment = async (event) => {
+    event.preventDefault();
+
+    // ... reset "Comment submitted!" message, if one exists
+
+    // get form data
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+    // retrieve the needed fields from the FormData object
+    const formObject = {
+        name: formData.get("name"),
+        email: formData.get("email"),
+        postURL: thisPostURL,
+        comment: formData.get("comment")
+    };
+    // ...</code></pre>
+
+                <p>Since I didn't want the extra work of making a new table in my database every time I made a new blog post, I have all the comments go to a single table. Each blog post tags the comments on it with the post's URL, and uses that URL to retrieve only the appropriate comments.</p>
+
+                <p>After the comment is formatted into an object, I use the <code class="language-js" data-language="javascript">fetch()</code> API to send the comment data to the serverless function in the body of a POST request.</p>
+
+
+    <pre><code class="language-js" data-language="javascript">    // ... (continued from above)
+    // call the serverless function and send it 
+    // formObject in the body of the request
+    const response = await fetch('/.netlify/functions/set_comment', {
+        method: "POST",
+        body: JSON.stringify(formObject)
+    })
+    // ...</code></pre>
+
+                                <p>From there, the rest of the handler prints either a success or error message under the comment submission form.</p>
+
+    <pre><code class="language-js" data-language="javascript">    // ... (continued from above)
+    .then(response => {
+        // ... reset form to indicate comment submitted,
+        // and print success message below
+    })
+    .catch(error => {
+        // ... reset form to indicate comment submitted, 
+        // and print error message below
+    });
+};</code></pre>
+                            <br />
+                            <h3>Handling the Comment Retrieval Button</h3>
+                                <p>The handler for retrieving the comments is similar. Note that the body of the POST request only needs the post URL&mdash;this is used to select the comments that were made on a given blog post.</p>
+
+<pre><code class="language-js" data-language="javascript">// retrieve conmment handler - thisPostURL is defined in page
+const handleGetComments = async (event) => {
+    event.preventDefault();
+
+    // ... erase any previously-displayed comments, load spinner .gif
+
+    // call serverless function
+    const response = await fetch('/.netlify/functions/get_comment', {
+        method:'POST',
+        body: JSON.stringify({
+            postURL: thisPostURL
+        })
+    })
+    // .json() returns a promise too, so there needs to be another .then()
+    .then(response => response.json())
+    .then(json => {
+        // ... clear the spinner; test if there are any comments 
+        // in the returned list; if so, iterate through them 
+        // and add the appropriate HTML/text
+    })
+    .catch(error => {
+        // ... clear the spinner; display an error message
+    });
+}</code></pre>
+
+                            <br />
+                            <h3>Supabase: Storing and Retrieving Comments</h3>
+                            <p>The serverless functions to interface with Supabase need the 'dotenv' and 'supabase-js' Node packages, which are required from index.js in the root directory.</p>
+<pre><code class="language-js" data-language="javascript">require('dotenv').config();
+require('@supabase/supabase-js');</code></pre>
+            <p>In the function files, which are in netlify/functions&mdash;the default directory Netlify specifies&mdash;I get the URL and anon key for the database from Netlify's .env variables. Netlify lets you specify those from your site's console, so it's easy to keep them secure.</p>
+<pre><code class="language-js" data-language="javascript">const {
+    DATABASE_URL,
+    SUPABASE_SERVICE_API_KEY
+} = process.env;</code></pre>
+            <p>The meat of the setter function is the <code class="language-js" data-language="javascript">.from()</code> method, which accesses the desired table, and the <code class="language-js" data-language="javascript">.insert()</code> method, which adds the new entry. These are specified by the Supabase <a href="https://zone-www-dot-lmn02xr2l-supabase.vercel.app/docs/reference/javascript/select">API</a>. Netlify uses the ES modules default export syntax for the serverless functions, and the functions are automatically named after the files that contain them&mdash;<code class="language-js" data-language="javascript">set_comment</code> and <code class="language-js" data-language="javascript">get_comment</code> in my case.</p>
+
+<pre><code class="language-js" data-language="javascript">// create supabase client using url/anon key from Netlify env variables
+const { createClient } = require('@supabase/supabase-js');
+const supabase = createClient(DATABASE_URL, SUPABASE_SERVICE_API_KEY);
+
+// uses ES modules syntax for default export
+exports.handler = async (event, context, callback) => {
+    let data
+    try {
+        // the result of createClient() can access the database
+        data = await supabase
+        // 'comments' is the name of the table 
+        // within my database; .from() selects that
+        .from('comments')
+        // .insert() takes an array with one or more objects whose keys correspond
+        // to those in the table, and adds each object as a new row to the table
+        .insert([
+            {   
+                name: JSON.parse(event.body).name,
+                email: JSON.parse(event.body).email,
+                postURL: JSON.parse(event.body).postURL,
+                comment: JSON.parse(event.body).comment,
+                created_at: ((new Date()).toISOString()).toLocaleString('en-US'),
+                show: true
+            }
+        ])
+    } catch (e) {
+        return {
+            statusCode: 500,
+            body: JSON.stringify({
+                error: e.message
+            })
+        }
+    }
+    return {
+        statusCode: 200,
+        body: JSON.stringify(data)
+    };
+}</code></pre>
+
+            <p>The getter function works similarly, but uses the <code class="language-js" data-language="javascript">.select()</code> and <code class="language-js" data-language="javascript">.eq()</code> methods. These specify the columns to return and a matching condition to indicate whether or not to return a row, respectively.</p>
+
+<pre><code class="language-js" data-language="javascript">exports.handler = async (event, context, callback) => {
+    let returnVals
+    try {
+        returnVals = await supabase
+        // as in set_comments, retrieves 'comments' table
+        .from('comments')
+        // selects the desired columns in each row
+        .select('name, email, comment, created_at')
+        // selects only the rows containing comments 
+        // made at the blog post's URL
+        .eq('postURL', JSON.parse(event.body).postURL)
+        
+    } catch (e) {
+        return {
+            statusCode: 500,
+            body: JSON.stringify({
+              error: e.message
+            })
+        }
+    }
+    return {
+        statusCode: 200,
+        body: JSON.stringify(returnVals.data)
+    };
+}</code></pre>
+        <br />
+        <h3>Conclusions</h3>
+        <p>Some of the challenges I had in this project:</p>
+        <ul>
+            <li>It took me some trial and error to conceptualize exactly what the serverless functions needed to send back and forth with my site/Netlify.</li>
+            <li>I had previously directly interfaced form submissions with Netlify for my contact form, but I needed to do a bit of reading to understand exactly how to get the information from the form into a format suitable to send in an HTTP POST request.</li>
+        </ul>
+        <p>One of my takeaways from this was that I should do more backend stuff. I haven't done much before, but I find it's a lot of fun to connect things together and make them communicate. Maybe a future project could include making my own database on my Raspberry Pi and setting up more complex interactions with it.</p>
+        <p>Thanks for reading this far! In the near term, I'm planning to make an RSS feed for this blog&mdash;look for a similar write-up when I do that.</p>
+        ]]> 
+        </content:encoded>
+    </item>
+
+    <item>
+        <title>Hello World!</title>
+        <author>Reilly Spitzfaden (@reillypascal@hachyderm.io)</author>
+        <link>https://reillyspitzfaden.com/blogposts/01-03-2024</link>
+        <guid>https://reillyspitzfaden.com/blogposts/01-03-2024</guid>
+        <pubDate>2024-01-03T05:00:00.000Z</pubDate>
+        <description>An introduction to this blog and what I plan to do with it</description>
+        <content:encoded><![CDATA[
+        <h2>Hello World!</h2>
+        <h3>January 3, 2024</h3>
+        <p>Welcome to my blog! I recently listened to <a href="https://localghost.dev/">Sophie Koonin</a>'s talk "<a href="https://www.youtube.com/watch?v=H2Ux0hGQcs4">This Talk Is Under Construction: A Love Letter to the Personal Website</a>," as well as <a href="https://localghost.dev/blog/remembering-the-early-00s-teen-website-scene/">this blog post</a> about the early-aughts teen website scene, and was immediately inspired to do more to make this site into a piece of personal expression. One of the ways I'm doing that is starting this blog, which I'll be using as a free-form journal about my interests and for write-ups of current projects. Some interests include:</p>
+        <ul>
+            <li>Digital signal processing and audio plugin development in C++</li>
+            <li>Composition in Max/MSP/gen</li>
+            <li>Homemade electronics, often with a musical bent</li>
+            <li>Various projects on my Raspberry Pi, including the <a href="https://geminiprotocol.net/">gemini</a> protocol, networking, and more</li>
+            <li>The <a href="https://en.wikipedia.org/wiki/Fediverse">Fediverse</a> and "<a href="https://smolweb.org/index.html">smol web</a>" or "small web"</li>
+        </ul>
+        <p>RSS will likely be coming if I'm able to figure that out, as well as potentially a built-in comments feature. For now, I'll be posting updates to my <a href="https://hachyderm.io/@reillypascal">Mastodon</a> (and if you know me personally, on other personal social media!).</p>
+        <p>I hope you'll join me!</p>
+        ]]> 
+        </content:encoded>
+    </item>
+
+</rss>
