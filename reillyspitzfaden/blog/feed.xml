@@ -10,7 +10,7 @@
 
     <!-- <item>
         <title></title>
-        <author>Reilly Spitzfaden (@reillypascal@hachyderm.io)</author>
+        <author>Reilly Spitzfaden</author>
         <link>https://reillyspitzfaden.com/blogposts/</link>
         <guid>https://reillyspitzfaden.com/blogposts/</guid>
         <pubDate>2024-XX-XXT05:00:00.000Z</pubDate>
@@ -22,7 +22,7 @@
 
     <item>
         <title>Listening and Reading List — Mar. 1, 2024</title>
-        <author>Reilly Spitzfaden (@reillypascal@hachyderm.io)</author>
+        <author>Reilly Spitzfaden</author>
         <link>https://reillyspitzfaden.com/blogposts/03-01-2024</link>
         <guid>https://reillyspitzfaden.com/blogposts/03-01-2024</guid>
         <pubDate>2024-03-01T05:00:00.000Z</pubDate>
@@ -65,7 +65,7 @@
 
     <item>
         <title>Composition Journal — Feb. 27, 2024</title>
-        <author>Reilly Spitzfaden (@reillypascal@hachyderm.io)</author>
+        <author>Reilly Spitzfaden</author>
         <link>https://reillyspitzfaden.com/blogposts/02-27-2024</link>
         <guid>https://reillyspitzfaden.com/blogposts/02-27-2024</guid>
         <pubDate>2024-02-27T05:00:00.000Z</pubDate>
@@ -129,7 +129,7 @@
     
     <item>
         <title>Do Read the Comments</title>
-        <author>Reilly Spitzfaden (@reillypascal@hachyderm.io)</author>
+        <author>Reilly Spitzfaden</author>
         <link>https://reillyspitzfaden.com/blogposts/01-14-2024</link>
         <guid>https://reillyspitzfaden.com/blogposts/01-14-2024</guid>
         <pubDate>2024-01-14T05:00:00.000Z</pubDate>
@@ -312,7 +312,7 @@ exports.handler = async (event, context, callback) => {
 
     <item>
         <title>Hello World!</title>
-        <author>Reilly Spitzfaden (@reillypascal@hachyderm.io)</author>
+        <author>Reilly Spitzfaden</author>
         <link>https://reillyspitzfaden.com/blogposts/01-03-2024</link>
         <guid>https://reillyspitzfaden.com/blogposts/01-03-2024</guid>
         <pubDate>2024-01-03T05:00:00.000Z</pubDate>
