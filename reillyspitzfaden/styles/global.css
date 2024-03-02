@@ -274,8 +274,20 @@ footer {
     }
 }
 footer td {
-    padding: 1em 1em 0 0;
+    padding: 1em 0.75em 0 0;
 }
+@media screen and (min-width: 400px) {
+    footer td {
+        padding: 1em 1em 0 0;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    footer td {
+        padding: 1em 1.15em 0 0;
+    }
+}
+
 footer :link {
     border-bottom: none;
 }
