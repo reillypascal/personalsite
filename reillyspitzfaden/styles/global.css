@@ -155,7 +155,7 @@ iframe {
 }
 
 /* Handles switching between hamburger menu and regular */
-@media screen and (min-width: 845px) {
+@media screen and (min-width: 900px) {
     .nav #menuLinks {
         display: contents;
     }
@@ -170,7 +170,7 @@ iframe {
         display: none;
     }
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1000px) {
     .nav {
         padding: 0.5rem 8%;
     }
