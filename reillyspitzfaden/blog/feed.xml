@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0" 
+    xmlns:atom="http://www.w3.org/2005/Atom"
     xmlns:content="http://purl.org/rss/1.0/modules/content/"
     >
     <channel>
         <title>Reilly Spitzfaden, Composer</title>
         <link>https://reillyspitzfaden.com/</link>
+        <atom:link href="https://reillyspitzfaden.com/blog/feed.xml" rel="self" type="application/rss+xml" />
         <description>A blog about my personal interests, including C++ audio plugin development, composition/sound design in Max/MSP, open tech, and web development</description>
-    </channel>
+    
 
     <!-- <item>
         <title></title>
@@ -330,5 +332,5 @@ exports.handler = async (event, context, callback) => {
         ]]> 
         </content:encoded>
     </item>
-
+    </channel>
 </rss>
