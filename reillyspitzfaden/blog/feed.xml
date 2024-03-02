@@ -25,8 +25,8 @@
     <item>
         <title>Listening and Reading List — Mar. 1, 2024</title>
         <dc:creator>Reilly Spitzfaden</dc:creator>
-        <link>https://reillyspitzfaden.com/blogposts/03-01-2024</link>
-        <guid>https://reillyspitzfaden.com/blogposts/03-01-2024</guid>
+        <link>https://reillyspitzfaden.com/blog/03-01-2024</link>
+        <guid>https://reillyspitzfaden.com/blog/03-01-2024</guid>
         <pubDate>Fri, 01 Mar 2024 00:00:00 EST</pubDate>
         <description>Links and discussion of what I'm currently listening to and reading</description>
         <content:encoded><![CDATA[
@@ -68,8 +68,8 @@
     <item>
         <title>Composition Journal — Feb. 27, 2024</title>
         <dc:creator>Reilly Spitzfaden</dc:creator>
-        <link>https://reillyspitzfaden.com/blogposts/02-27-2024</link>
-        <guid>https://reillyspitzfaden.com/blogposts/02-27-2024</guid>
+        <link>https://reillyspitzfaden.com/blog/02-27-2024</link>
+        <guid>https://reillyspitzfaden.com/blog/02-27-2024</guid>
         <pubDate>Tue, 27 Feb 2024 00:00:00 EST</pubDate>
         <description>Spectral compositing sound design from my work-in-progress "Forget your name"</description>
         <content:encoded><![CDATA[
@@ -132,8 +132,8 @@
     <item>
         <title>Do Read the Comments</title>
         <dc:creator>Reilly Spitzfaden</dc:creator>
-        <link>https://reillyspitzfaden.com/blogposts/01-14-2024</link>
-        <guid>https://reillyspitzfaden.com/blogposts/01-14-2024</guid>
+        <link>https://reillyspitzfaden.com/blog/01-14-2024</link>
+        <guid>https://reillyspitzfaden.com/blog/01-14-2024</guid>
         <pubDate>Sun, 14 Jan 2024 00:00:00 EST</pubDate>
         <description>A writeup of using Netlify serverless functions and Supabase to code a comments section on a static site</description>
         <content:encoded><![CDATA[
@@ -315,8 +315,8 @@ exports.handler = async (event, context, callback) => {
     <item>
         <title>Hello World!</title>
         <dc:creator>Reilly Spitzfaden</dc:creator>
-        <link>https://reillyspitzfaden.com/blogposts/01-03-2024</link>
-        <guid>https://reillyspitzfaden.com/blogposts/01-03-2024</guid>
+        <link>https://reillyspitzfaden.com/blog/01-03-2024</link>
+        <guid>https://reillyspitzfaden.com/blog/01-03-2024</guid>
         <pubDate>Wed, 03 Jan 2024 00:00:00 EST</pubDate>
         <description>An introduction to this blog and what I plan to do with it</description>
         <content:encoded><![CDATA[
