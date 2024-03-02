@@ -5,5 +5,5 @@
 https://reillyspitzfaden.netlify.app/* https://reillyspitzfaden.com/:splat 301!
 http://reillyspitzfaden.netlify.app/* http://reillyspitzfaden.com/:splat 301!
 
-# https://reillyspitzfaden.com/blogposts/* https://reillyspitzfaden.com/blog/:splat 301!
-# http://reillyspitzfaden.com/blogposts/* http://reillyspitzfaden.com/blog/:splat 301!
+https://reillyspitzfaden.com/blogposts/* https://reillyspitzfaden.com/blog/:splat 301!
+http://reillyspitzfaden.com/blogposts/* http://reillyspitzfaden.com/blog/:splat 301!
