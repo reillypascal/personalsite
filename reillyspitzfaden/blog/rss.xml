@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Reilly Spitzfaden, Composer</title>
+        <link>https://reillyspitzfaden.com/</link>
+        <description>A blog about my personal interests, including C++ audio plugin development, composition/sound design in Max/MSP, open tech, and web development</description>
+    </channel>
+
+    <item>
+        <title>Listening and Reading List — Mar. 1, 2024</title>
+        <author>Reilly Spitzfaden (@reillypascal@hachyderm.io)</author>
+        <link>https://reillyspitzfaden.com/blogposts/03-01-2024</link>
+        <guid>https://reillyspitzfaden.com/blogposts/03-01-2024</guid>
+        <pubDate>2024-03-01T05:00:00.000Z</pubDate>
+        <description>Links and discussion of what I'm currently listening to and reading</description>
+    </item>
+
+    <item>
+        <title>Composition Journal — Feb. 27, 2024</title>
+        <author>Reilly Spitzfaden (@reillypascal@hachyderm.io)</author>
+        <link>https://reillyspitzfaden.com/blogposts/02-27-2024</link>
+        <guid>https://reillyspitzfaden.com/blogposts/02-27-2024</guid>
+        <pubDate>2024-02-27T05:00:00.000Z</pubDate>
+        <description>Spectral compositing sound design from my work-in-progress "Forget your name"</description>
+    </item>
+    
+    <item>
+        <title>Do Read the Comments</title>
+        <author>Reilly Spitzfaden (@reillypascal@hachyderm.io)</author>
+        <link>https://reillyspitzfaden.com/blogposts/01-14-2024</link>
+        <guid>https://reillyspitzfaden.com/blogposts/01-14-2024</guid>
+        <pubDate>2024-01-14T05:00:00.000Z</pubDate>
+        <description>A writeup of using Netlify serverless functions and Supabase to code a comments section on a static site</description>
+    </item>
+
+    <item>
+        <title>Hello World!</title>
+        <author>Reilly Spitzfaden (@reillypascal@hachyderm.io)</author>
+        <link>https://reillyspitzfaden.com/blogposts/01-03-2024</link>
+        <guid>https://reillyspitzfaden.com/blogposts/01-03-2024</guid>
+        <pubDate>2024-01-03T05:00:00.000Z</pubDate>
+        <description>An introduction to this blog and what I plan to do with it</description>
+    </item>
+
+</rss>
