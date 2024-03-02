@@ -6,7 +6,7 @@
 
         <!-- Facebook SEO/cards -->
         <meta property="og:title" content="Reilly Spitzfaden, Composer | 01-14-2024, Do Read the Comments" />
-        <meta property="og:url" content="https://reillyspitzfaden.com/blogposts/01-14-2024" />
+        <meta property="og:url" content="https://reillyspitzfaden.com/blog/01-14-2024" />
         <meta property="og:image" content="https://reillyspitzfaden.com/media/wefax_og_cr.jpeg" />
         <meta property="og:image:secure_url" content="https://reillyspitzfaden.com/media/wefax_og_cr.jpeg" />
         <meta property="og:image:type" content="image/jpeg" /> 
@@ -24,7 +24,7 @@
         <!-- General -->
         <meta name="description" content="A writeup of using Netlify serverless functions and Supabase to code a comments section on a static site" />
         <title>Reilly Spitzfaden, Composer | 01-14-2024, Do Read the Comments</title>
-        <link rel="canonical" href="https://reillyspitzfaden.com/blogposts/01-14-2024" />
+        <link rel="canonical" href="https://reillyspitzfaden.com/blog/01-14-2024" />
         <link rel="icon" href="../media/favicon-32px.png" type="image/x-icon"/>
 
         <!-- my styles and scripts -->
@@ -85,7 +85,7 @@
                                 <p>My blog now has a comment section! Let's talk about how I made it.</p> 
                                 <p>It uses the <a href="https://supabase.com/">Supabase</a> Postgres database, which bills itself as an "open-source Firebase alternative." There are a number of ways of communicating with the database. I chose the <a href="https://github.com/supabase/supabase-js">supabase-js</a> JavaScript client since I'm familiar with JS, and because I wanted to use Netlify's <a href="https://www.netlify.com/blog/intro-to-serverless-functions/">"serverless" function</a> capabilities to run the code that communicates with the database.</p>
 
-                                <p>I considered several ways of getting the comments to display, including embedding a server-side-rendered page in an &lt;iframe&gt;, and using the pre-made "<a href="https://jsrepos.com/repo/a-blazing-fast-lightweight-and-open-source-comment-system-for-your-static-website-blogs-powered-by-supabase">SupaComments</a>" library, but it actually turned out to be easier to just do it myself with vanilla JavaScript. For the full code, see the <a href="https://github.com/reillypascal/personalsite/tree/main/reillyspitzfaden/netlify/functions">Netlify functions</a>, <a href="https://github.com/reillypascal/personalsite/blob/main/reillyspitzfaden/styles/scripts.js">global JS file</a>, and the <a href="https://github.com/reillypascal/personalsite/tree/main/reillyspitzfaden/blogposts">blog posts'</a> HTML files on GitHub. I'll walk through some of the most relevant parts here.</p> 
+                                <p>I considered several ways of getting the comments to display, including embedding a server-side-rendered page in an &lt;iframe&gt;, and using the pre-made "<a href="https://jsrepos.com/repo/a-blazing-fast-lightweight-and-open-source-comment-system-for-your-static-website-blogs-powered-by-supabase">SupaComments</a>" library, but it actually turned out to be easier to just do it myself with vanilla JavaScript. For the full code, see the <a href="https://github.com/reillypascal/personalsite/tree/main/reillyspitzfaden/netlify/functions">Netlify functions</a>, <a href="https://github.com/reillypascal/personalsite/blob/main/reillyspitzfaden/styles/scripts.js">global JS file</a>, and the <a href="https://github.com/reillypascal/personalsite/tree/main/reillyspitzfaden/blog">blog posts'</a> HTML files on GitHub. I'll walk through some of the most relevant parts here.</p> 
                                 
                                 <br />
                                 <h3>Handling Comment Submissions</h3>
@@ -293,7 +293,7 @@ exports.handler = async (event, context, callback) => {
                     </div>
                 </div>
                 <script>
-                    const thisPostURL = 'reillyspitzfaden.com/blogposts/01-14-2024';
+                    const thisPostURL = 'reillyspitzfaden.com/blog/01-14-2024';
 
                     document.addEventListener('DOMContentLoaded', () => {
                         const commentForm = document.getElementById('comment-form');
