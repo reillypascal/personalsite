@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0" 
     xmlns:atom="http://www.w3.org/2005/Atom"
     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
     >
     <channel>
         <title>Reilly Spitzfaden, Composer</title>
@@ -23,10 +24,10 @@
 
     <item>
         <title>Listening and Reading List — Mar. 1, 2024</title>
-        <author>Reilly Spitzfaden</author>
+        <dc:creator>Reilly Spitzfaden</dc:creator>
         <link>https://reillyspitzfaden.com/blogposts/03-01-2024</link>
         <guid>https://reillyspitzfaden.com/blogposts/03-01-2024</guid>
-        <pubDate>2024-03-01T05:00:00.000Z</pubDate>
+        <pubDate>Fri, 01 Mar 2024 00:00:00 EST</pubDate>
         <description>Links and discussion of what I'm currently listening to and reading</description>
         <content:encoded><![CDATA[
             <h3>What I've been listening to</h3>
@@ -66,10 +67,10 @@
 
     <item>
         <title>Composition Journal — Feb. 27, 2024</title>
-        <author>Reilly Spitzfaden</author>
+        <dc:creator>Reilly Spitzfaden</dc:creator>
         <link>https://reillyspitzfaden.com/blogposts/02-27-2024</link>
         <guid>https://reillyspitzfaden.com/blogposts/02-27-2024</guid>
-        <pubDate>2024-02-27T05:00:00.000Z</pubDate>
+        <pubDate>Tue, 27 Feb 2024 00:00:00 EST</pubDate>
         <description>Spectral compositing sound design from my work-in-progress "Forget your name"</description>
         <content:encoded><![CDATA[
         <p>I'm currently working on a piece for (tentatively) B-flat clarinet; MIDI keyboard/Max; and a percussionist playing a mix of standard instruments, "junk," and feedback setups.</p>
@@ -86,35 +87,35 @@
         <h3>Sound 1: tonal/sustained</h3>
         <p>For today's sound, my sustained, tonal source was made with the open-source <a href="https://surge-synthesizer.github.io">Surge XT</a> synthesizer. Surge XT contains an oscillator titled "Twist" that appears to be an implementation of Mutable Instruments' "<a href="https://pichenettes.github.io/mutable-instruments-documentation/modules/plaits/">Plaits</a>" Eurorack module. I'm using one of the organ-like wavetables to create a sound that rapidly morphs between low and high harmonics. Additionally, Surge XT supports microtuning, and I'm using the 131313... mode of <a href="https://en.xen.wiki/w/20edo">20-edo</a>.</p>
 
-        <audio controls>
+        <audio>
             <source src="./media/02-27-2024/plaits_organ_rand_sweeps_2.mp3" type="audio/mp3">
         </audio>
 
         <p>I then used a trick I've discovered to make samples sound like they're played through an untuned FM radio. I have a collection of samples of just raw radio static. If I use those samples to modulate a delay on my source, the static convincingly changes in amplitude along with the sample.</p>
-        <audio controls>
+        <audio>
             <source src="./media/02-27-2024/radio_synth_fft.mp3" type="audio/mp3">
         </audio>
 
         <p>In addition to sounding cool, the static gives the next stage something to "chew on." I used the phase vocoder from <a href="https://cycling74.com/tutorials/the-phase-vocoder-–-part-i">Cycling '74's</a> tutorial to time stretch my staticky chords, and the static causes all kinds of nice artifacts in the phase vocoder. After this, I added a little bit of saturation because having <code>fftz.ether~</code> pick the quieter bin can sometimes sound a bit dull.</p>
-        <audio controls>
+        <audio>
             <source src="./media/02-27-2024/radio_synth_fft_pvoc.mp3" type="audio/mp3">
         </audio>
 
         <h3>Sound 2: noisy/rhythmic</h3>
         <p>On the other side, I started with a sine wave oscillator in gen~ frequency-modulating itself at a single-sample delay (it was this short delay that made me need to use gen~). I used the rand~ object to modulate a number of parameters, including the starting frequency and modulation depth. This produces some nice staticky, rhythmic noises that sound like a very light synthetic snare.</p>
         <p>I then used Logic Pro's "flex time" feature to quantize the result to a 16th note grid (which also adds some nice time stretching artifacts!) </p>
-        <audio controls>
+        <audio>
             <source src="./media/02-27-2024/fm-fb-osc-rand_bip.7.mp3" type="audio/mp3">
         </audio>
 
         <p>I play two copies (one for left and one for right) of the sample with random modulation of the speed and direction.</p>
-        <audio controls>
+        <audio>
             <source src="./media/02-27-2024/fm-fb-osc-rand_bip.7_proc.mp3" type="audio/mp3">
         </audio>
 
         <h3>Sound 1 & 2 combined</h3>
         <p>Finally, when I put both the sustained and percussive sources into <code>fftz.ether~</code> the end result sounds like this:</p>
-        <audio controls>
+        <audio>
             <source src="./media/02-27-2024/spectral_composite_dry.mp3" type="audio/mp3">
         </audio>
         <p>I was going for something to fill out and add activity to the upper register, and I'm very happy with how it turned out.</p>
@@ -130,10 +131,10 @@
     
     <item>
         <title>Do Read the Comments</title>
-        <author>Reilly Spitzfaden</author>
+        <dc:creator>Reilly Spitzfaden</dc:creator>
         <link>https://reillyspitzfaden.com/blogposts/01-14-2024</link>
         <guid>https://reillyspitzfaden.com/blogposts/01-14-2024</guid>
-        <pubDate>2024-01-14T05:00:00.000Z</pubDate>
+        <pubDate>Sun, 14 Jan 2024 00:00:00 EST</pubDate>
         <description>A writeup of using Netlify serverless functions and Supabase to code a comments section on a static site</description>
         <content:encoded><![CDATA[
         <p>My blog now has a comment section! Let's talk about how I made it.</p> 
@@ -145,7 +146,7 @@
         <h3>Handling Comment Submissions</h3>
         <p>In the form submission handler function, I make the form data into a FormData object. I then retrieve the commenter's name, email, and comment, as well as the URL of the blog post on which they're commenting. Note that in the code examples, I have left out the DOM-manipulating code to focus on handling the comment data.</p>
 
-<pre><code class="language-js" data-language="javascript">// (from scripts.js)
+<pre><code class="language-js">// (from scripts.js)
 // submit conmment handler - thisPostURL variable is 
 // defined in the page that calls this function
 const handleSubmitComment = async (event) => {
@@ -313,10 +314,10 @@ exports.handler = async (event, context, callback) => {
 
     <item>
         <title>Hello World!</title>
-        <author>Reilly Spitzfaden</author>
+        <dc:creator>Reilly Spitzfaden</dc:creator>
         <link>https://reillyspitzfaden.com/blogposts/01-03-2024</link>
         <guid>https://reillyspitzfaden.com/blogposts/01-03-2024</guid>
-        <pubDate>2024-01-03T05:00:00.000Z</pubDate>
+        <pubDate>Wed, 03 Jan 2024 00:00:00 EST</pubDate>
         <description>An introduction to this blog and what I plan to do with it</description>
         <content:encoded><![CDATA[
         <p>Welcome to my blog! I recently listened to <a href="https://localghost.dev/">Sophie Koonin</a>'s talk "<a href="https://www.youtube.com/watch?v=H2Ux0hGQcs4">This Talk Is Under Construction: A Love Letter to the Personal Website</a>," as well as <a href="https://localghost.dev/blog/remembering-the-early-00s-teen-website-scene/">this blog post</a> about the early-aughts teen website scene, and was immediately inspired to do more to make this site into a piece of personal expression. One of the ways I'm doing that is starting this blog, which I'll be using as a free-form journal about my interests and for write-ups of current projects. Some interests include:</p>
