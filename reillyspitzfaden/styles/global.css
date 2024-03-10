@@ -185,8 +185,8 @@ iframe {
 
 /* "main" formatting */
 #main, #mainRecent, #mainMedia, #mainBlog {
-    margin: 0 1.5rem 5%; /* top, sides, bottom */
-    padding: 01rem;
+    margin: 0 0.75rem 5%; /* top, sides, bottom */
+    padding: 1rem;
     padding-top: 0.25rem;
     border-radius: 5px;
 }
@@ -203,6 +203,7 @@ iframe {
 
 @media screen and (min-width: 480px) {
     #main, #mainRecent, #mainMedia, #mainBlog {
+        margin: 0 1.5rem 5%;
         padding: 2rem;
         padding-top: 0.75rem;
     }
@@ -341,17 +342,17 @@ footer :link {
     justify-content: space-between;
 }
 .gridContainingBlock {
-    position: relative;
+    /* position: relative; */
     width: 100%;
 }
 .gridVideoWrapper {
     position: relative;
     padding-bottom: 56.25%;
-    padding-top: 25px;
     height: 0;
 }
 .gridVideoWrapper object, 
-.gridVideoWrapper iframe {
+.gridVideoWrapper iframe,
+.gridVideoWrapper > lite-youtube > *  {
     position: absolute;
     top: 0;
     left: 0;
@@ -373,21 +374,21 @@ footer :link {
     justify-content: space-between;
 }
 .videoGrid .containingBlock {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    /* margin-left: 1rem; */
+    /* margin-right: 1rem; */
     width: 100%;
 }
-.videoList .containingBlock {
+/* .videoList .containingBlock {
     max-width: 560px;
-}
+} */
 .videoWrapper {
     position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
+    padding-bottom: 60%;
     height: 0;
 }
 .videoWrapper object, 
-.videoWrapper iframe {
+.videoWrapper iframe,
+.videoWrapper > lite-youtube > * {
     position: absolute;
     top: 0;
     left: 0;
