@@ -184,25 +184,16 @@ iframe {
 /*************************************************/
 
 /* "main" formatting */
-#main, #mainRecent, #mainMedia {
+#main, #mainRecent, #mainMedia, #mainBlog {
     margin: 0 1.5rem 5%; /* top, sides, bottom */
-    /* background-color: #000; */
-    padding: 1em;
-    padding-top: 0.25em;
+    padding: 2rem;
+    padding-top: 0.75rem;
     border-radius: 5px;
 }
 
 #main, #mainMedia {
     width: fit-content; 
     /* margin: auto; */
-}
-
-#mainBlog {
-    margin: 0 1.5rem 5%; /* top, sides, bottom */
-    /* background-color: #000; */
-    padding: 1em;
-    padding-top: 0.25em;
-    border-radius: 5px;
 }
 
 #BGpad {
@@ -514,6 +505,13 @@ li + li, li > ul {
     margin-top: 0.35rem;
 }
 
+.blogPostAsterism {
+    font-size: 16pt;
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 0.25rem 0 0;
+
+}
 /*************************************************/
 
 /* Works list formatting */
