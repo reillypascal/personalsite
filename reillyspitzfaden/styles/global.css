@@ -420,7 +420,7 @@ footer :link {
     max-width: 45em;
     line-height: 1.25;
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 480px) {
     .textBlock {
         line-height: 1.33;
     }
@@ -437,7 +437,7 @@ footer :link {
     min-width: fit-content;
     line-height: 1.25;
 }
-/* @media screen and (min-width: 400px) {
+/* @media screen and (min-width: 480px) {
     .blogPostLinks {
         line-height: 1.33;
     }
@@ -484,7 +484,7 @@ footer :link {
     border: none;
     border-top: 1px solid #565973;
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 480px) {
     .blogPostLinks > hr, #workslist > hr, #main > hr {
         margin: 2rem 0;
     }
@@ -513,15 +513,22 @@ li + li, li > ul {
 }
 
 #mainBlog > .textBlock > p + p {
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
 }
 
 .blogPostAsterism {
     font-size: 16pt;
     max-width: fit-content;
     margin: 0 auto;
-    padding: 0.25rem 0 0;
-
+}
+@media screen and (min-width: 480px) {
+    #mainBlog > .textBlock > p + p {
+        margin-top: 1.5rem;
+    }
+    .blogPostAsterism {
+        padding: 0.25rem 0 0;
+    
+    }
 }
 /*************************************************/
 
