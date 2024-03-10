@@ -186,8 +186,8 @@ iframe {
 /* "main" formatting */
 #main, #mainRecent, #mainMedia, #mainBlog {
     margin: 0 1.5rem 5%; /* top, sides, bottom */
-    padding: 2rem;
-    padding-top: 0.75rem;
+    padding: 01rem;
+    padding-top: 0.25rem;
     border-radius: 5px;
 }
 
@@ -199,6 +199,13 @@ iframe {
 #BGpad {
     margin-top: 5%;
     margin-bottom: 5%;
+}
+
+@media screen and (min-width: 480px) {
+    #main, #mainRecent, #mainMedia, #mainBlog {
+        padding: 2rem;
+        padding-top: 0.75rem;
+    }
 }
 @media screen and (min-width: 640px) {
     #main, #mainRecent {border-radius: 7px;}
