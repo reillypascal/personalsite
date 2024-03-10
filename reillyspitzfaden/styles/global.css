@@ -512,6 +512,10 @@ li + li, li > ul {
     margin-top: 0.35rem;
 }
 
+#mainBlog > .textBlock > p + p {
+    margin-top: 1.5rem;
+}
+
 .blogPostAsterism {
     font-size: 16pt;
     max-width: fit-content;
