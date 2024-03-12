@@ -114,13 +114,15 @@ iframe {
     overflow: hidden;
     margin: 0;
     width: vw100;
-    padding: 0.5rem 2rem;
+    /* padding: 0.5rem 2rem; */
+    padding: 8px 32px;
     /* background-color: #000; */
     position: relative;
     font-size: 100%;
 }
 .active, .navElement {
-    margin: 0.125rem 0.75rem 0.125rem 0;
+    /* margin: 0.125rem 0.75rem 0.125rem 0; */
+    margin: 2px 12px 2px 0;
 }
 .active {
     margin-right: auto;
@@ -130,7 +132,8 @@ iframe {
 
 .nav a {
     /* color: #fff; */
-    padding-right: 2rem;
+    /* padding-right: 2rem; */
+    padding-right: 32px;
     text-decoration: none;
     display: block;
 }
@@ -138,9 +141,12 @@ iframe {
     /* background: #000; */
     display: block;
     position: absolute;
-    padding: 0.875rem 1rem;
-    right: 0.25rem;
+    /* padding: 0.875rem 1rem;
+    right: 0.25rem; */
+    padding: 14px 16px;
+    right: 4px;
     top: 0;
+
 }
 .nav #menuLinks {
     display: none;
@@ -151,7 +157,8 @@ iframe {
     border-bottom: none;
     border-radius: 2px;
     /* highlight size */
-    padding: 0.25rem 0.5rem;
+    /* padding: 0.25rem 0.5rem; */
+    padding: 4px 8px;
 }
 
 /* Handles switching between hamburger menu and regular */
@@ -160,7 +167,8 @@ iframe {
         display: contents;
     }
     .nav {
-        padding-right: 2rem;
+        /* padding-right: 2rem; */
+        padding-right: 32px;
         position: relative;
         display: flex;
         flex-flow: row wrap;
@@ -172,12 +180,14 @@ iframe {
 }
 @media screen and (min-width: 1000px) {
     .nav {
-        padding: 0.5rem 8%;
+        /* padding: 0.5rem 8%; */
+        padding: 8px 8%;
     }
 }
 @media screen and (min-width: 1280px) {
     .nav {
-        padding: 0.5rem 12%;
+        /* padding: 0.5rem 12%; */
+        padding: 8px 12%;
     }
 }
 
@@ -185,9 +195,13 @@ iframe {
 
 /* "main" formatting */
 #main, #mainRecent, #mainMedia, #mainBlog {
-    margin: 0 0.75rem 5%; /* top, sides, bottom */
+    /* top, sides, bottom */
+    /* margin: 0 0.75rem 5%;
     padding: 1rem;
-    padding-top: 0.25rem;
+    padding-top: 0.25rem; */
+    margin: 0 16px 5%;
+    padding: 16px;
+    padding-top: 4px;
     border-radius: 5px;
 }
 
@@ -203,9 +217,12 @@ iframe {
 
 @media screen and (min-width: 480px) {
     #main, #mainRecent, #mainMedia, #mainBlog {
-        margin: 0 1.5rem 5%;
+        /* margin: 0 1.5rem 5%; 
         padding: 2rem;
-        padding-top: 0.75rem;
+        padding-top: 0.75rem; */
+        margin: 0 24px 5%;
+        padding: 32px;
+        padding-top: 12px;
     }
 }
 @media screen and (min-width: 640px) {
@@ -213,7 +230,8 @@ iframe {
 }
 @media screen and (min-width: 768px) {
     #mainBlog {
-        max-width: 45em;
+        /* max-width: 45rem; */
+        max-width: 720px;
     }
     #main, #mainBlog {
         margin: auto;
@@ -251,14 +269,15 @@ iframe {
 footer::before {
     content: '';
     display: block;
-    padding-top: 1.5rem;
-    margin-bottom: 0rem;
+    /* padding-top: 1.5rem; */
+    padding-top: 24px;
+    margin-bottom: 0;
     border-bottom: 1px solid #383a3f;
 }
 footer {
     font-size: 0.85rem;
-    /* background-color: #000; */
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
+    padding: 0 32px;
 }
 @media screen and (min-width: 960px) {
     footer {
@@ -273,17 +292,20 @@ footer {
     }
 }
 footer td {
-    padding: 1em 0.75em 0 0;
+    /* padding: 1em 0.75em 0 0; */
+    padding: 14px 10px 0 0;
 }
 @media screen and (min-width: 400px) {
     footer td {
-        padding: 1em 1em 0 0;
+        /* padding: 1em 1em 0 0; */
+        padding: 14px 14px 0 0;
     }
 }
 
 @media screen and (min-width: 480px) {
     footer td {
-        padding: 1em 1.15em 0 0;
+        /* padding: 1em 1.15em 0 0; */
+        padding: 14px 16px 0 0;
     }
 }
 
@@ -295,15 +317,17 @@ footer :link {
 
 /* Homepage */
 #myCard {
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
+    padding: 0 16px;
     margin: 25% auto 25%;
     text-align: center;
-    width: 18rem;
-    height: 10rem;
+    /* width: 18rem;
+    height: 10rem; */
+    width: 288px;
+    height: 160px;
     border-width: 2px;
     border-style: solid;
     border-radius: 4px;
-    font-size: 20pt;
 }
 
 #myCardName {
@@ -317,8 +341,10 @@ footer :link {
     #myCard {
         border-radius: 5px;
         margin: 15% auto;
-        width: 34rem;
-        height: 15rem;
+        /* width: 34rem;
+        height: 15rem; */
+        width: 544px;
+        height: 240px;
     }
     #myCardName {
         font-size: 48pt;
@@ -378,9 +404,9 @@ footer :link {
     /* margin-right: 1rem; */
     width: 100%;
 }
-/* .videoList .containingBlock {
+.videoList .containingBlock {
     max-width: 560px;
-} */
+}
 .videoWrapper {
     position: relative;
     padding-bottom: 60%;
@@ -405,20 +431,24 @@ footer :link {
 
 /* Bio formatting */
 .headshot {
-    margin-right: 1rem;
-    margin-bottom: 0.5rem;
+    /* margin-right: 1rem;
+    margin-bottom: 0.5rem; */
+    margin-right: 16px;
+    margin-bottom: 8px;
     float: left;
 }
 
 @media screen and (min-width: 480px) {
     .headshot {
-        margin-right: 1.5rem;
+        /* margin-right: 1.5rem; */
+        margin-right: 24px;
     }
 }
 
 /* Text Block formatting */
 .textBlock {
-    max-width: 45em;
+    /* max-width: 45em; */
+    max-width: 720px;
     line-height: 1.25;
 }
 @media screen and (min-width: 480px) {
@@ -434,7 +464,8 @@ footer :link {
 
 /* Blog post list formatting */
 .blogPostLinks {
-    max-width: 45em;
+    /* max-width: 45em; */
+    max-width: 720px;
     min-width: fit-content;
     line-height: 1.25;
 }
@@ -445,7 +476,8 @@ footer :link {
 } */
 @media screen and (min-width: 760px) {
     .blogPostLinks {
-        min-width: 30em;
+        /* min-width: 30em; */
+        min-width: 480px;
         /* line-height: 1.6; */
     }
     /* .commentSection {
@@ -454,45 +486,54 @@ footer :link {
 }
 @media screen and (min-width: 960px) {
     .blogPostLinks {
-        min-width: 35em;
+        /* min-width: 35em; */
+        min-width: 560px;
     }
 }
 .commentSection > form {
-    max-width: 45em;
+    /* max-width: 45em; */
+    max-width: 720px;
 }
 #commentBGPad {
     padding-top: 0;
-    padding-bottom: 4rem;
+    /* padding-bottom: 4rem; */
+    padding-bottom: 64px;
 } 
 
 #commentDisplay {
-    margin: 0.5rem;
+    /* margin: 0.5rem; */
+    margin: 8px;
 }
 .comment {
     border-radius: 3px;
-    padding: 0.25rem 1rem 0.25rem;
+    /* padding: 0.25rem 1rem 0.25rem; */
+    padding: 4px 16px 4px;
     /* background-color: #303234; */
 } 
 
 .blogPostLinks > hr, #workslist > hr, #main > hr {
-    margin: 1.5rem 0;
+    /* margin: 1.5rem 0; */
+    margin: 24px 0;
     border: none;
     border-top: 1px solid #383a3f;
 }
 
 .comment > hr {
-    margin: 1.25rem 0;
+    /* margin: 1.25rem 0; */
+    margin: 20px 0;
     border: none;
     border-top: 1px solid #565973;
 }
 @media screen and (min-width: 480px) {
     .blogPostLinks > hr, #workslist > hr, #main > hr {
-        margin: 2rem 0;
+        /* margin: 2rem 0; */
+        margin: 32px 0;
     }
 }
 @media screen and (min-width: 640px) {
     .blogPostLinks > hr, #workslist > hr, #main > hr {
-        margin: 2.5rem 0;
+        /* margin: 2.5rem 0; */
+        margin: 40px 0;
     }
 }
 pre {
@@ -505,16 +546,19 @@ code {
 /* list (e.g., "listening to") indentation*/
 
 ul {
-    padding-left: 0px;
-    margin-left: 1.5rem;
+    padding-left: 0;
+    /* margin-left: 1.5rem; */
+    margin-left: 24px;
 }
 
 li + li, li > ul {
-    margin-top: 0.35rem;
+    /* margin-top: 0.35rem; */
+    margin-top: 6px;
 }
 
 #mainBlog > .textBlock > p + p {
-    margin-top: 0.5rem;
+    /* margin-top: 0.5rem; */
+    margin-top: 8px;
 }
 
 .blogPostAsterism {
@@ -524,11 +568,12 @@ li + li, li > ul {
 }
 @media screen and (min-width: 480px) {
     #mainBlog > .textBlock > p + p {
-        margin-top: 1.5rem;
+        /* margin-top: 1.5rem; */
+        margin-top: 24px;
     }
     .blogPostAsterism {
-        padding: 0.25rem 0 0;
-    
+        /* padding: 0.25rem 0 0; */
+        padding: 4px 0 0;
     }
 }
 /*************************************************/
@@ -540,7 +585,10 @@ li + li, li > ul {
 }
 #categories li {
     display: inline; 
-    padding-right: 0.5em; 
+    padding-right: 0.5rem;
+}
+#workslist {
+    max-width: 720px;
 }
 #workslist th, #materials th {
     font-weight: 400;
@@ -556,8 +604,10 @@ li + li, li > ul {
 /* Makes sizing form elements more consistent */
 form {
     box-sizing: border-box;
-    max-width: 40em;
-    padding: 0.5em;
+    /* max-width: 40rem;
+    padding: 0.5rem; */
+    max-width: 720px;
+    padding: 8px;
 }
 *, *::after, *:before {
     box-sizing: inherit;
