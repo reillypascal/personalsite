@@ -1,7 +1,7 @@
 
 // Animate dropdown menu
 function hamburgerToggle() {
-    var x = document.getElementById("menuLinks");
+    let x = document.getElementById("menuLinks");
     if (x.style.display === "block") {
     x.style.display = "none";
     } else {
@@ -11,9 +11,16 @@ function hamburgerToggle() {
 
 // Switch from dropdown to menu bar if >= 900px
 function hamburgerOnOff() {
-    var size = window.innerWidth;
-    var x = document.getElementById("menuLinks");
-    if (size >= 900) {
+    // get window width and font rem size
+    let size = window.innerWidth;
+    const documentHTML = document.querySelector("html");
+    const remSize = window.getComputedStyle(documentHTML).fontSize.replace("px", "");
+    
+    // get menu div
+    let x = document.getElementById("menuLinks");
+
+    // calculate window size in rem; show/hide nav
+    if (size >= 56.25 * remSize) { // was 900px
     x.style.display = "contents";
     } else {
     x.style.display = "none";
