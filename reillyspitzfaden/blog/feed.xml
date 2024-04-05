@@ -10,8 +10,54 @@
         <description>A blog about my personal interests, including C++ audio plugin development, composition/sound design in Max/MSP, open tech, and web development</description>
 
         <item>
+            <title>New Album Announcement</title>
+            <dc:creator>Reilly Spitzfaden</dc:creator>
+            <link>https://reillyspitzfaden.com/blog/04-05-2024</link>
+            <guid>https://reillyspitzfaden.com/blog/04-05-2024</guid>
+            <pubDate>Fri, 05 Apr 2024 00:00 EDT</pubDate>
+            <description>My trio 'If this reaches you' is on Apply Triangle's new album, out on April 12!</description>
+            <content:encoded><![CDATA[
+                <h2>New Album Announcement</h2>
+                <p>One of my compositions is on an upcoming album &mdash; <a href="https://applytriangle.bandcamp.com/album/oxalis-triangularis-vol-2"><cite>Oxalis Triangularis: Vol. 2</cite></a> by <a href="https://applytriangle.com/">Apply Triangle</a>! The ensemble is a NYC-based electroacoustic trio comprising Yoshi Weinberg (flutes), Tyler Neidermayer (clarinets), and Jixue Yang (piano/keyboards).</p>
+                <p>The full album is a <a href="https://applytriangle.bandcamp.com/album/oxalis-triangularis-complete-volumes-1-3">3-disc set</a>, and my piece &mdash; <cite>If this reaches you</cite> &mdash; will be on <a href="https://applytriangle.bandcamp.com/album/oxalis-triangularis-vol-2">volume 2</a>.<br />
+                It comes out on April 12, and you can pre-order in digital and CD format now!</p>
+                
+                <h3>Composing <cite>If this reaches you</cite></h3>
+                <p>When I wrote the piece, I had recently discovered <a href="https://en.wikipedia.org/wiki/Software-defined_radio">software-defined radio</a>. I use an <a href="https://www.rtl-sdr.com/about-rtl-sdr/">RTL-SDR</a> receiver — a small USB dongle that contains a tuner and ADC chip — and the tuning and demodulation is handled in the computer, using software like <a href="https://www.sdrpp.org/">SDR++</a> or <a href="https://airspy.com/download/">SDRSharp</a>.</p>
+                <p>The receiver can pick up analog voice communication (e.g., ambulances, air traffic controllers, etc.), and digitally-encoded transmissions such as pagers, clock synchronization signals, and weather map faxes. Fun fact: the background image for my site is one such weather fax! The digital communications sound something like a <a href="https://freesound.org/people/wtermini/sounds/546450/">dial-up modem</a>, and work in a similar way. The analog voice sounds crackly and staticky, and I can often hear sounds in the background, giving fascinating, but extremely limited glimpses into what's happening on the other end.</p>
+                <p>Especially in <a href="https://en.wikipedia.org/wiki/Shortwave_bands">shortwave bands</a>, the signals I picked up often came from great distances — at one point, I picked up a station from Japan. As I listened, I felt both connected to all the signals' sources, but also a great sense of distance and loneliness. As I found ways to combine the radio sounds with unusual and experimental sounds from the instruments, the radio sounds strongly evoked memory, loss, nostalgia, and distance for me.</p>
+                
+                <h3>Technical Notes</h3>
+                <p>To play the radio sounds, I made a Max/MSP patch for the pianist that assigns radio samples to the lower keys, and has a bright, electric piano sound on the higher ones. The clarinetist plays a variety of <a href="https://heatherroche.net/category/multiphonic/">multiphonics</a> and other extended techniques, and the flutist also has a cardboard box to scrape with a cello/bass bow.</p>
+                
+                <h3>Program Note</h3>
+                <p>I wrote a short poem as a program note for the piece:</p>
+                <blockquote>
+                <p>I watched the space between the houses undergo a sea change<br />
+                Into something slippery and strange<br />
+                Though it wasn’t mine to hold, I still carry it with me</p>
+                <p>I walked as far as daylight would take me<br />
+                The wires stayed the same<br />
+                I brought them back anyway to show that I had done my due diligence</p>
+                <p>A satellite floated overhead today and reminded me of home</p>
+                <p>I can hear it now<br />
+                I am not the only one left to tell the tale</p>
+                <p>A letter came, but the sky had already touched the ground behind me, so I kept walking</p>
+                </blockquote>
+                
+                <h3>The Project</h3>
+                <p>Here's the announcement from the ensemble:</p>
+                <blockquote>
+                <p>Announcing <cite>Oxalis Triangularis</cite> &mdash; a triple album of thirty-three new works from thirty-three composers recorded in a fully remote setting by Apply Triangle. The project was developed through a call for scores in the summer of 2020 and stems from the resilience of artists to continue to create through a global pandemic. It is a testament to the flexibility and creativity possible through electroacoustic composition.</p>
+                <p>Oxalis Triangularis refers to the scientific name for a purple “false shamrock” due to its triangle-like leaves. Throughout three albums Apply Triangle not only showcases the innovative techniques of 33 living composers but also highlights the embodied cultural nuances inherent in each composer’s style.</p>
+                </blockquote>
+                <p>Thanks for reading, and I would love if you check out the album!</p>
+            ]]> 
+            </content:encoded>
+        </item>
+        <item>
             <title>RSS Is Nice</title>
-            <author>Reilly Spitzfaden</author>
+            <dc:creator>Reilly Spitzfaden</dc:creator>
             <link>https://reillyspitzfaden.com/blog/03-10-2024</link>
             <guid>https://reillyspitzfaden.com/blog/03-10-2024</guid>
             <pubDate>Sun, 10 Mar 2024 00:00:00 EST</pubDate>

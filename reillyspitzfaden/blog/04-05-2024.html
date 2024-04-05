@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Facebook SEO/cards -->
+        <meta property="og:title" content="Reilly Spitzfaden, Composer | 04-05-2024, New Album Announcement" />
+        <meta property="og:url" content="My trio 'If this reaches you' is on Apply Triangle's new album, out on April 12!" />
+        <meta property="og:image" content="https://reillyspitzfaden.com/media/wefax_og_cr.jpeg" />
+        <meta property="og:image:secure_url" content="https://reillyspitzfaden.com/media/wefax_og_cr.jpeg" />
+        <meta property="og:image:type" content="image/jpeg" /> 
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="My trio 'If this reaches you' is on Apply Triangle's new album, out on April 12!" />
+
+        <!-- Twitter SEO/cards -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@reillypascal">
+        <meta name="twitter:creator" content="@reillypascal">
+        <meta name="twitter:title" content="Reilly Spitzfaden, Composer | 04-05-2024, New Album Announcement" />
+        <meta name="twitter:description" content="My trio 'If this reaches you' is on Apply Triangle's new album, out on April 12!" />
+        <meta name="twitter:image" content="https://reillyspitzfaden.com/media/wefax_og_cr.jpeg" />
+
+        <!-- General -->
+        <meta name="description" content="My trio 'If this reaches you' is on Apply Triangle's new album, out on April 12!" />
+        <title>Reilly Spitzfaden, Composer | 04-05-2024, New Album Announcement</title>
+        <link rel="canonical" href="https://reillyspitzfaden.com/blog/04-05-2024" />
+        <link rel="icon" href="../media/favicon-32px.png" type="image/x-icon"/>
+
+        <!-- my styles and scripts -->
+        <link rel="stylesheet" type="text/css" href="../styles/global.css" />
+        <script src="../styles/scripts.js"></script>
+        
+        <!-- Fonts -->
+        <link rel="preload" id="googlefonts-cs" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript>
+            <link rel="stylesheet" id="googlefonts-css"  href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic&display=swap" type="text/css" media="all" />
+        </noscript>
+
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+        </noscript>
+    </head>
+    <body onresize="hamburgerOnOff()">
+        <!-- fixed background -->
+        <div class="bg"></div>
+        <!-- moving foreground-->
+        <div class="foreground">
+            <!-- includes footer - makes it fill the page -->
+            <div class="wrapper">
+                <!-- navigation menu -->
+                <div class="nav">
+                    <a href="../index.html" class="active">Home</a>
+                    <div id="menuLinks">
+                      <div class="navElement"><a href="../bio.html">Bio</a></div>
+                      <div class="navElement"><a href="../works.html">Works List</a></div>
+                      <div class="navElement"><a href="../media.html">Media</a></div>
+                      <div class="navElement"><a href="../supplemental.html">Supplemental Materials</a></div>
+                      <div class="navElement"><a href="../blog.html">Blog</a></div>
+                      <div class="navElement"><a href="../projects.html">Code Projects</a></div>
+                      <div class="navElement"><a href="../contact.html">Contact</a></div>
+                      <div class="navElement"><a href="../blog/feed.xml">RSS</a></div>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="hamburgerToggle()">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <!-- page content minus header/footer -->
+                <div class="content">
+                    <br/>
+                    <div id="BGpad">
+                        <div id="mainBlog">
+                            <!-- post contents -->
+                            <article class="textBlock">
+                                <h2>New Album Announcement</h2>
+                                <p>One of my compositions is on an upcoming album &mdash; <a href="https://applytriangle.bandcamp.com/album/oxalis-triangularis-vol-2"><cite>Oxalis Triangularis: Vol. 2</cite></a> by <a href="https://applytriangle.com/">Apply Triangle</a>! The ensemble is a NYC-based electroacoustic trio comprising Yoshi Weinberg (flutes), Tyler Neidermayer (clarinets), and Jixue Yang (piano/keyboards).</p>
+                                <p>The full album is a <a href="https://applytriangle.bandcamp.com/album/oxalis-triangularis-complete-volumes-1-3">3-disc set</a>, and my piece &mdash; <cite>If this reaches you</cite> &mdash; will be on <a href="https://applytriangle.bandcamp.com/album/oxalis-triangularis-vol-2">volume 2</a>.<br />
+                                It comes out on April 12, and you can pre-order in digital and CD format now!</p>
+                                
+                                <h3>Composing <cite>If this reaches you</cite></h3>
+                                <p>When I wrote the piece, I had recently discovered <a href="https://en.wikipedia.org/wiki/Software-defined_radio">software-defined radio</a>. I use an <a href="https://www.rtl-sdr.com/about-rtl-sdr/">RTL-SDR</a> receiver — a small USB dongle that contains a tuner and ADC chip — and the tuning and demodulation is handled in the computer, using software like <a href="https://www.sdrpp.org/">SDR++</a> or <a href="https://airspy.com/download/">SDRSharp</a>.</p>
+                                <p>The receiver can pick up analog voice communication (e.g., ambulances, air traffic controllers, etc.), and digitally-encoded transmissions such as pagers, clock synchronization signals, and weather map faxes. Fun fact: the background image for my site is one such weather fax! The digital communications sound something like a <a href="https://freesound.org/people/wtermini/sounds/546450/">dial-up modem</a>, and work in a similar way. The analog voice sounds crackly and staticky, and I can often hear sounds in the background, giving fascinating, but extremely limited glimpses into what's happening on the other end.</p>
+                                <p>Especially in <a href="https://en.wikipedia.org/wiki/Shortwave_bands">shortwave bands</a>, the signals I picked up often came from great distances — at one point, I picked up a station from Japan. As I listened, I felt both connected to all the signals' sources, but also a great sense of distance and loneliness. As I found ways to combine the radio sounds with unusual and experimental sounds from the instruments, the radio sounds strongly evoked memory, loss, nostalgia, and distance for me.</p>
+                                
+                                <h3>Technical Notes</h3>
+                                <p>To play the radio sounds, I made a Max/MSP patch for the pianist that assigns radio samples to the lower keys, and has a bright, electric piano sound on the higher ones. The clarinetist plays a variety of <a href="https://heatherroche.net/category/multiphonic/">multiphonics</a> and other extended techniques, and the flutist also has a cardboard box to scrape with a cello/bass bow.</p>
+                                
+                                <h3>Program Note</h3>
+                                <p>I wrote a short poem as a program note for the piece:</p>
+                                <blockquote>
+                                <p>I watched the space between the houses undergo a sea change<br />
+                                Into something slippery and strange<br />
+                                Though it wasn’t mine to hold, I still carry it with me</p>
+                                <p>I walked as far as daylight would take me<br />
+                                The wires stayed the same<br />
+                                I brought them back anyway to show that I had done my due diligence</p>
+                                <p>A satellite floated overhead today and reminded me of home</p>
+                                <p>I can hear it now<br />
+                                I am not the only one left to tell the tale</p>
+                                <p>A letter came, but the sky had already touched the ground behind me, so I kept walking</p>
+                                </blockquote>
+                                
+                                <h3>The Project</h3>
+                                <p>Here's the announcement from the ensemble:</p>
+                                <blockquote>
+                                <p>Announcing <cite>Oxalis Triangularis</cite> &mdash; a triple album of thirty-three new works from thirty-three composers recorded in a fully remote setting by Apply Triangle. The project was developed through a call for scores in the summer of 2020 and stems from the resilience of artists to continue to create through a global pandemic. It is a testament to the flexibility and creativity possible through electroacoustic composition.</p>
+                                <p>Oxalis Triangularis refers to the scientific name for a purple “false shamrock” due to its triangle-like leaves. Throughout three albums Apply Triangle not only showcases the innovative techniques of 33 living composers but also highlights the embodied cultural nuances inherent in each composer’s style.</p>
+                                </blockquote>
+                                <p>Thanks for reading, and I would love if you check out the album!</p>
+                            </article>
+                            <div class="blogPostAsterism"><p>&#x2042;</p></div>
+                            <!-- close "main" -->
+                        </div>
+                        <!-- close "BGpad" -->
+                    </div>
+                    <!-- end content -->
+                </div>
+                <div class="content">
+                    <div id="commentBGPad">
+                        <div id="mainBlog">
+                            <div class="commentSection">
+                                <form id="comment-form" name="comments" action="" method="POST">
+                                    <h2>Leave a comment</h2>
+                                    <fieldset>
+                                        <legend>Comment</legend>
+                                        <ul>
+                                            <li><input type="text" name="name" id="comment-name" placeholder="Name (required)" class="textinput" required="true" aria-required="true"></li>
+                                            <li><input type="text" name="email" id="comment-email" placeholder="Email (optional)" class="textinput"></li>
+                                            <li><textarea name="comment" id="comment-story" placeholder="Comment (required)" required="true" aria-required="true"></textarea></li>
+                                            <li><div id="submit-success"></div><input type="submit" value="Submit" id="submit-comment" ></li>
+                                        </ul>
+                                    </fieldset>
+                                </form>
+                                <div id="commentDisplay">
+                                    <h3>User Comments</h3>
+                                    <input type="submit" id="load-comments" value="Load Comments">
+                                    <!-- <input type="submit" id="load-comments" value="Load Comments" onclick="this.blur();"> -->
+                                    <div id="comment-section"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <style>
+                    blockquote {
+                        margin-left: 16px;
+                        color: hsla(208, 15%, 67%, 1); /* hue from aliceblue */
+                    }
+                    blockquote > p {
+                        border-left: 1px solid hsla(208, 15%, 67%, 1); /* hue from aliceblue */
+                        padding-left: 12px;
+                    }
+                </style>
+                <script>
+                    const thisPostURL = 'reillyspitzfaden.com/blog/04-05-2024';
+
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const commentForm = document.getElementById('comment-form');
+                        const getCommentButton = document.getElementById('load-comments');
+
+                        commentForm.addEventListener('submit', handleSubmitComment);
+                        getCommentButton.addEventListener('click', handleGetComments);
+                    })
+                </script>
+
+                <!-- footer -->
+                <footer>
+                    <table>
+                        <tr>
+                            <td><a href="https://github.com/reillypascal"><img src="../media/github-mark-white.png" alt=""/></a></td>
+                            <td><a href="https://www.instagram.com/reillypascal/"><img src="../media/instagram-glyph-white.png" alt=""/></a></td>
+                            <!-- <td><a href="https://www.linkedin.com/in/reillyspitzfaden/"><img src="../media/linkedin-logo-white.png" alt=""/></a></td> -->
+                            <td><a href="https://hachyderm.io/@reillypascal"><img src="../media/mastodon-logo-white.png" alt=""/></a></td>
+                            <!-- <td><a href="https://makertube.net/c/reilly_spitzfaden_composer/videos"><img src="../media/peertube-logo-white.png"></a></td> -->
+                            <td><a href="https://soundcloud.com/reilly-spitzfaden"><img src="../media/soundcloud-brands-white.png" alt=""/></a></td>
+                            <td><a href="https://www.tiktok.com/@reillypascal"><img src="../media/tiktok-logo-white.png" alt=""/></a></td>
+                            <td><a href="https://www.youtube.com/@reillyspitzfaden"><img src="../media/youtube-icon-dark.png" alt=""/></a></td>
+                            <td><a href="https://reillyspitzfaden.com/blog/feed.xml"><img src="../media/rss-icon-white.png" alt=""/></a></td>
+                        </tr>
+                    </table>
+
+                    <p>&copy; 2022<script>new Date().getFullYear()>2022&&document.write("-"+new Date().getFullYear());</script> Reilly Spitzfaden // all site coding by Reilly Spitzfaden</p>
+                </footer>
+            <!-- end wrapper -->
+            </div>
+            <!-- end foreground -->
+        </div>
+    </body>
+</html>
