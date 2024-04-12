@@ -401,8 +401,10 @@ footer :link {
     }
 }
 
-.bandcampEmbed {
-    margin-bottom: 16px;
+@media screen and (min-width: 480px) {
+    .bandcampEmbed {
+        margin-bottom: 16px;
+    }
 }
 /*************************************************/
 
