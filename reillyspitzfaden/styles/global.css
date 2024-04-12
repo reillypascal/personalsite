@@ -401,6 +401,9 @@ footer :link {
     }
 }
 
+.bandcampEmbed {
+    margin-bottom: 16px;
+}
 /*************************************************/
 
 /* Media, projects, supplemental page */
@@ -516,7 +519,8 @@ footer :link {
     /* background-color: #303234; */
 } 
 
-.blogPostLinks > hr, #workslist > hr, #main > hr {
+.blogPostLinks > hr, #workslist > hr, #main > hr, #recent > hr {
+    width: 100%;
     /* margin: 1.5rem 0; */
     margin: 24px 0;
     border: none;
