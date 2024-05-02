@@ -94,14 +94,14 @@
 
                                 <img src="media/05-04-2024/polybuffer_loader.webp" 
                                     alt="Max/MSP patch described by the previous two paragraphs, with two polybuffer~ objects being loaded with samples from folders, and the lists of buffers from the polybuffer~s being loaded into a coll named cylinder_samp." 
-                                    style="max-width: 640px;"/>
+                                    id="polybuffer_loader_img"/>
 
                                 <h3>Looping and Mangling the Snippets</h3>
                                 <p>By naming the <code>coll</code> objects in the <code>sample_chooser</code> subpatcher the same as the one from the previous step, I'm able to access this list of buffers in the playback section of the patch. First I dump the entire list of buffers and use <code>zl.len</code> (gets length of a list) to get the number of sub-buffers. I can then use this length to set the size for an <code>urn</code> object (random without repeats), and use the random numbers from the <code>urn</code> along with the "nth" message to select buffers at the appropriate index from the <code>coll</code>. Note that you will have to add one to the random values from <code>urn</code> because the "nth" method starts at one instead of zero — this fact regularly trips me up. The <code>vinyl_pops_chooser</code> subpatcher does the same thing with the list of samples at index 1 in the <code>coll</code>. The contents of this subpatcher are shown below:</p>
 
                                 <img src="media/05-04-2024/coll_random_select.webp" 
                                     alt="Max/MSP patch described by the previous two paragraphs, with a coll object named cylinder_samp as before, and logic to get the length at index 0; generate random numbers without repeats up to that length; and retrieve the buffer name at index 0, and a random point into the list of buffers." 
-                                    style="max-width: 360px"/>
+                                    id="coll_random_select_img"/>
 
                                 <p>I have a metronome object plus a random number generator sending out a clock pulse that varies in rate with each pulse. I use that with a chain of counters to periodically load new buffers from the <code>polybuffer~</code> into <code>groove~</code> for playback. Throughout the patch I have subpatchers labeled <code>%_gate</code> — these are "Bernoulli gates." When a message or bang enters the gate, the subpatcher makes a random number between 0–100; checks if that value is less than or equal to a threshold; and if so, allows the message/bang through. The <code>patcherargs</code> object in these subpatchers gets the number typed after the patcher name and uses this as a threshold/probability for the gate. See below:</p>
 
@@ -163,6 +163,16 @@
                     img {
                         max-width: 100%;
                         height: auto;
+                    }
+                    @media screen and (min-width: 480px) {
+                        #coll_random_select_img {
+                            max-width: 360px;
+                        }
+                    }
+                    @media screen and (min-width: 760px) {
+                        #polybuffer_loader_img {
+                            max-width: 640px;
+                        }
                     }
                 </style>
                 <script>
