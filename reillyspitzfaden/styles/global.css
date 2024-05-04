@@ -1,11 +1,10 @@
 /*
 TODO:
+- split between pages
 - non-google fonts
-- comment sizing on mobile
 - responsive images
 - js hangups
-- font touchup
-- replace br w/css?
+- replace br w/css
 */
 
 /* @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); */
@@ -552,6 +551,13 @@ pre {
 }
 code {
     border-radius: 3px;
+}
+
+.RSSValidation {
+    border: 0 !important;
+}
+.RSSValidation > img {
+    margin-top: 24px;
 }
 
 /* list (e.g., "listening to") indentation*/
