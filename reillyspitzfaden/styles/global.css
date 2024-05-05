@@ -553,12 +553,12 @@ code {
     border-radius: 3px;
 }
 
-.RSSValidation {
+/* .RSSValidation {
     border: 0 !important;
 }
 .RSSValidation > img {
     margin-top: 24px;
-}
+} */
 
 /* list (e.g., "listening to") indentation*/
 
