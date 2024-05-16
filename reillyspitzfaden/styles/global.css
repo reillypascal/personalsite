@@ -342,6 +342,8 @@ footer :link {
 #myCardName {
     /* font-family: 'Antic Didone', serif; */
     font-size: 26pt;
+    text-decoration: none; 
+    border-bottom-style: none;
 }
 #myCardDescription {
     font-size: 14pt;
