@@ -343,6 +343,10 @@ footer :link {
     /* font-family: 'Antic Didone', serif; */
     font-size: 26pt;
 }
+#myCardName a {
+    text-decoration: none; 
+    border-bottom-style: none;
+}
 #myCardDescription {
     font-size: 14pt;
 }
@@ -368,13 +372,8 @@ footer :link {
     }
 }
 
-.u-photo {
+.h-card {
     display: none;
-}
-
-.p-name {
-    text-decoration: none; 
-    border-bottom-style: none;
 }
 /*************************************************/
 
