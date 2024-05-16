@@ -48,9 +48,13 @@
 
         <!-- RSS Autodiscovery -->
         <link rel="alternate" type="application/rss+xml" title="Reilly Spitzfaden | RSS" href="https://reillyspitzfaden.com/blog/feed.xml" />
-        <!-- Mastodon verification -->
+
+        <!-- rel="me" verification -->
         <link rel="me" href="https://hachyderm.io/@reillypascal" />
         <link rel="me" href="https://github.com/reillypascal" />
+
+        <!-- IndieAuth -->
+        <link rel="authorization_endpoint" href="https://indieauth.com/auth">
     </head>
     <body onresize="hamburgerOnOff()">
         <!-- fixed background -->
@@ -148,6 +152,8 @@
                             <td><a href="https://reillyspitzfaden.com/blog/feed.xml"><img src="./media/rss-icon-white.png" alt="RSS"/></a></td>
                         </tr>
                     </table>
+
+
 
                     <p>&copy; 2022<script>new Date().getFullYear()>2022&&document.write("-"+new Date().getFullYear());</script> Reilly Spitzfaden // all site coding by Reilly Spitzfaden</p>
                 </footer>
