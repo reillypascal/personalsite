@@ -318,7 +318,8 @@ footer td {
     }
 }
 
-footer :link {
+/* base on class when redo social media HTML */
+footer > table :link {
     border-bottom: none;
 }
 
