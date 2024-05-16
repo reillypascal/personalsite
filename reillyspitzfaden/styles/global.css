@@ -342,8 +342,6 @@ footer :link {
 #myCardName {
     /* font-family: 'Antic Didone', serif; */
     font-size: 26pt;
-    text-decoration: none; 
-    border-bottom-style: none;
 }
 #myCardDescription {
     font-size: 14pt;
@@ -370,6 +368,14 @@ footer :link {
     }
 }
 
+.u-photo {
+    display: none;
+}
+
+.p-name {
+    text-decoration: none; 
+    border-bottom-style: none;
+}
 /*************************************************/
 
 /* Homepage "recent" section */
