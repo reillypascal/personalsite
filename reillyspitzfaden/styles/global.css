@@ -284,7 +284,7 @@ footer::before {
     border-bottom: 1px solid #383a3f;
 }
 footer {
-    font-size: 0.85rem;
+    /* font-size: 0.85rem; */
     /* padding: 0 2rem; */
     padding: 0 24px;
 }
