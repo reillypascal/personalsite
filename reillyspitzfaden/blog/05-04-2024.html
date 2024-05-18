@@ -81,7 +81,23 @@
                             <!-- post contents -->
                             <article class="textBlock">
                                 <h2>Glitchy Lofi Piano Looper + Radio &mdash; Part 1</h2>
-                                <p>May 4, 2024</p>
+
+                                <div class="post-meta">
+                                    <span class="meta-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20">
+                                            <title>
+                                                calendar
+                                            </title><g fill="#d2dde6">
+                                                <path d="M15 3V1h-2v2H7V1H5v2H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm3 14H2V8h16zm-2-6h-4v4h4z"/>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    
+                                    <span class="meta-text">
+                                        <a href="https://reillyspitzfaden.com/blog/05-04-2024"><time>May 4, 2024</time></a> 
+                                    </span>
+                                </div>
+
                                 <p>Hi everyone! Today's post is on <a href="https://en.wikipedia.org/wiki/Max_(software)">Max/MSP</a> sound design. I'll be talking about how I got <a href="https://hachyderm.io/@reillypascal/112242684024114281">this sound</a> I posted about on my <a href="https://hachyderm.io/@reillypascal">Mastodon</a> a few weeks ago. It's part of a trio I'm writing for MIDI keyboard, clarinet, and percussion tentatively titled <em>Forget your name</em>.</p>
                                 
                                 <p>I mentioned in my <a href="https://reillyspitzfaden.com/blog/02-27-2024">Feb. 27 post</a> that I've been using the <a href="https://github.com/ericlyon/FFTease3.0-MaxMSP"><code>fftz.ether~</code></a> Max/MSP object to combine the spectra of two sounds. It compares each FFT bin between the two sounds, and selects the one that's either quieter or louder, depending on the settings. Here I'm using it to combine glitching lofi piano/percussion with various radio sounds.</p>

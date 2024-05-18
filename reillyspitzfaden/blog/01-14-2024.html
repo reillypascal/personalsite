@@ -87,7 +87,23 @@
                              <!-- post contents -->
                              <article class="textBlock">
                                 <h2>Do Read the Comments</h2>
-                                <h3>January 14, 2024</h3>
+                                
+                                <div class="post-meta">
+                                    <span class="meta-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20">
+                                            <title>
+                                                calendar
+                                            </title><g fill="#d2dde6">
+                                                <path d="M15 3V1h-2v2H7V1H5v2H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm3 14H2V8h16zm-2-6h-4v4h4z"/>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    
+                                    <span class="meta-text">
+                                        <a href="https://reillyspitzfaden.com/blog/01-14-2024"><time>January 14, 2024</time></a> 
+                                    </span>
+                                </div>
+
                                 <p>My blog now has a comment section! Let's talk about how I made it.</p> 
                                 <p>It uses the <a href="https://supabase.com/">Supabase</a> Postgres database, which bills itself as an "open-source Firebase alternative." There are a number of ways of communicating with the database. I chose the <a href="https://github.com/supabase/supabase-js">supabase-js</a> JavaScript client since I'm familiar with JS, and because I wanted to use Netlify's <a href="https://www.netlify.com/blog/intro-to-serverless-functions/">"serverless" function</a> capabilities to run the code that communicates with the database.</p>
 

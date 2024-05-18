@@ -601,6 +601,25 @@ li + li, li > ul {
         padding: 4px 0 0;
     }
 }
+
+.post-meta {
+    padding-bottom: 32px;
+}
+.meta-icon {
+    position: relative;
+    top: 3px;
+}
+.meta-text {
+    margin-left: 3px;
+    margin-right: 16px;
+}
+.heart-meta {
+    margin-right: 4px;
+}
+.heart-react {
+    position: relative;
+    top: 4px;
+}
 /*************************************************/
 
 /* Works list formatting */

@@ -81,7 +81,23 @@
                             <!-- post contents -->
                             <article class="textBlock">
                                 <h2>RSS Is Nice</h2>
-                                <h3>March 10, 2024</h3>
+                                
+                                <div class="post-meta">
+                                    <span class="meta-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20">
+                                            <title>
+                                                calendar
+                                            </title><g fill="#d2dde6">
+                                                <path d="M15 3V1h-2v2H7V1H5v2H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm3 14H2V8h16zm-2-6h-4v4h4z"/>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    
+                                    <span class="meta-text">
+                                        <a href="https://reillyspitzfaden.com/blog/03-10-2024"><time>March 10, 2024</time></a> 
+                                    </span>
+                                </div>
+
                                 <p>This past week I added <a href="https://en.wikipedia.org/wiki/RSS">RSS</a> to my blog! Here I'll talk about the process of doing that, my rediscovery of how nice RSS is, and some music blogs I've been enjoying. If you want to follow my blog, <a href="https://reillyspitzfaden.com/blog/feed.xml">here's the link</a>.</p>
                                 <h3>RSS for My Blog</h3>
                                 <p>I started out by trying to make my blog automatically generate the RSS feed — all I would have to do is upload the files to Netlify as I normally do. The first place I looked was at this <a href="https://www.contentful.com/blog/generate-blog-rss-feed-with-javascript-and-netlify/">article</a>, with the <a href="https://www.npmjs.com/package/jsdom">jsdom</a> NPM package to handle parsing my HTML files where this post used <a href="https://www.contentful.com/about-us/">Contentful</a>'s built-in system. As I tried this and some related avenues out, I became unhappy with the number of steps involved, and auto-generating started to feel like more work than simply hand-writing an XML file.</p>
