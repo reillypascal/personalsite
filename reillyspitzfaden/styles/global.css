@@ -611,14 +611,32 @@ li + li, li > ul {
 }
 .meta-text {
     margin-left: 3px;
-    margin-right: 16px;
+    /* margin-right: 16px; */
 }
-.heart-meta {
-    margin-right: 4px;
+
+.post-reactions {
+    padding-top: 24px;
+}
+/* https://stackoverflow.com/questions/22672368/how-to-make-a-transparent-html-button */
+.react-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    /* outline: none; */
+    /* overflow: hidden; */
+    /* background-repeat: no-repeat; */
 }
 .heart-react {
     position: relative;
     top: 4px;
+    opacity: 0.67;
+}
+.heart-react:not([disabled]):hover,
+.heart-react:not([disabled]):focus {
+    opacity: 1;
+}
+.heart-react[disabled] {
+    cursor: not-allowed;
 }
 /*************************************************/
 
