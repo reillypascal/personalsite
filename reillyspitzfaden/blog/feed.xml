@@ -10,6 +10,47 @@
         <description>A blog about my personal interests, including C++ audio plugin development, composition/sound design in Max/MSP, open tech, and web development</description>
 
         <item>
+            <title>Receiving Webmentions, Part 1</title>
+            <dc:creator>Reilly Spitzfaden</dc:creator>
+            <link>https://reillyspitzfaden.com/blog/05-21-2024</link>
+            <guid>https://reillyspitzfaden.com/blog/05-21-2024</guid>
+            <pubDate>Tue, 21 May 2024 00:00 EDT</pubDate>
+            <description>Setting up my blog to receive Webmentions</description>
+            <content:encoded><![CDATA[
+                <p>Hi everyone! I recently set up my blog to receive <a href="https://en.wikipedia.org/wiki/Webmention">Webmentions</a>, which means that if somebody wants to link to one of my posts from their website, I can get a notification about their post. I like this because it allows people in the <a href="https://indieweb.org">IndieWeb</a> community to use our websites kind of like social media — to have conversations with each other — but outside of the silos of social media.</p>
+
+                <p>I got the basics taken care of for now, and in a future update I will make it easier for people to send them to me, as well as adding a way to display them as comments on the appropriate post.</p>
+
+                <h3>How I Did It</h3>
+                <p>I used <a href="https://webmention.io">Webmention.io</a> for my Webmentions, which made the whole process pretty simple on my end. First I went to Webmention.io and signed in with my website. When you type your website URL into the sign in field, it looks for a <code class="language-html">rel="me"</code> link. In my case, I have the following HTML tag in the <code class="language-html">&lt;head&gt;</code> of my page:</p>
+
+<pre><code class="language-html">&lt;link rel="me" href="https://github.com/reillypascal" /&gt;</code></pre>
+
+                <p>In other words, I'm using my GitHub account to sign in to Webmention.io. This is called <a href="https://microformats.org/wiki/RelMeAuth">RelMeAuth</a>, and if you don't want to use a silo website such as GitHub, you can also use <a href="https://indieweb.org/IndieAuth">IndieAuth</a>, which I will likely set up in the future.</p>
+
+                <p>If I type my URL into the login bar now, Webmention.io will redirect me to a login page where I can approve the sign-in via GitHub. Once I've logged in, I can simply place the following tag in the <code class="language-html">&lt;head&gt;</code> of my homepage:</p>
+
+<pre><code class="language-html">&lt;link rel="webmention" href="https://webmention.io/reillyspitzfaden.com/webmention" /&gt;</code></pre>
+
+                <p>The general format is as follows (this is also given on Webmention.io once you've logged in):</p>
+
+<pre><code class="language-html">&lt;link rel="webmention" href="https://webmention.io/&lt;username&gt;/webmention" /&gt;</code></pre>
+
+                <p>Where "<code class="language-http">&lt;username&gt;</code>" is usually the URL of your site.</p>
+
+                <h3>One More Thing</h3>
+                <p>At this point you could previously go <a href="https://webmention.io/dashboard">here</a> and see any Webmentions that came in. However, there is one new feature to be aware of. I tested out my site using the "<a href="https://webmention.rocks/receive/1">Receiver Test #1</a>" at <a href="https://webmention.rocks">webmention.rocks</a>, and it was giving me a 404 error. When I talked to Webmention.io's creator Aaron Parecki in the <a href="https://chat.indieweb.org/">IndieWeb chat</a>, I learned that there are some new updates. As discussed in <a href="https://github.com/aaronpk/webmention.io/issues/182">this</a> GitHub issue, Aaron wants to prevent Webmention.io from automatically accepting mentions for anybody who does not explicitly  ask for it. As a result, one final step is that you need to go <a href="https://webmention.io/settings/sites">here</a> after signing into Webmention.io, and enter your site URL in the box. At this point, the receiver test worked flawlessly for me.</p>
+
+                <h3>Going Forward</h3>
+                <p>If you have Webmentions set up, please send me one if you link to my blog posts! I always appreciate connecting with other IndieWeb people. If you're just getting started with Webmention.io, you should be able to go to <code class="language-http">https://webmention.io/&lt;username&gt;/xmlrpc</code>, where <code class="language-http">&lt;username&gt;</code> is your site URL, and send me one. Soon I will be adding a field to my blog posts so you can submit the URL of your post right on my site. I will also make it so when you click the button to load comments, Webmentions I've received for the post will be displayed alongside the comments.</p>
+
+                <h3>Fun Fact of the Day</h3>
+                <p>Speaking of blogs, "blog" comes from "web-log," but did you know that "log" (in the sense of "log-book") comes from "log" as in a log from a tree? I like to browse <a href="https://etymonline.com">Etymonline</a> for fun, and the page for <a href="https://www.etymonline.com/word/log#etymonline_v_43590">log</a> (as in "log-book") explains that sailors would place a chip of a tree log in the water on the end of a rope with knots at regular intervals, and used the rate at which the knots passed by to tell the ship's speed. Isn't etymology great?</p>
+            ]]> 
+            </content:encoded>
+        </item>
+
+        <item>
             <title>Healthy, Sustainable Social Internet</title>
             <dc:creator>Reilly Spitzfaden</dc:creator>
             <link>https://reillyspitzfaden.com/blog/05-17-2024</link>
