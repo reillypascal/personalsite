@@ -622,14 +622,14 @@ li + li, li > ul {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    /* outline: none; */
-    /* overflow: hidden; */
-    /* background-repeat: no-repeat; */
+    outline: none;
+    overflow: hidden;
+    background-repeat: no-repeat;
 }
 .heart-react {
     position: relative;
     top: 4px;
-    opacity: 0.67;
+    opacity: 0.75;
 }
 #react-btn:not([disabled]) > .heart-react:hover,
 #react-btn:not([disabled]) > .heart-react:focus {
