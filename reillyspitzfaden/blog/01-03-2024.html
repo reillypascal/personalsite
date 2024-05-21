@@ -30,6 +30,7 @@
         <!-- my styles and scripts -->
         <link rel="stylesheet" type="text/css" href="../styles/global.css" />
         <script src="../styles/scripts.js"></script>
+        <script src="../styles/interactions.js"></script>
 
         <!-- Fonts -->
         <link rel="preload" id="googlefonts-cs" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
@@ -140,14 +141,6 @@
                 
                 <script>
                     const thisPostURL = 'reillyspitzfaden.com/blog/01-03-2024';
-
-                    document.addEventListener('DOMContentLoaded', () => {
-                        const commentForm = document.getElementById('comment-form');
-                        const getCommentButton = document.getElementById('load-comments');
-
-                        commentForm.addEventListener('submit', handleSubmitComment);
-                        getCommentButton.addEventListener('click', handleGetComments);
-                    })
                 </script>
 
                 <!-- footer -->
