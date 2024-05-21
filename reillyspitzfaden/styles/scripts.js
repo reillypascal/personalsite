@@ -162,14 +162,38 @@ const handleGetComments = async (event) => {
         });
 }
 
-const handleSubmitHeart = async (event) => {
+const handleGetHeart = async (event) => {
     // event.preventDefault();
 
     const reactCtr = document.getElementById('react-ctr');
     reactCtr.innerText = '';
 
+    const response = await fetch('/.netlify/functions/get_heart', {
+        method: 'POST',
+        body: JSON.stringify({
+            postURL: thisPostURL
+        })
+    })
+        .then (response => response.json())
+        .then(json => {
+            let reactCount = Object.keys(json).length;
+            if (reactCount > 0) {
+                reactCtr.innerText = `x${reactCount}`;
+            }
+        })
+        .catch(error => {
+            reactCtr.innerText = 'error retrieving reactions';
+
+            console.log(error);
+            console.log(response);
+        })
+}
+
+const handleSubmitHeart = async (event) => {
+    event.preventDefault();
+    
     const reactionObject = {
-        heart: 1,
+        heart: '',
         postURL: thisPostURL
     };
 
@@ -178,7 +202,8 @@ const handleSubmitHeart = async (event) => {
         body: JSON.stringify(reactionObject)
     })
         .then(response => {
-
+            console.log(response);
+            handleGetHeart();
         })
         .catch(error => {
             reactCtr.innerText = "error reacting to post";

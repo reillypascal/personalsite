@@ -16,7 +16,8 @@ exports.handler = async (event, context, callback) => {
         .from('open_heart')
         .insert([
             {
-                heart: 1
+                heart: 1,
+                postURL: JSON.parse(event.body).postURL
             }
         ])
     } catch (e) {

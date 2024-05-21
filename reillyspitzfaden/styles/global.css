@@ -618,7 +618,7 @@ li + li, li > ul {
     padding-top: 24px;
 }
 /* https://stackoverflow.com/questions/22672368/how-to-make-a-transparent-html-button */
-.react-button {
+#react-btn {
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -637,6 +637,9 @@ li + li, li > ul {
 }
 .heart-react[disabled] {
     cursor: not-allowed;
+}
+#react-ctr {
+    font-weight: 300;
 }
 /*************************************************/
 
