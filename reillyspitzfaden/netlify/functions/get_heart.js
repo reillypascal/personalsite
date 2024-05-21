@@ -10,7 +10,7 @@ exports.handler = async (event, context, callback) => {
     let returnVals
     try {
         returnVals = await supabase
-        .from('open_heart')
+        .from('reactions')
         .select('heart')
         .eq('postURL', JSON.parse(event.body).postURL)
     } catch (e) {

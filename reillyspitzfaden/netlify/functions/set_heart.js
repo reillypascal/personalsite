@@ -13,7 +13,7 @@ exports.handler = async (event, context, callback) => {
     try {
         // the result of createClient() can access the database
         data = await supabase
-        .from('open_heart')
+        .from('reactions')
         .insert([
             {
                 heart: 1,
