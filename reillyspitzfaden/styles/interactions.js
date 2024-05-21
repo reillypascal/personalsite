@@ -184,8 +184,9 @@ const handleSubmitHeart = async (event) => {
         .then(response => {
             console.log(response);
             handleGetHeart();
+            
             reactBtn.disabled = "disabled";
-            // localStorage.setItem('heart', 'true');
+            window.localStorage.setItem('react-btn', 'disabled');
         })
         .catch(error => {
             reactCtr.innerText = "error reacting to post";
@@ -208,4 +209,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const reactBtn = document.getElementById('react-btn');
     reactBtn.addEventListener('click', handleSubmitHeart);
     handleGetHeart();
+
+    if (window.localStorage.getItem('react-btn') == 'disabled') {
+        reactBtn.disabled = true;
+    }
 })
