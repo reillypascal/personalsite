@@ -130,18 +130,18 @@
                             
                             </article>
 
-                            <!-- <div class="post-reactions">
+                            <div class="post-reactions">
                                 <span class="heart-meta">
                                     Post Reactions:
                                 </span>
-                                <button class="react-button">
+                                <button class="react-btn">
                                     <span class="heart-react">
                                         <img src="../media/icon-heart-pink.svg" alt="heart icon" />
                                     </span>
                                 </button>
 
                                 <span class="react-ctr"></span>
-                            </div> -->
+                            </div>
 
                             <div class="blogPostAsterism"><p>&#x2042;</p></div>
 
@@ -191,6 +191,10 @@
 
                         commentForm.addEventListener('submit', handleSubmitComment);
                         getCommentButton.addEventListener('click', handleGetComments);
+
+                        const reactBtn = document.getElementById('react-btn');
+
+                        reactBtn.addEventListener('click', handleSubmitHeart);
                     })
                 </script>
 

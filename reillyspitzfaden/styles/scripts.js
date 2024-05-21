@@ -161,3 +161,29 @@ const handleGetComments = async (event) => {
             console.log(response);
         });
 }
+
+const handleSubmitHeart = async (event) => {
+    // event.preventDefault();
+
+    const reactCtr = document.getElementById('react-ctr');
+    reactCtr.innerText = '';
+
+    const reactionObject = {
+        heart: 1,
+        postURL: thisPostURL
+    };
+
+    const response = await fetch('/.netlify/functions/set_heart', {
+        method: "POST",
+        body: JSON.stringify(reactionObject)
+    })
+        .then(response => {
+
+        })
+        .catch(error => {
+            reactCtr.innerText = "error reacting to post";
+
+            console.log(error);
+            console.log(response);
+        });
+};
