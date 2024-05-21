@@ -631,11 +631,11 @@ li + li, li > ul {
     top: 4px;
     opacity: 0.67;
 }
-.heart-react:not([disabled]):hover,
-.heart-react:not([disabled]):focus {
+#react-btn:not([disabled]) > .heart-react:hover,
+#react-btn:not([disabled]) > .heart-react:focus {
     opacity: 1;
 }
-.heart-react[disabled] {
+#react-btn[disabled] {
     cursor: not-allowed;
 }
 #react-ctr {

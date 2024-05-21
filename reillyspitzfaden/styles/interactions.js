@@ -169,6 +169,9 @@ const handleGetHeart = async (event) => {
 const handleSubmitHeart = async (event) => {
     event.preventDefault();
 
+    const reactBtn = document.getElementById('react-btn');
+    const reactCtr = document.getElementById('react-ctr');
+
     const reactionObject = {
         heart: '',
         postURL: thisPostURL
@@ -181,6 +184,8 @@ const handleSubmitHeart = async (event) => {
         .then(response => {
             console.log(response);
             handleGetHeart();
+            reactBtn.disabled = "disabled";
+            // localStorage.setItem('heart', 'true');
         })
         .catch(error => {
             reactCtr.innerText = "error reacting to post";
