@@ -625,6 +625,8 @@ li + li, li > ul {
     outline: none;
     overflow: hidden;
     background-repeat: no-repeat;
+    padding: 0;
+    margin: 0 4px;
 }
 .heart-react {
     position: relative;
