@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Facebook SEO/cards -->
+        <meta property="og:title" content="Reilly Spitzfaden, Composer |" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="https://reillyspitzfaden.com/media/wefax_og_cr.jpeg" />
+        <meta property="og:image:secure_url" content="https://reillyspitzfaden.com/media/wefax_og_cr.jpeg" />
+        <meta property="og:image:type" content="image/jpeg" /> 
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="" />
+
+        <!-- Twitter SEO/cards -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@reillypascal">
+        <meta name="twitter:creator" content="@reillypascal">
+        <meta name="twitter:title" content="Reilly Spitzfaden, Composer |" />
+        <meta name="twitter:description" content="" />
+        <meta name="twitter:image" content="https://reillyspitzfaden.com/media/wefax_og_cr.jpeg" />
+
+        <!-- General -->
+        <meta name="description" content="" />
+        <title>Reilly Spitzfaden, Composer |</title>
+        <link rel="canonical" href="" />
+        <link rel="icon" href="../media/favicon-32px.png" type="image/x-icon"/>
+
+        <!-- my styles and scripts -->
+        <link rel="stylesheet" type="text/css" href="../styles/global.css" />
+        <script src="../styles/scripts.js"></script>
+        
+        <!-- Fonts -->
+        <link rel="preload" id="googlefonts-cs" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript>
+            <link rel="stylesheet" id="googlefonts-css"  href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic&display=swap" type="text/css" media="all" />
+        </noscript>
+
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+        </noscript>
+    </head>
+    <body onresize="hamburgerOnOff()">
+        <!-- fixed background -->
+        <div class="bg"></div>
+        <!-- moving foreground-->
+        <div class="foreground">
+            <!-- includes footer - makes it fill the page -->
+            <div class="wrapper">
+                <!-- navigation menu -->
+                <div class="nav">
+                    <a href="../index.html" class="active">Home</a>
+                    <div id="menuLinks">
+                      <div class="navElement"><a href="../bio.html">Bio</a></div>
+                      <div class="navElement"><a href="../works.html">Works List</a></div>
+                      <div class="navElement"><a href="../media.html">Media</a></div>
+                      <div class="navElement"><a href="../supplemental.html">Supplemental Materials</a></div>
+                      <div class="navElement"><a href="../blog.html">Blog</a></div>
+                      <div class="navElement"><a href="../projects.html">Code Projects</a></div>
+                      <div class="navElement"><a href="../contact.html">Contact</a></div>
+                      <div class="navElement"><a href="../blog/feed.xml">RSS</a></div>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="hamburgerToggle()">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <!-- page content minus header/footer -->
+                <div class="content">
+                    <br/>
+                    <div id="BGpad">
+                        <div id="main">
+                            
+                            <!-- close "main" -->
+                        </div>
+                        <!-- close "BGpad" -->
+                    </div>
+                    <!-- end content -->
+                </div>
+                
+                <!-- footer -->
+                <footer>
+                    <table>
+                        <tr>
+                            <td><a href="https://github.com/reillypascal" title="GitHub"><img src="../media/github-mark-white.png" alt="GitHub"/></a></td>
+                            <td><a href="https://www.instagram.com/reillypascal/" title="Instagram"><img src="../media/instagram-glyph-white.png" alt="Instagram"/></a></td>
+                            <td><a href="https://hachyderm.io/@reillypascal" title="Mastodon"><img src="../media/mastodon-logo-white.png" alt="Mastodon"/></a></td>
+                            <!-- <td><a href="https://makertube.net/c/reilly_spitzfaden_composer/videos" title-"PeerTube"><img src="../media/peertube-logo-white.png" alt="PeerTube"></a></td> -->
+                            <td><a href="https://soundcloud.com/reilly-spitzfaden" title="SoundCloud"><img src="../media/soundcloud-brands-white.png" alt="SoundCloud"/></a></td>
+                            <td><a href="https://www.tiktok.com/@reillypascal" title="TikTok"><img src="../media/tiktok-logo-white.png" alt="TikTok"/></a></td>
+                            <td><a href="https://www.youtube.com/@reillyspitzfaden" title="YouTube"><img src="../media/youtube-icon-dark.png" alt="YouTube"/></a></td>
+                            <td><a href="https://reillyspitzfaden.com/blog/feed.xml" title="RSS"><img src="../media/rss-icon-white.png" alt="RSS"/></a></td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        <a href="https://xn--sr8hvo.ws/previous">←</a>
+                        <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a>
+                        <a href="https://xn--sr8hvo.ws/next">→</a>
+                    </p>
+
+                    <p>&copy; 2022<script>new Date().getFullYear()>2022&&document.write("-"+new Date().getFullYear());</script> by Reilly Spitzfaden. This site supports <a href="https://webmention.net/">Webmention</a>.</p>
+                </footer>
+            <!-- end wrapper -->
+            </div>
+            <!-- end foreground -->
+        </div>
+    </body>
+</html>
