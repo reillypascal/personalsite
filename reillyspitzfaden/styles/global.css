@@ -140,6 +140,7 @@ iframe {
 }
 /* makes svg arrow "transparent" to clicks */
 .dropbtn > img {
+    fill: #d2dde6;
     pointer-events: none;
 }
 .dropdown-content {
