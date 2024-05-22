@@ -60,12 +60,29 @@
                 <div class="nav">
                     <a href="index.html" class="active">Home</a>
                     <div id="menuLinks">
-                        <div class="navElement"><a href="bio.html">Bio</a></div>
-                        <div class="navElement"><a href="works.html">Works List</a></div>
-                        <div class="navElement"><a href="media.html">Media</a></div>
-                        <div class="navElement"><a href="supplemental.html">Supplemental Materials</a></div>
+                        <div class="navElement">
+                            <div class="dropdown">
+                                <button onclick="showDropdown('about-dropdown')" class="dropbtn">About <img src="media/icon-caret-down-invert.svg" alt="" /></button>
+                                <div id="about-dropdown" class="dropdown-content">
+                                    <a href="bio.html">Bio</a>
+                                    <a href="now.html">Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="navElement">
+                            <div class="dropdown">
+                                <button onclick="showDropdown('music-dropdown')" class="dropbtn">Music <img src="media/icon-caret-down-invert.svg" alt="" /></button>
+                                <div id="music-dropdown" class="dropdown-content">
+                                    <a href="works.html">Works List</a>
+                                    <a href="media.html">Media</a>
+                                    <a href="supplemental.html">Supplemental Materials</a>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="navElement"><a href="blog.html">Blog</a></div>
-                        <div class="navElement"><a href="projects.html">Code Projects</a></div>
+                        <div class="navElement"><a href="projects.html">Code</a></div>
                         <div class="navElement"><a href="contact.html">Contact</a></div>
                         <div class="navElement"><a href="blog/feed.xml">RSS</a></div>
                     </div>

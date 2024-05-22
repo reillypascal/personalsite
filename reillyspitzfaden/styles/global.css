@@ -21,7 +21,7 @@ body, .nav, .nav a.icon, #main, #mainBlog, #mainMedia, #mainRecent, footer {
     background-color: #111318;
 }
 
-body, .nav a, :link, :visited, input.textinput, textarea, input[type="submit"] {
+body, .dropbtn, .nav a, :link, :visited, input.textinput, textarea, input[type="submit"] {
     color: #d2dde6;
 }
 
@@ -38,7 +38,7 @@ body, .nav a, :link, :visited, input.textinput, textarea, input[type="submit"] {
     /* background-color: #343a40; */
 }
 
-.nav a:focus, .nav a:hover {
+.nav a:focus, .nav a:hover, .dropbtn:focus, .dropbtn:hover, .dropdown-content a:focus, .dropdown-content a:hover {
     background-color: #363847;
     /* background-color: #343a40; */
     box-shadow: 0 0 1px 1px #111318 inset;
@@ -110,7 +110,7 @@ iframe {
 
 /* nav formatting */
 .nav {
-    overflow: hidden;
+    /* overflow: hidden; */ /* interferes with dropdown sub-menus */
     margin: 0;
     width: vw100;
     /* padding: 0.5rem 2rem; */
@@ -128,7 +128,38 @@ iframe {
     /* sets highlight size in dropdown layout */
     width: max-content;
 }
-
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn {
+    font-size: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+/* makes svg arrow "transparent" to clicks */
+.dropbtn > img {
+    pointer-events: none;
+}
+.dropdown-content {
+    background-color: #111318;
+    display: none;
+    position: static;
+    /* z-index: 1; */
+    padding: 8px;
+    border-radius: 2px;
+}
+.dropdown-content a {
+    color: #d2dde6;
+    padding: 12px 8px;
+    /* margin: 2px 0; */
+    text-decoration: none;
+    display: block;
+}
+.show {
+    display: block;
+}
 .nav a {
     /* color: #fff; */
     /* padding-right: 2rem; */
@@ -150,7 +181,7 @@ iframe {
 .nav #menuLinks {
     display: none;
 }
-.nav :link {
+.nav :link, .dropbtn {
     /* sets highlight size in dropdown layout */
     width: max-content;
     border-bottom: none;
@@ -159,7 +190,9 @@ iframe {
     /* padding: 0.25rem 0.5rem; */
     padding: 4px 8px;
 }
-
+.dropbtn {
+    padding: 4px 10px 4px 8px;
+}
 /* Handles switching between hamburger menu and regular */
 @media screen and (min-width: 56.25rem) { /* was 900px */
     .nav #menuLinks {
@@ -175,6 +208,9 @@ iframe {
     }
     .nav a.icon {
         display: none;
+    }
+    .dropdown-content {
+        position: absolute;
     }
 }
 @media screen and (min-width: 62.5rem) { /* was 1000 px */
