@@ -141,14 +141,15 @@ iframe {
 .dropdown-content {
     background-color: #111318;
     display: none;
-    position: absolute;
-    z-index: 1;
+    position: static;
+    /* z-index: 1; */
     padding: 8px;
     border-radius: 2px;
 }
 .dropdown-content a {
     color: #d2dde6;
     padding: 12px 8px;
+    /* margin: 2px 0; */
     text-decoration: none;
     display: block;
 }
@@ -201,6 +202,9 @@ iframe {
     }
     .nav a.icon {
         display: none;
+    }
+    .dropdown-content {
+        position: absolute;
     }
 }
 @media screen and (min-width: 62.5rem) { /* was 1000 px */

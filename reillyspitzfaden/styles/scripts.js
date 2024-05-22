@@ -17,21 +17,34 @@ function hamburgerOnOff() {
     const remSize = window.getComputedStyle(documentHTML).fontSize.replace("px", "");
     
     // get menu div
-    let x = document.getElementById("menuLinks");
+    let menu = document.getElementById("menuLinks");
+    // get all dropdown content divs
+    let dropdowns = document.getElementsByClassName("dropdown-content");
 
     // calculate window size in rem; show/hide nav
     if (size >= 56.25 * remSize) { // was 900px
-    x.style.display = "contents";
+        menu.style.display = "contents";
+
+        for (let i = 0; i < dropdowns.length; i++) {
+            let dropdown = dropdowns[i];
+            dropdown.style.position = "absolute";
+        }
     } else {
-    x.style.display = "none";
+        menu.style.display = "none";
+        for (let i = 0; i < dropdowns.length; i++) {
+            let dropdown = dropdowns[i];
+            dropdown.style.position = "static";
+        }
     }
 }
 
 function showDropdown(dropdownID) {
+    // hideDropdown();
     document.getElementById(dropdownID).classList.toggle("show");
 }
 
-window.onclick = function(event) {
+// closes dropdowns and hamburger
+function hideDropdown(event) {
     if (!event.target.matches('.dropbtn')) {
         let dropdowns = document.getElementsByClassName("dropdown-content");
         for (let i = 0; i < dropdowns.length; i++) {
@@ -41,4 +54,13 @@ window.onclick = function(event) {
             }
         }
     }
+
+    // if (!(event.target.matches('.icon') || event.target.matches('.fa-bars'))) {
+    //     let hamburger = document.getElementById("menuLinks");
+    //     if (hamburger.style.display === "block") {
+    //         hamburger.style.display = "none";
+    //     }
+    // }
 }
+
+window.onclick = hideDropdown;
