@@ -119,7 +119,7 @@ iframe {
     position: relative;
     font-size: 100%;
 }
-.active, .navElement {
+.active, .navElement, .dropdown {
     /* margin: 0.125rem 0.75rem 0.125rem 0; */
     margin: 2px 12px 2px 0;
 }
