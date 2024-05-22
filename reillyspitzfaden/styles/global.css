@@ -119,7 +119,7 @@ iframe {
     position: relative;
     font-size: 100%;
 }
-.active, .navElement, .dropbtn {
+.active, .navElement {
     /* margin: 0.125rem 0.75rem 0.125rem 0; */
     margin: 2px 12px 2px 0;
 }
@@ -137,6 +137,10 @@ iframe {
     background-color: transparent;
     border: none;
     cursor: pointer;
+}
+/* makes svg arrow "transparent" to clicks */
+.dropbtn > img {
+    pointer-events: none;
 }
 .dropdown-content {
     background-color: #111318;
@@ -186,7 +190,9 @@ iframe {
     /* padding: 0.25rem 0.5rem; */
     padding: 4px 8px;
 }
-
+.dropbtn {
+    padding: 4px 10px 4px 8px;
+}
 /* Handles switching between hamburger menu and regular */
 @media screen and (min-width: 56.25rem) { /* was 900px */
     .nav #menuLinks {

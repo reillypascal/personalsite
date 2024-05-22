@@ -39,7 +39,6 @@ function hamburgerOnOff() {
 }
 
 function showDropdown(dropdownID) {
-    // hideDropdown();
     document.getElementById(dropdownID).classList.toggle("show");
 }
 
@@ -55,12 +54,12 @@ function hideDropdown(event) {
         }
     }
 
-    // if (!(event.target.matches('.icon') || event.target.matches('.fa-bars'))) {
-    //     let hamburger = document.getElementById("menuLinks");
-    //     if (hamburger.style.display === "block") {
-    //         hamburger.style.display = "none";
-    //     }
-    // }
+    if (!event.target.closest('.nav')) {
+        let hamburger = document.getElementById("menuLinks");
+        if (hamburger.style.display === "block") {
+            hamburger.style.display = "none";
+        }
+    }
 }
 
 window.onclick = hideDropdown;
