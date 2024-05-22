@@ -148,7 +148,7 @@ iframe {
     display: none;
     position: static;
     /* z-index: 1; */
-    padding: 8px;
+    padding: 2px 8px 8px;
     border-radius: 2px;
 }
 .dropdown-content a {
@@ -211,6 +211,7 @@ iframe {
         display: none;
     }
     .dropdown-content {
+        padding: 8px;
         position: absolute;
     }
 }
