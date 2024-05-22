@@ -21,7 +21,7 @@ body, .nav, .nav a.icon, #main, #mainBlog, #mainMedia, #mainRecent, footer {
     background-color: #111318;
 }
 
-body, .nav a, :link, :visited, input.textinput, textarea, input[type="submit"] {
+body, .dropbtn, .nav a, :link, :visited, input.textinput, textarea, input[type="submit"] {
     color: #d2dde6;
 }
 
@@ -38,7 +38,7 @@ body, .nav a, :link, :visited, input.textinput, textarea, input[type="submit"] {
     /* background-color: #343a40; */
 }
 
-.nav a:focus, .nav a:hover {
+.nav a:focus, .nav a:hover, .dropbtn:focus, .dropbtn:hover, .dropdown-content a:focus, .dropdown-content a:hover {
     background-color: #363847;
     /* background-color: #343a40; */
     box-shadow: 0 0 1px 1px #111318 inset;
@@ -110,7 +110,7 @@ iframe {
 
 /* nav formatting */
 .nav {
-    overflow: hidden;
+    /* overflow: hidden; */ /* interferes with dropdown sub-menus */
     margin: 0;
     width: vw100;
     /* padding: 0.5rem 2rem; */
@@ -119,7 +119,7 @@ iframe {
     position: relative;
     font-size: 100%;
 }
-.active, .navElement, .dropdown {
+.active, .navElement, .dropbtn {
     /* margin: 0.125rem 0.75rem 0.125rem 0; */
     margin: 2px 12px 2px 0;
 }
@@ -128,7 +128,33 @@ iframe {
     /* sets highlight size in dropdown layout */
     width: max-content;
 }
-
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn {
+    font-size: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-content {
+    background-color: #111318;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding: 8px;
+    border-radius: 2px;
+}
+.dropdown-content a {
+    color: #d2dde6;
+    padding: 12px 8px;
+    text-decoration: none;
+    display: block;
+}
+.show {
+    display: block;
+}
 .nav a {
     /* color: #fff; */
     /* padding-right: 2rem; */
@@ -150,7 +176,7 @@ iframe {
 .nav #menuLinks {
     display: none;
 }
-.nav :link {
+.nav :link, .dropbtn {
     /* sets highlight size in dropdown layout */
     width: max-content;
     border-bottom: none;
