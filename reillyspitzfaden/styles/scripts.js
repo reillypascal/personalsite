@@ -44,7 +44,12 @@ function showDropdown(dropdownID) {
 
 // closes dropdowns and hamburger
 function hideDropdown(event) {
-    if (!event.target.matches('.dropbtn')) {
+    // get window width and font rem size
+    let size = window.innerWidth;
+    const documentHTML = document.querySelector("html");
+    const remSize = window.getComputedStyle(documentHTML).fontSize.replace("px", "");
+
+    if (!event.target.matches('.dropbtn') && size >= 56.25 * remSize) {
         let dropdowns = document.getElementsByClassName("dropdown-content");
         for (let i = 0; i < dropdowns.length; i++) {
             let openDropdown = dropdowns[i];
