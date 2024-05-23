@@ -44,7 +44,7 @@ function showDropdown(dropdownID) {
 
 // closes dropdowns and hamburger
 function hideDropdown(event) {
-    if (!event.target.matches('.dropbtn')) {
+    if (!event.target.contains('.dropbtn')) {
         let dropdowns = document.getElementsByClassName("dropdown-content");
         for (let i = 0; i < dropdowns.length; i++) {
             let openDropdown = dropdowns[i];
