@@ -21,7 +21,7 @@ body, .nav, .nav a.icon, #main, #mainBlog, #mainMedia, #mainNow, #mainRecent, fo
     background-color: #111318;
 }
 
-body, .dropbtn, .nav a, :link, :visited, input.textinput, textarea, input[type="submit"] {
+body, .dropbtn, .nav a, :link, :visited, input.textinput, textarea, input[type="submit"], input#webmention-source {
     color: #d2dde6;
 }
 
@@ -33,7 +33,7 @@ body, .dropbtn, .nav a, :link, :visited, input.textinput, textarea, input[type="
     /* backdrop-filter: contrast(-5%); */
 }
 
-.comment, input.textinput, textarea, input[type="submit"] {
+.comment, input.textinput, textarea, input[type="submit"], input#webmention-source {
     background-color: #363847;
     /* background-color: #343a40; */
 }
@@ -44,7 +44,7 @@ body, .dropbtn, .nav a, :link, :visited, input.textinput, textarea, input[type="
     box-shadow: 0 0 1px 1px #111318 inset;
 }
 
-input.textinput:focus, textarea:focus {
+input.textinput:focus, textarea:focus, input#webmention-source:focus {
     outline-color: hsla(209, 100%, 94%, 0.67) !important;
 }
 
@@ -550,7 +550,7 @@ footer > table :link {
         min-width: 560px;
     }
 }
-.commentSection > form {
+.commentSection > form, .webmention-form > form {
     max-width: 45rem;
     /* max-width: 720px; */
 }
@@ -749,7 +749,7 @@ label {
 input, textarea, fieldset {
     flex: 1 1 30em;
 }
-input.textinput {
+input.textinput, input#webmention-source {
     border: none;
     border-radius: 3px;
     padding: 5px;
@@ -758,6 +758,9 @@ input.textinput {
     font-weight: 400;
     /* background-color: #303234; */
     /* color: #fff; */
+}
+input#webmention-source {
+    width: calc(100% - 5.33rem);
 }
 textarea {
     display: block;
@@ -774,7 +777,7 @@ textarea {
     /* background-color: #303234; */
     /* color: #fff; */
 }
-input.textinput:focus, textarea:focus {
+input.textinput:focus, textarea:focus, input#webmention-source:focus {
     outline-style: solid !important;
     outline-width: 1px !important;
     /* outline: rgba(224, 240, 255, 0.67) solid 1px !important; */
@@ -800,6 +803,11 @@ input[type="submit"]:focus, input[type="submit"]:hover {
     outline-width: 1px !important;
     /* outline: rgba(224, 240, 255, 0.67) solid 1px ! important; */
     /* background-color: #585a5f; */
+}
+input[id="webmention-submit"] {
+    float: right;
+    width: 4.75em;
+    height: 1.75em;
 }
 input[id="send-email"] {
     display: flex;

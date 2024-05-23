@@ -200,6 +200,9 @@ const handleSubmitHeart = async (event) => {
 
 // add listeners, set up usage of comment/reaction functions
 document.addEventListener('DOMContentLoaded', () => {
+    const webmentionTarget = document.getElementById('webmention-target');
+    webmentionTarget.setAttribute('value', thisPostURL);
+
     const commentForm = document.getElementById('comment-form');
     const getCommentButton = document.getElementById('load-comments');
 
