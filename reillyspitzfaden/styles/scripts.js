@@ -54,13 +54,12 @@ function hideDropdown(event) {
         }
     }
 
-    if (!event.target.closest('.nav')) {
-        let hamburger = document.getElementById("menuLinks");
-        if (hamburger.style.display === "block") {
-            hamburger.style.display = "none";
-        }
-    }
+    // if (!event.target.closest('.nav')) {
+    //     let hamburger = document.getElementById("menuLinks");
+    //     if (hamburger.style.display === "block") {
+    //         hamburger.style.display = "none";
+    //     }
+    // }
 }
 
 window.addEventListener('click', hideDropdown);
-// window.addEventListener('touchstart', hideDropdown);
