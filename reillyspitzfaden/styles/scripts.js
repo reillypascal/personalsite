@@ -62,4 +62,5 @@ function hideDropdown(event) {
     }
 }
 
-window.onclick = hideDropdown;
+// window.onclick = hideDropdown;
+window.addEventListener('click', hideDropdown);
