@@ -62,6 +62,5 @@ function hideDropdown(event) {
     }
 }
 
-// window.onclick = hideDropdown;
 window.addEventListener('click', hideDropdown);
-window.addEventListener('touchstart', hideDropdown);
+// window.addEventListener('touchstart', hideDropdown);
