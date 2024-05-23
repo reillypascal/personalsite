@@ -3,9 +3,17 @@
 function hamburgerToggle() {
     let x = document.getElementById("menuLinks");
     if (x.style.display === "block") {
-    x.style.display = "none";
+        x.style.display = "none";
+        
+        let dropdowns = document.getElementsByClassName("dropdown-content");
+        for (let i = 0; i < dropdowns.length; i++) {
+            let openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
     } else {
-    x.style.display = "block";
+        x.style.display = "block";
     }
 }
 
