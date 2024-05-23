@@ -806,6 +806,7 @@ input[type="submit"]:focus, input[type="submit"]:hover {
 }
 input[id="webmention-submit"] {
     float: right;
+    text-align: center;
     width: 4.75em;
     height: 1.75em;
 }
