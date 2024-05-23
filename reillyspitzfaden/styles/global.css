@@ -806,8 +806,10 @@ input[type="submit"]:focus, input[type="submit"]:hover {
 }
 input[id="webmention-submit"] {
     float: right;
+    /* margin: 0 0 0 auto; */
     text-align: center;
     width: 4.75em;
+    padding: 0 2px; /* keeps text from moving right on mobile */
     height: 1.75em;
 }
 input[id="send-email"] {
