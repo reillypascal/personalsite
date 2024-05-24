@@ -681,6 +681,20 @@ li + li, li > ul {
 #react-ctr {
     font-weight: 300;
 }
+.share-openly-btn {
+    border-radius: 18px;
+    border: none;
+    display: inline-flex;
+    justify-content: center; /* center the content horizontally */
+    align-items: center; /* center the content vertically */
+    padding: 4px 8px 4px 12px;
+    margin: 24px 0 0 0;
+}
+.share-openly-btn > a {
+    color: #111318;
+    border: none;
+    padding: 4px;
+}
 /*************************************************/
 
 /* Works list formatting */
