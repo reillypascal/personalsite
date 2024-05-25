@@ -684,7 +684,7 @@ li + li, li > ul {
 .share-openly-btn {
     border-radius: 18px;
     border: none;
-    padding: 4px 8px 4px 12px;
+    padding: 4px 8px;
     margin: 24px 0 0 0;
 }
 .share-openly-btn > a {
