@@ -102,7 +102,7 @@ const handleGetComments = async (event) => {
                     commenterName.textContent = element.name;
                     thisComment.textContent = element.comment;
                     // commentDateHR.style.color = "#565973";
-                    commentDate.textContent = `Date: ${dateObj.getMonth() + 1}-${dateObj.getDay()}-${dateObj.getFullYear()}`;
+                    commentDate.textContent = `Date: ${dateObj.getMonth() + 1}-${dateObj.getDate()}-${dateObj.getFullYear()}`;
                     commentDate.style.fontSize = "10pt";
 
                     // add children to div
